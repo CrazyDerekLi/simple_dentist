@@ -1,0 +1,110 @@
+<view class="container">
+  <view class="lunbo">
+    <swiper 
+      indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" 
+      interval="{{interval}}" 
+      duration="{{duration}}"
+      current="0" 
+      bindchange="changeUser"
+      >
+      <block wx:for="{{userList}}" wx:for-index="idx" wx:key="{{idx}}">
+          <swiper-item>
+              <view style="position:relative;height:100%;background:#{{item.healthy==0?'f28a94':'74bee3'}}">
+                <view class="status_box">
+                  <image src="/img/healthy_{{item.healthy==0?0:item.healthy<healthy?1:2}}.png"></image>
+                  <view class="cir_bg"></view>
+                </view>
+                <view class="healthy_title">
+                  {{item.username}}
+                </view>
+                <view class="healthy_count_box">
+                  <image src="/img/healthy_count_bg.png"></image>
+                  <view class="healthy_count_red_bg" style="width:{{(healthy-item.healthy)*372/healthy}}rpx;display:{{item.healthy==healthy?'none':'block'}};"></view>
+                  <view class="healthy_btn_red_bg" style="display:{{item.healthy==healthy?'none':'block'}}"></view>
+                  <view class="healthy_btn_search" bindtap="go2Search" data-index="{{idx}}"></view>
+                  <view class="healthy_btn_add" bindtap="go2Add" data-index="{{idx}}"></view>
+                </view>
+                <view class="healthy_tip">
+                  {{item.healthy==0?'尚未检查 病发率高':item.healthy<healthy?'尚有口腔问题未解决':'口腔状态非常好'}}
+                </view>
+              </view>
+          </swiper-item>
+      </block>
+      </swiper>
+  </view>
+  <view class="panel-tab">
+      <view class="view-item" style="padding-left:70rpx;">
+        <view class="btn_shoucang">
+          <image src="/img/btn_shoucang.png"></image>
+        </view>
+        全民口腔健康解决方案
+        <view class="btn-enter">
+          <image src="/img/btn_enter.png"></image>
+        </view>
+      </view>
+      <view class="view-item-body">
+        <view class="project_list">
+          <view class="project_item">
+            <view class="project_item_title">免费检查</view>
+            <view class="project_item_progress">
+              <view class="progress_item"></view>
+              <view class="progress_item"></view>
+              <view class="progress_item"></view>
+              <view class="progress_item"></view>
+            </view>
+            <view class="project_item_tip">已完成0/4</view>
+          </view>
+          <view class="project_item">
+            <view class="project_item_title">免费洗牙</view>
+            <view class="project_item_progress">
+              <view class="progress_item"></view>
+              <view class="progress_item"></view>
+              <view class="progress_item"></view>
+              <view class="progress_item"></view>
+              <view class="progress_item"></view>
+            </view>
+            <view class="project_item_tip">需购买特权卡</view>
+          </view>
+          <view class="project_item">
+            <view class="project_item_title">免费拔牙</view>
+            <view class="project_item_progress">
+              <view class="progress_item"></view>
+              <view class="progress_item"></view>
+              <view class="progress_item"></view>
+            </view>
+            <view class="project_item_tip">需购买特权卡</view>
+          </view>
+        </view>
+      </view>
+  </view>
+
+  <view class="panel-tab">
+    <view class="view-item">
+      医嘱消息
+      <view class="btn-enter">
+        <image src="/img/btn_enter.png"></image>
+      </view>
+    </view>
+    <view class="view-item-body">
+      <view class="message_list">
+        <view class="message_item">
+          <view class="message_btn_sound">
+            <image src="/img/btn_sound.png"></image>
+          </view>
+          <view class="message_title">系统消息</view>
+          <view class="message_info">您收到一条家庭牙医发来的消息，点击查看</view>
+          <view class="message_date">2017年6月22日</view>
+        </view>
+        <view class="message_item">
+          <view class="message_btn_sound">
+            <image src="/img/btn_sound.png"></image>
+          </view>
+          <view class="message_title">系统消息</view>
+          <view class="message_info">您收到一条家庭牙医发来的消息，点击查看</view>
+          <view class="message_date">2017年6月22日</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

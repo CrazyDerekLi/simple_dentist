@@ -1,0 +1,44 @@
+.container{
+  position:fixed;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  height:auto;
+  width:auto;
+  overflow:auto;
+}
+.panel-tab{
+  margin-bottom:20rpx;
+  border-bottom:1rpx solid #efefef;
+}
+.view-item{
+  height:80rpx;
+  line-height:80rpx;
+  padding:0;
+  margin:0;
+  font-size:28rpx;
+  color:#7e7b7f;
+  border-top:1rpx solid #f2f2f2;
+  border-bottom:1rpx solid #f2f2f2;
+  position:relative;
+  font-weight: bold;
+}
+.view-item .btn-enter{
+  width:12rpx;
+  height:24rpx;
+  position:absolute;
+  top:28rpx;
+  right:20rpx;
+}
+.view-item .btn-enter image{
+  width:12rpx;
+  height:24rpx;
+  position:absolute;
+  left:0;
+  top:0;
+}
+.view-item-body{
+  padding:10rpx 30rpx;
+  position:relative;
+}
