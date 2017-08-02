@@ -1,0 +1,39 @@
+<view class="container">
+  <view class="healthy_top">
+    <view class="healthy_title">
+      全民口腔健康
+    </view>
+    <view class="healthy_desc">
+      50,000口腔专家携手护卫国人口腔
+    </view>
+  </view>
+  <view class="healthy_body">
+    <view class="healthy_body_desc">
+      为了解决我国看牙问题，特推出全民口腔健康解决方案。为了解决我国看牙问题，特推出全民口腔健康解决方案为了解决我国看牙问题，特推出全民口腔健康解决方案为了解决我国看牙问题，特推出全民口腔健康解决方案为了解决我国看牙问题，特推出全民口腔健康解决方案
+    </view>
+    <view class="healthy_body_title">
+      四大专享特权
+    </view>
+    <view class="healthy_body_tequan_list">
+      <view class="healthy_body_tequan_item">
+        <view class="circle"></view>
+        免费检查
+      </view>
+      <view class="healthy_body_tequan_item">
+        <view class="circle"></view>
+        免费洗牙
+      </view>
+      <view class="healthy_body_tequan_item">
+        <view class="circle"></view>
+        免费检查
+      </view>
+      <view class="healthy_body_tequan_item">
+        <view class="circle"></view>
+        免费检查
+      </view>
+    </view>
+  </view>
+  <view class="healthy_btn">
+    一键购买
+  </view>
+</view>

@@ -1,2 +1,57 @@
-<!--pages/main/my.wxml-->
-<text>pages/main/my.wxml</text>
+<view class="container">
+  <view class="my_top">
+    <view class="my_amount_box">
+      <view class="my_amount">
+        <view class="amount_title">余额（元）</view>
+        <view class="amount_count">
+          <view class="integer">10</view>
+          <view class="decimal">.00</view>
+        </view>
+      </view>
+      <view class="my_amount_card">
+        <view class="amount_title">银行卡</view>
+        <view class="card_amount">0</view>
+      </view>
+    </view>
+  </view>
+  <view class="my_list">
+    <view class="my_item">
+      <view class="my_icon">
+        <image src="/img/my_card.png"></image>
+      </view>
+      卡包
+      <view class="my_item_tip">
+        您尚未成为会员
+      </view>
+    </view>
+    <view class="my_item" bindtap="go2zhangdan">
+      <view class="my_icon">
+        <image src="/img/my_zhangdan.png"></image>
+      </view>
+      账单
+      <view class="my_item_tip">
+        查看历史纪录
+      </view>
+    </view>
+    <view class="my_item" bindtap="go2cart">
+      <view class="my_icon">
+        <image src="/img/my_cart.png"></image>
+      </view>
+      购物车
+      <view class="my_item_tip">
+        您有两个商品尚未付款
+      </view>
+    </view>
+  </view>
+  <view class="my_list">
+    <view class="my_item" bindtap="go2familydoctor">
+      <view class="my_icon">
+        <image src="/img/my_doctor.png"></image>
+      </view>
+      家庭医生
+      <view class="my_item_tip">
+        尚未设置家庭医生
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="my_question_top">
+    <view class="my_question_top_left">已有答案</view>
+    <view class="my_question_top_right">尚未回答</view>
+  </view>
+  <view class="my_question_list">
+    <view class="my_question_item">
+      <view class="my_question_info">
+        <view class="my_question_btn">问题</view>
+        牙齿以前喜欢肯甘蔗什么的，弄得牙齿坏了。这个能治好吗？没去看医生，所以也不知道是哪种情况。
+      </view>
+      <view class="my_question_status">
+        <view class="status_left">2017年7月4日 13:11:01</view>
+        <view class="status_right">已结束</view>
+      </view>
+    </view>
+    <view class="my_question_item">
+      <view class="my_question_info">
+        <view class="my_question_btn">问题</view>
+        牙齿以前喜欢肯甘蔗什么的，弄得牙齿坏了。这个能治好吗？没去看医生，所以也不知道是哪种情况。
+      </view>
+      <view class="my_question_status">
+        <view class="status_left">2017年7月4日 13:11:01</view>
+        <view class="status_right">已结束</view>
+      </view>
+    </view>
+  </view>
+</view>

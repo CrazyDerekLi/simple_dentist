@@ -1,0 +1,96 @@
+.container{
+  background:#f8f8f8;
+  padding-bottom:100rpx;
+}
+.message_top{
+  height:340rpx;
+  background: #74bee3;
+  position:relative;
+  margin:0;
+  padding-top:40rpx;
+  border-top:1rpx solid #9ed2ea;
+}
+.doctor_photo{
+  width:160rpx;
+  height:160rpx;
+  border-radius: 160rpx;
+  border:10rpx solid #fff;
+  margin:0 auto;
+  overflow: hidden;
+}
+.doctor_photo image{
+  width:160rpx;
+  height:160rpx;
+}
+.doctor_name{
+  color:#fff;
+  font-size:40rpx;
+  line-height:50rpx;
+  text-align: center;
+  font-weight: bold;
+  padding-top:20rpx;
+}
+.doctor_zhicheng{
+  color:#fff;
+  font-size:30rpx;
+  line-height:40rpx;
+  text-align:center;
+}
+.btn_sanjiao{
+  position:absolute;
+  left:50%;
+  bottom:0;
+  width:0;
+  height:0;
+  margin-left:-10rpx;
+  border-left: 20rpx solid transparent;
+  border-right: 20rpx solid transparent;
+  border-bottom: 20rpx solid #fff;
+}
+.message_info_item{
+  padding:60rpx 60rpx 80rpx 60rpx;
+  background:#fff;
+  border-bottom:1rpx solid #efefef;
+  position:relative;
+}
+.message_info_item view{
+  font-size:28rpx;
+  line-height:40rpx;
+  color:#7e7c81;
+  text-align:left;
+}
+.message_info_item .message_date{
+  position:absolute;
+  bottom:0;
+  text-align: center;
+  color:#ccc;
+  left:0;
+  right:0;
+  line-height: 80rpx;
+}
+.message_btn_list{
+  position:absolute;
+  bottom:0;
+  height:100rpx;
+  border-top:1rpx solid #efefef;
+  left:0;
+  right:0;
+}
+.message_btn_left{
+  width:50%;
+  float:left;
+  background:#fff;
+  color:#7d7b7e;
+  text-align:center;
+  line-height: 100rpx;
+  font-size:32rpx;
+}
+.message_btn_right{
+  width:50%;
+  float:left;
+  background:#77daa1;
+  color:#fff;
+  text-align:center;
+  line-height: 100rpx;
+  font-size:36rpx;
+}

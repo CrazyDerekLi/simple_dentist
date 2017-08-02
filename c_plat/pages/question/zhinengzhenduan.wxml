@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="self_top">
+    <view class="self_top_progress {{progress>0?'selected':''}}">
+      <view class="white_line"></view>
+      <view class="circle"></view>
+    </view>
+    <view class="self_top_progress {{progress>1?'selected':''}}">
+      <view class="white_line"></view>
+      <view class="circle"></view>
+    </view>
+    <view class="self_top_progress {{progress>2?'selected':''}}">
+      <view class="white_line"></view>
+      <view class="circle"></view>
+    </view>
+  </view>
+  <view class="self_body">
+    <view class="title">
+      请选择您遇到的问题
+    </view>
+    <view class="self_list">
+      <view class="self_item" bindtap="addProgress" 
+        wx:for="{{progressList}}" 
+        wx:for-index="idx" 
+        wx:for-item="progressItem" 
+        data-index="{{idx}}" 
+        wx:key="{{progressItem.id}}">
+        {{progressItem.name}}
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,48 @@
+<view class="container">
+  <view class="question_top">
+    <view class="question_item user_info">
+      <view class="user_photo">
+        <image src="/img/family_doctor_photo.png"></image>
+      </view>
+      <view class="user_name">王小明</view>
+      <view class="user_wx">微信号：123456789</view>
+    </view>
+    <view class="question_item">
+      <view class="question_item_left">年龄：40岁</view>
+      <view class="question_item_center">
+        <view class="gender_item">
+          <image src="/img/select_1.png"></image>
+          男
+        </view>
+        <view class="gender_item">
+          <image src="/img/select_0.png"></image>
+          女
+        </view>
+      </view>
+      <view class="question_item_right">必填</view>
+      
+    </view>
+    <view class="question_item">
+      <view class="question_item_left">联系方式：15000000000</view>
+      <view class="question_item_right">必填</view>
+    </view>
+  </view>
+  <view class="question_textarea">
+    <view class="question_textarea_head">
+      病情描述（至少十个字）
+    </view>
+    <view class="question_textarea_body">
+      <textarea value="123" />  
+    </view>
+  </view>
+  <view class="show_info">
+    <view class="show_info_body">
+    <image src="/img/btn_dun_gray.png"></image>
+    隐私信息提供安全保障
+  
+    </view>
+  </view>
+  <view class="question_bottom_btn">
+    提交问题
+  </view>
+</view>

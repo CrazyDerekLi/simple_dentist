@@ -1,0 +1,52 @@
+<view class="container">
+<!--pages/fujin/doctor/doctor.wxml-->
+  <view class="doctor_info">
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <view class="doctor_name">
+      李天德<text>主治医师</text>
+    </view>
+    <view class="doctor_hospital">
+      <view>日照市口腔医院</view>
+      <view class="bao">
+        <view>保</view>
+      </view>
+    </view>
+    <view class="doctor_wenzhenshu">
+      问诊数：357
+    </view>
+    <view class="doctor_haopinglv">
+      好评率：99%
+    </view>
+    <view class="doctor_biaoqian_box">
+      <view class="doctor_biaoqian yellow">讲信用</view>
+      <view class="doctor_biaoqian red">效率高</view>
+      <view class="doctor_biaoqian yellow">很幽默</view>
+      <view class="doctor_biaoqian red">医术高</view>
+    </view>
+  </view>
+  <view class="doctor_detail">
+    <view class="doctor_detail_item">
+      医生简介
+      <view>自我简介李医生，自我简介李医生，自我简介李医生，自我简介李医生，自我简介李医生，自我简介李医生，自我简介李医生，自我简介李医生，自我简介李医生，自我简介李医生，自我简介李医生，自我简介李医生，</view>
+      <view>擅长：种植牙 种植牙 种植牙 种植牙</view>
+    </view>
+    <view class="doctor_detail_item">
+      医学教育背景
+    </view>
+    <view class="doctor_detail_item">
+      <view>2012年毕业于济宁医学院</view>
+      <view>2016年就职于日照口腔医院</view>
+    </view>
+    <view class="doctor_detail_item">
+      学术研究成果
+    </view>
+    <view class="doctor_detail_item">
+      <view>李医生的医术高明，非常满意！无忧卡消费很便宜！以后看牙全靠他！</view>
+    </view>
+  </view>
+  <view class="doctor_btns">
+    <view class="doctor_left_btn">设为家庭医生</view>
+    <view class="doctor_right_btn">马上问诊</view>
+  </view>
+
+</view>

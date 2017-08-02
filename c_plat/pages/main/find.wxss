@@ -1,1 +1,77 @@
-/* pages/main/find.wxss */
+.lunbo{
+    height:350rpx;
+    overflow:hidden;
+    background:#fff;
+}
+.lunbo swiper{
+    height:350rpx;
+}
+.slide_image{
+  position:relative;
+  display: block;
+  height:350rpx;
+  width:840rpx;
+}
+.goods_list{
+  margin-top:10rpx;
+  position:relative;
+}
+.good_item{
+  width:50%;
+  position:relative;
+  float:left;
+  padding-top:370rpx;
+  margin-bottom:10rpx;
+}
+.good_photo{
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  height:360rpx;
+  z-index:1;
+}
+.good_img{
+  background:#ccc;
+  width:360rpx;
+  height:360rpx;
+  position:absolute;
+  left:50%;
+  top:0;
+  margin-left:-180rpx;
+}
+.good_img image{
+  width:360rpx;
+  height:360rpx;
+}
+.good_xinpin{
+  color:#fff;
+  position:absolute;
+  height:40rpx;
+  line-height:40rpx;
+  padding:0 10rpx;
+  background:#f38996;
+  font-size:28rpx;
+  border-bottom-right-radius: 10rpx;
+  z-index:100;
+}
+.good_title{
+  height:40rpx;
+  line-height: 40rpx;
+  font-size:32rpx;
+  font-weight: bold;
+  padding-left:20rpx;
+}
+.good_context{
+  height:40rpx;
+  line-height:40rpx;
+  font-size:26rpx;
+  padding-left:20rpx;
+}
+.good_amount{
+  height:40rpx;
+  line-height:40rpx;
+  color:#ff6666;
+  font-size:30rpx;
+  padding-left:20rpx;
+}

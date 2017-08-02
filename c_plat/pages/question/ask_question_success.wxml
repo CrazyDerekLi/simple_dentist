@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="success_body">
+    <image src="/img/question_success.png"></image>
+    <view class="title">
+      已发布成功
+    </view>
+    <view class="info">
+      <view>当前在线口腔医生456人</view>
+      <view>正在为您匹配</view>
+    </view>
+  </view>
+</view>

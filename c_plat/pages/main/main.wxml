@@ -34,7 +34,7 @@
       </swiper>
   </view>
   <view class="panel-tab">
-      <view class="view-item" style="padding-left:70rpx;">
+      <view class="view-item" style="padding-left:70rpx;" bindtap="go2HealthyDesc">
         <view class="btn_shoucang">
           <image src="/img/btn_shoucang.png"></image>
         </view>
@@ -88,7 +88,7 @@
     </view>
     <view class="view-item-body">
       <view class="message_list">
-        <view class="message_item">
+        <view class="message_item" bindtap="go2DoctorMessage">
           <view class="message_btn_sound">
             <image src="/img/btn_sound.png"></image>
           </view>
@@ -96,7 +96,7 @@
           <view class="message_info">您收到一条家庭牙医发来的消息，点击查看</view>
           <view class="message_date">2017年6月22日</view>
         </view>
-        <view class="message_item">
+        <view class="message_item" bindtap="go2DoctorMessage">
           <view class="message_btn_sound">
             <image src="/img/btn_sound.png"></image>
           </view>

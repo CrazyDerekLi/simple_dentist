@@ -1,9 +1,30 @@
 {
   "pages": [
     "pages/main/main",
-    "pages/main/nearby",
     "pages/main/find",
-    "pages/main/my"
+    "pages/main/my",
+    "pages/main/nearby",
+    "pages/hospital/doctor",
+    "pages/hospital/hospital",
+    "pages/my/mouth",
+    "pages/my/addfamily",
+    "pages/my/familydetail",
+    "pages/my/familydoctor",
+    "pages/my/zhangdan",
+    "pages/find/jiesuan",
+    "pages/find/cart",
+    "pages/find/gooddetail",
+    "pages/question/ask_question",
+    "pages/question/ask_question_success",
+    "pages/question/ziwozhenduan",
+    "pages/question/myquestions",
+    "pages/question/questiondetail",
+    "pages/question/doctoraskquestion",
+    "pages/question/resolvequestion",
+    "pages/question/zhenduanbaogao",
+    "pages/question/zhinengzhenduan",
+    "pages/message/doctor_message",
+    "pages/healthy/healthy_desc"
   ],
   "window":{
     "backgroundTextStyle":"light",

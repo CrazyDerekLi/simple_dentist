@@ -1,0 +1,46 @@
+<view class="container">
+  <view class="familydoctor_top">
+    <view class="familydoctor_photo">
+      <image src="/img/family_doctor_photo.png"></image>
+    </view>
+    <view class="familydoctor_name">
+      李医生
+      <view class="btn_bao">保</view>
+    </view>
+    <view class="familydoctor_position">
+      日照市口腔医院主治医生
+    </view>
+    <view class="familydoctor_btn">
+      更换
+    </view>
+  </view>
+  <view class="familydoctor_title">
+    我的家庭成员
+  </view>
+  <view class="familydoctor_list">
+    <view class="familydoctor_item" bindtap="go2detail">
+      <view class="familydoctor_item_photo">
+        <image src="/img/family_doctor_photo.png"></image>
+      </view>
+      王小明
+      <view class="familydoctor_item_tip">
+        尚未检查，病发率高
+      </view>
+    </view>
+    <view class="familydoctor_item" bindtap="go2detail">
+      <view class="familydoctor_item_photo">
+        <image src="/img/family_doctor_photo.png"></image>
+      </view>
+      王小明
+      <view class="familydoctor_item_tip">
+        尚未检查，病发率高
+      </view>
+    </view>
+    <view class="familydoctor_item plus" bindtap="go2add">
+      <view class="familydoctor_plus">
+        <image src="/img/family_doctor_plus.png"></image>
+      </view>
+      <view class="familydoctor_add">添加新成员</view>
+    </view>
+  </view>
+</view>

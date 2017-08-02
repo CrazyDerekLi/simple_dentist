@@ -1,0 +1,75 @@
+.container{
+  background:#efeff0;
+}
+.my_question_top{
+  height:100rpx;
+  border-top:1rpx solid #f2f2f2;
+}
+.my_question_top_left,.my_question_top_right{
+  width:50%;
+  position:relative;
+  float:left;
+  height:100rpx;
+  line-height:100rpx;
+  text-align: center;
+  color:#9fa0a0;
+  background: #fff;
+  font-size:32rpx;
+}
+.my_question_top_right{
+  border-left:1rpx solid #f2f2f2;
+  margin-left:-1rpx;
+}
+.my_question_list{
+  margin-top:20rpx;
+}
+.my_question_item{
+  border-top:1rpx solid #f2f2f2;
+  border-bottom:1rpx solid #f2f2f2;
+  background:#fff;
+  margin-bottom: 20rpx;
+  padding-bottom:20rpx;
+}
+.my_question_info{
+  position:relative;
+  padding:30rpx 30rpx 30rpx 120rpx;
+  line-height: 40rpx;
+  font-size:30rpx;
+  color:#7e7b7f;
+}
+.my_question_btn{
+  position:absolute;
+  top:20rpx;
+  left:30rpx;
+  width:80rpx;
+  height:50rpx;
+  line-height: 50rpx;
+  background:#3ebeed;
+  color:#fff;
+  font-size:30rpx;
+  text-align: center;
+  border-radius: 2rpx;
+}
+.my_question_status{
+  position:relative;
+  height:60rpx;
+  line-height: 60rpx;
+}
+.status_left{
+  float:left;
+  position:relative;
+  height:60rpx;
+  line-height: 60rpx;
+  padding-left:30rpx;
+  font-size:30rpx;
+  color:#b2b2b2;
+}
+.status_right{
+  position:relative;
+  height:60rpx;
+  line-height: 60rpx;
+  padding-right: 30rpx;
+  float:right;
+  font-size:30rpx;
+  color:#b2b2b2;
+}

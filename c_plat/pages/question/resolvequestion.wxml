@@ -1,0 +1,58 @@
+<view class="container">
+  <view class="lunbo">
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:for-index="idx" wx:key="{{idx}}">
+          <swiper-item>
+              <view style="position:relative;height:100%;">
+                  <image src="{{item}}" class="slide_image" style=""/>
+              </view>
+          </swiper-item>
+      </block>
+      </swiper>
+  </view>
+  <view class="search_box">
+    <view class="search_body">
+      <image src="/img/btn_search_gray.png"></image>
+      <input  />
+      <view class="search_btn">搜索答案</view>    
+    </view>
+  </view>
+  <view class="question_list">
+    <view class="question_item">
+      <view class="question_ask">
+        <view class="btn_question">问题</view>
+        牙疼能治好吗？
+        <view class="question_ask_date">
+          2小时前
+        </view>
+      </view>
+      <view class="question_answer">
+        <view class="btn_answer">回答</view>
+        牙齿以前喜欢肯甘蔗什么的，弄得牙齿坏了。这个能治好吗？没去看医生，所以也不知道是哪种情况。
+      </view>
+    </view>
+    <view class="question_item">
+      <view class="question_ask">
+        <view class="btn_question">问题</view>
+        牙疼能治好吗？
+        <view class="question_ask_date">
+          2小时前
+        </view>
+      </view>
+      <view class="question_answer">
+        <view class="btn_answer">回答</view>
+        牙齿以前喜欢肯甘蔗什么的，弄得牙齿坏了。这个能治好吗？没去看医生，所以也不知道是哪种情况。
+      </view>
+    </view>
+  </view>
+  <view class="question_btns">
+    <view class="question_left_btn">
+      <image src="/img/btn_history.png"></image>
+      我的提问
+    </view>
+    <view class="question_right_btn">
+      马上提问
+    </view>
+  </view>
+</view>

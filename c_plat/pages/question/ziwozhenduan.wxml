@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="zhenduan_top">
+    <view class="zhenduan_img">
+      <image src="/img/btn_mouth.png"></image>
+      <view class="title">
+        自我诊断
+      </view>
+      <view class="info">
+        接下来，您只需要花几分钟时间进行自我诊断，就可以获得来自权威专家的就医指导建议以及相对透明的诊疗价格。
+      </view>
+    </view>
+  </view>
+  <view class="zhenduan_list">
+    <view class="zhenduan_item" bindtap="go2zhineng">
+      <view class="zhenduan_item_icon">
+        <image src="/img/btn_search.png"></image>
+      </view>
+      <view class="zhenduan_item_title">智能诊断</view>
+      <view class="zhenduan_item_info">只需三步，马上知晓病因，治疗方案及相应价格</view>
+    </view>
+    <view class="zhenduan_item" bindtap="go2jieda">
+      <view class="zhenduan_item_icon">
+        <image src="/img/btn_info.png"></image>
+      </view>
+      <view class="zhenduan_item_title">名医解答</view>
+      <view class="zhenduan_item_info">名医在线权威解答，解决患者个性化需求</view>
+    </view>
+  </view>
+</view>

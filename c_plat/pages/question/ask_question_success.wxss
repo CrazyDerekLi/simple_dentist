@@ -1,0 +1,32 @@
+.container{
+  background:#74bee3;
+}
+.success_body{
+  height:340rpx;
+  position:absolute;
+  top:40%;
+  margin-top:-170rpx;
+  left:0;
+  right:0;
+}
+.success_body image{
+  position:relative;
+  display: block;
+  margin:0 auto;
+  width:160rpx;
+  height:160rpx;
+}
+.title{
+  color:#fff;
+  text-align: center;
+  height:80rpx;
+  line-height: 80rpx;
+  font-size:36rpx;
+}
+.info{
+  color:#fff;
+  text-align: center;
+  height:100rpx;
+  line-height: 30rpx;
+  font-size:28rpx;
+}

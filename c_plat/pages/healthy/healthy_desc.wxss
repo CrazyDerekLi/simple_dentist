@@ -1,0 +1,63 @@
+.healthy_top{
+  height:460rpx;
+  background: #74bee3;
+  position:relative;
+  margin:0;
+  border-top:1rpx solid #9ed2ea;
+}
+.healthy_title{
+  line-height:60rpx;
+  font-size:60rpx;
+  font-weight: bold;
+  padding-top:170rpx;
+  text-align: center;
+  color:#fff;
+}
+.healthy_desc{
+  line-height:50rpx;
+  font-size:34rpx;
+  text-align: center;
+  color: #fff;
+}
+.healthy_body{
+  padding:40rpx;
+}
+.healthy_body_desc{
+  font-size:26rpx;
+  line-height: 36rpx;
+  color:#7d7b7e;
+}
+.healthy_body_title{
+  line-height:100rpx;
+  font-size:40rpx;
+  color:#7d7b7e;
+}
+.healthy_btn{
+  position:absolute;
+  bottom:0;
+  height:100rpx;
+  font-size:40rpx;
+  text-align: center;
+  background: #77daa1;
+  color:#fff;
+  left:0;
+  right:0;
+  line-height: 100rpx;
+}
+.healthy_body_tequan_item{
+  line-height:40rpx;
+  height:40rpx;
+  font-size:28rpx;
+  color:#7d7b7e;
+  padding-left:40rpx;
+  position:relative;
+}
+.circle{
+  position:absolute;
+  left:10rpx;
+  top:10rpx;
+  width:20rpx;
+  height:20rpx;
+  background:#7d7b7e;
+  border-radius: 20rpx;
+}

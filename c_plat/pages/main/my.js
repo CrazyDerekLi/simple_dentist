@@ -7,7 +7,27 @@ Page({
   data: {
   
   },
-
+  go2zhangdan:function(){
+    var url = "/pages/my/zhangdan";
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+  },
+  go2familydoctor:function(){
+    var url = "/pages/my/familydoctor";
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+  },
+  go2cart:function(){
+    var url = "/pages/find/cart";
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */

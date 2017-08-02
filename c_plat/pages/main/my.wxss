@@ -1,1 +1,100 @@
-/* pages/main/my.wxss */
+.container{
+  background:#f8f8f8;
+}
+.my_top{
+  padding:80rpx 0 100rpx 0;
+  height:150rpx;
+  background:#74bee3;
+  border-top:1rpx solid #9ed2ea;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+.my_amount_box{
+  height:150rpx;
+  position:relative;
+}
+.my_amount,.my_amount_card{
+  width:50%;
+  float:left;
+  height:150rpx;
+  color:#fff;
+}
+.my_amount_card{
+  border-left:1rpx solid #fff;
+  margin-left:-1rpx;
+}
+.amount_title{
+  height:40rpx;
+  line-height:40rpx;
+  text-align: center;
+  font-size:36rpx;
+  padding-left:20rpx;
+}
+.my_amount_card .amount_title{
+  padding-right:20rpx;
+}
+.amount_count{
+  height:120rpx;
+  position:relative;
+}
+.integer{
+  display: block;
+  width:50%;
+  position:relative;
+  line-height:130rpx;
+  font-size:100rpx;
+  float:left;
+  text-align: right;
+}
+.decimal{
+  display: block;
+  width:50%;
+  position:relative;
+  line-height:100rpx;
+  font-size:48rpx;
+  float:left;
+}
+.card_amount{
+  text-align:center;
+  font-size:100rpx;
+  line-height:130rpx;
+}
+.my_list{
+  margin-top:20rpx;
+  border-top:1rpx solid #f2f2f2;
+  background:#fff;
+}
+.my_item{
+  border-bottom:1rpx solid #f2f2f2;
+  line-height:100rpx;
+  font-size:32rpx;
+  color:#7e7b7f;
+  padding-left:100rpx;
+  padding-right:220rpx;
+  position:relative;
+  height:100rpx;
+}
+.my_item .my_icon{
+  width:100rpx;
+  height:100rpx;
+  position:absolute;
+  left:0;
+  top:0;
+}
+.my_item_tip{
+  text-align:right;
+  padding-right:50rpx;
+  height:100rpx;
+  line-height: 100rpx;
+  position:absolute;
+  right:0;
+  top:0;
+  font-size: 26rpx;
+  color:#ccc;
+}
+.my_icon image{
+  position:absolute;
+  width:66rpx;
+  height:54rpx;
+  left:27rpx;
+  top:23rpx;
+}

@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="jiesuan_address">
+    添加地址
+    <view class="btn_enter">
+      <image src="/img/btn_enter.png"></image>
+    </view>
+  </view>
+  <view class="jiesuan_good_box">
+    <view class="good_photo"></view>
+    飞利浦充电式电动牙刷
+    <view class="good_amount">358.00元</view>
+  </view>
+  <view class="jiesuan_result">
+    <view>商品价格：358.00元</view>
+    <view>配送费用：0.00元</view>
+  </view>
+  <view class="jiesuan_btns">
+    <view class="jiesuan_left_btn">合计：358.00元</view>
+    <view class="jiesuan_right_btn">去付款</view>
+  </view>
+</view>

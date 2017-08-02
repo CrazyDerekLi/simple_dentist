@@ -1,0 +1,80 @@
+<view class="container">
+
+  <view class="cart_list">
+    <view class="cart_item">
+      <view class="checkbox">
+        <image src="/img/select_1.png"></image>
+      </view>
+      <view class="good_photo"></view>
+      <view class="good_title">飞利浦电动牙刷</view>
+      <view class="good_type">天蓝色</view>
+      <view class="good_amount">358.00元</view>
+      <view class="good_delete">删除</view>
+      <view class="good_count_box">
+        <view class="choose_count_btns">
+          <view class="choose_count_left_btn">
+            <image src="/img/btn_left_gray.png"></image>
+          </view>
+          1
+          <view class="choose_count_right_btn">
+            <image src="/img/btn_right_gray.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="cart_item">
+      <view class="checkbox">
+        <image src="/img/select_0.png"></image>
+      </view>
+      <view class="good_photo"></view>
+      <view class="good_title">飞利浦电动牙刷</view>
+      <view class="good_type">天蓝色</view>
+      <view class="good_amount">358.00元</view>
+      <view class="good_delete">删除</view>
+      <view class="good_count_box">
+        <view class="choose_count_btns">
+          <view class="choose_count_left_btn">
+            <image src="/img/btn_left_gray.png"></image>
+          </view>
+          1
+          <view class="choose_count_right_btn">
+            <image src="/img/btn_right_gray.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="cart_item">
+      <view class="checkbox">
+        <image src="/img/select_0.png"></image>
+      </view>
+      <view class="good_photo"></view>
+      <view class="good_title">飞利浦电动牙刷</view>
+      <view class="good_type">天蓝色</view>
+      <view class="good_amount">358.00元</view>
+      <view class="good_delete">删除</view>
+      <view class="good_count_box">
+        <view class="choose_count_btns">
+          <view class="choose_count_left_btn">
+            <image src="/img/btn_left_gray.png"></image>
+          </view>
+          1
+          <view class="choose_count_right_btn">
+            <image src="/img/btn_right_gray.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="cart_tip">
+    <image src="/img/btn_info_gray.png"></image>
+    商品购买是否成功，以最终下单为准，请尽快结算
+  </view>
+  <view class="cart_btns">
+    <view class="cart_left_btn">
+      <image src="/img/select_0.png"></image>
+      全选
+    </view>
+    <view class="cart_center_btn">合计：346.00元</view>
+    <view class="cart_right_btn" bindtap="go2jiesuan">结算(2)</view>
+  </view>
+</view>

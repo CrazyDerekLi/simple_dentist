@@ -1,66 +1,99 @@
-// pages/main/nearby.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-  
+    doctor: true,
+    hospitalList: [
+      {
+        icon: "https://dingdongyy.net/hospital-webapp/xcx/product.png",
+        id: "1",
+        title: "日照市口腔医院",
+        address: "山东省日照市东港区",
+        phone: "15863149556",
+        person: 346,
+        latitude: 0,
+        longitude: 0,
+        distance: "2.8km"
+      }, {
+        icon: "https://dingdongyy.net/hospital-webapp/xcx/product.png",
+        id: "2",
+        title: "口腔医学院",
+        address: "山东省日照市东港区",
+        phone: "0531-2221122",
+        person: 26,
+        latitude: 0,
+        longitude: 0,
+        distance: "2.9km"
+      }, {
+        icon: "https://dingdongyy.net/hospital-webapp/xcx/product.png",
+        id: "1",
+        title: "日照市口腔医院",
+        address: "山东省日照市东港区",
+        phone: "15863149556",
+        person: 346,
+        latitude: 0,
+        longitude: 0,
+        distance: "2.8km"
+      }, {
+        icon: "https://dingdongyy.net/hospital-webapp/xcx/product.png",
+        id: "2",
+        title: "口腔医学院",
+        address: "山东省日照市东港区",
+        phone: "0531-2221122",
+        person: 26,
+        latitude: 0,
+        longitude: 0,
+        distance: "2.9km"
+      }
+    ]
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
+  closeMsg: function () {
+    var that = this;
+    this.setData({
+      msgHidden: true
+    });
+  },
+  chooseSwitch: function () {
+    var doctor = !this.data.doctor;
+    this.setData({
+      doctor: doctor
+    });
+  },
+  go2Doctor: function () {
+    var url = "/pages/hospital/doctor";
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+  },
+  go2Hospital: function () {
+    var url = "/pages/hospital/hospital";
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+  },
+  changeO:function(event){
+    this.setData({
+      doctor:false
+    });
+  },
+  changeD:function(event){
+    this.setData({
+      doctor: true
+    });
+  },
   onLoad: function (options) {
-  
+    // 页面初始化 options为页面跳转所带来的参数
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady: function () {
-  
+    // 页面渲染完成
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
   onShow: function () {
-  
+    // 页面显示
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
   onHide: function () {
-  
+    // 页面隐藏
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
   onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+    // 页面关闭
   }
 })

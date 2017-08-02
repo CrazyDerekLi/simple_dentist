@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="message_top">
+    <view class="doctor_photo">
+      <image src="/img/doctor_default.png"></image>
+    </view>
+    <view class="doctor_name">李医生</view>
+    <view class="doctor_zhicheng">日照市口腔医院主治医师</view>
+    <view class="btn_sanjiao"></view>
+  </view>
+  <view class="message_info_item">
+    <view>您好：</view>
+    <view>
+      根据您的口腔检查报告，您出现了牙齿疾病，急需治疗。这种疾病很可怕，会造成很多痛苦，会造成很多痛苦，会造成很多痛苦，会造成很多痛苦，会造成很多痛苦，会造成很多痛苦。
+    </view>
+    <view class="message_date">
+      2017-06-28
+    </view>
+  </view>
+  <view class="message_btn_list">
+    <view class="message_btn_left" bindtap="go2ziwozhenduan">
+      自我诊断
+    </view>
+    <view class="message_btn_right">
+      立即预约
+    </view>
+  </view>
+</view>

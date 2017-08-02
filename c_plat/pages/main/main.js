@@ -24,10 +24,35 @@ Page({
   onLoad: function (options) {
     this.setTopColor(this.data.userList[0].healthy);
   },
+  go2HealthyDesc:function(event){
+    var url = "/pages/healthy/healthy_desc";
+    //var url = "/pages/question/zhinengzhenduan";
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+  },
+  go2DoctorMessage: function (event) {
+    var url = "/pages/message/doctor_message";
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+  },
   go2Search:function(event){
-
+    var url = "/pages/question/ziwozhenduan";
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
   },
   go2Add:function(event){
+    var url = "/pages/question/ask_question";
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+    /*
     var index = event.currentTarget.dataset.index;
     console.log(index);
     var data = this.data.userList;
@@ -37,7 +62,7 @@ Page({
     this.setTopColor(data[index].healthy);
     this.setData({
       userList:data
-    });
+    });*/
   },
   changeUser:function(event){
     var index = event.detail.current;

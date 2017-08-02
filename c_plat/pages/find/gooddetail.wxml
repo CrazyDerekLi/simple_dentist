@@ -1,0 +1,117 @@
+<view class="container">
+  <view class="lunbo">
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:for-index="idx" wx:key="{{idx}}">
+          <swiper-item>
+              <view style="position:relative;height:100%;">
+                  <image src="{{item}}" class="slide_image" style=""/>
+              </view>
+          </swiper-item>
+      </block>
+      </swiper>
+  </view>
+  <view class="good_info">
+    <view class="good_title">
+      飞利浦充电式电动牙刷
+    </view>
+    <view class="good_content">
+      充电式成人牙刷充电式成人牙刷
+    </view>
+    <view class="good_amount_box">
+      <view class="good_amount">¥358.00</view>
+      <view class="good_tip">已销售3456件</view>
+    </view>
+  </view>
+  <view class="good_choose">
+    <view class="choose_label">已选</view>
+    <view class="choose_info">飞利浦电动牙刷KW型号翡翠绿x1</view>
+    <view class="choose_img">
+      <image src="/img/btn_enter.png"></image>
+    </view>
+  </view>
+  <view class="good_body">
+    产品信息
+  </view>
+  <view class="good_pingjia_list">
+    <view class="good_pingjia_item">
+      <view class="good_pingjia_user_info">
+        <view class="pingjia_photo">
+          <image src="/img/family_doctor_photo.png"></image>
+        </view>
+        <view class="pingjia_user">
+          李医生
+          <view class="btn_wuyou">无忧卡</view>
+          <view class="btn_quan">券</view>
+        </view>
+        <view class="pingjia_date">2017-05-06</view>
+      </view>
+      <view class="good_pingjia_info">
+        李医生的医术高明,非常满意！无忧卡消费，很便宜！以后看牙全靠他
+      </view>
+    </view>
+  </view>
+
+  <view class="good_btns">
+    <view class="good_left_btn">
+      <image src="/img/btn_home_gray.png"></image>
+      回首页
+    </view>
+    <view class="good_center_btn" bindtap="go2cart">
+      <image src="/img/btn_cart_gray.png"></image>
+      购物车
+      <view class="tip">3</view>
+    </view>
+    <view class="good_right_btn" bindtap="showChoose">
+      加入购物车
+    </view>
+  </view>
+</view>
+<view class="msk" style="display:{{showChoose=='1'?'block':'none'}}"></view>
+<view class="choose_box" style="display:{{showChoose=='1'?'block':'none'}}">
+  <view class="choose_good_img"></view>
+  <view class="choose_box_body">
+    <view class="btn_close" bindtap="closeChoose">
+      <image src="/img/btn_close_gray.png"></image>
+    </view>
+    <view class="choose_good_detail">
+      <view class="choose_good_amount">¥358.00</view>
+      <view class="choose_good_content">飞利浦充电式电动牙刷</view>
+    </view>
+    <view class="choose_type_list">
+      <view class="choose_type_item">
+        <view class="choose_type_item_title">颜色</view>
+        <view class="choose_type_item_list">
+          <view class="type_item selected">
+            <view class="color_blue"></view>
+            天蓝色
+          </view>
+          <view class="type_item">
+            <view class="color_green"></view>
+            翡翠绿
+          </view>
+          <view class="type_item">
+            <view class="color_orange"></view>
+            天蓝色
+          </view>
+        </view>
+        <view class="clear"></view>
+      </view>
+    </view>
+    <view class="choose_count">
+      <view class="choose_count_title">购买数量</view>
+      <view class="choose_count_btns">
+        <view class="choose_count_left_btn">
+          <image src="/img/btn_left_gray.png"></image>
+        </view>
+        1
+        <view class="choose_count_right_btn">
+          <image src="/img/btn_right_gray.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="choose_btn">
+    确定
+  </view>
+</view>

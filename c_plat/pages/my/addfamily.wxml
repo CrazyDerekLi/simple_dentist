@@ -1,0 +1,49 @@
+<view class="container">
+  <view class="add_list">
+    <view class="add_item add_item_photo">
+      <view class="add_left">头像</view>
+      <view class="add_right">
+        <view class="add_photo">
+          <image src="/img/family_doctor_photo.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class="add_item">
+      <view class="add_left">姓名</view>
+      <view class="add_right">
+        李晓明
+      </view>
+    </view>
+  </view>
+  <view class="add_list">
+    <view class="add_item">
+      <view class="add_left">年龄</view>
+      <view class="add_right">
+        14岁
+      </view>
+    </view>
+    <view class="add_item">
+      <view class="add_left">性别</view>
+      <view class="add_right">
+        男
+      </view>
+    </view>
+  </view>
+  <view class="add_list">
+    <view class="add_item">
+      <view class="add_left">城市</view>
+      <view class="add_right">
+        日照市
+      </view>
+    </view>
+    <view class="add_item">
+      <view class="add_left">联系电话</view>
+      <view class="add_right">
+        15508777789
+      </view>
+    </view>
+  </view>
+  <view class="add_btn">
+    确认添加
+  </view>
+</view>
