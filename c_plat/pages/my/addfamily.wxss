@@ -34,6 +34,20 @@
   position:relative;
   font-size:32rpx;
   color:#b5b5b6;
+  min-width:400rpx;
+  text-align: right;
+}
+.add_right input{
+  height:100rpx;
+  line-height:100rpx;
+  text-align: right;
+  float:right;
+}
+.add_right_label{
+  height:100rpx;
+  line-height: 100rpx;
+  text-align: left;
+  float:right;
 }
 .add_photo{
   position:absolute;
@@ -42,13 +56,24 @@
   width:180rpx;
   height:180rpx;
 }
-.add_photo image{
+.add_photo .add_photo_box{
   position:absolute;
   width:140rpx;
   height:140rpx;
-  top:20rpx;
+  top:10rpx;
   right:0;
+  border-radius: 140rpx;
+  overflow: hidden;
+  border:10rpx solid #f2f2f2;
 }
+.add_photo .add_photo_box image{
+  position:absolute;
+  width:140rpx;
+  height:140rpx;
+  left:0;
+  top:0;
+}
+
 .add_btn{
   position:fixed;
   bottom:0;

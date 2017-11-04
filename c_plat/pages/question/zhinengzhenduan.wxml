@@ -23,8 +23,8 @@
         wx:for-index="idx" 
         wx:for-item="progressItem" 
         data-index="{{idx}}" 
-        wx:key="{{progressItem.id}}">
-        {{progressItem.name}}
+        wx:key="{{progressItem.dic_code}}">
+        {{progressItem.dic_name}}
       </view>
     </view>
   </view>

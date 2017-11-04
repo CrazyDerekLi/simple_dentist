@@ -1,24 +1,13 @@
 // pages/question/zhinengzhenduan.js
+var util = require('../../utils/util.js');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    progress1:[
-      {id: 1, name: "牙齿疼痛" },
-      { id: 2, name: "塞牙" },
-      { id: 3, name: "牙松动" },
-      { id: 4, name: "牙齿不齐/拥挤/地包天" },
-      {id: 5, name: "龋齿" }
-    ],
-    progress2:[
-      { id: 1, name: "夜间/冷热刺激疼" },
-      { id: 2, name: "饭后疼痛" },
-      { id: 3, name: "咀嚼疼痛" },
-      { id: 4, name: "牙龈肿痛" },
-      { id: 5, name: "反复性牙区疼痛" }
-    ],
+    progress1:[],
+    progress2:[],
     progressList:[],
     progress:1,
     selectProgress1:'',
@@ -29,31 +18,21 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      progressList:this.data.progress1
-    });
+    this.getType1();
   },
   addProgress:function(event){
-    
-    
     var index = event.currentTarget.dataset.index;
     var key = "selectProgress" + this.data.progress;
     var data = {};
     data["selectProgress" + this.data.progress] = index;
-    data.progressList = this.data["progress" + (this.data.progress+1)];
     this.setData(data);
-
+    if(this.data.progress == 1){
+      this.getType2(this.data["progress" + this.data.progress][index]);
+    }
     if (this.data.progress >= 2) {
-      console.log(this.selectProgress1);
-      console.log(this.selectProgress2);
-      // wx.showModal({
-      //   title: '提示',
-      //   content: '跳转页面,提交内容为：'
-      //   + this.data.progress1[this.data.selectProgress1].name + "==="
-      //   + this.data.progress2[this.data.selectProgress2].name
-      //   ,
-      // });
-      var url = "/pages/question/zhenduanbaogao";
+      var type1 = this.data.progress1[this.data.selectProgress1].dic_code;
+      var type2 = this.data.progress2[this.data.selectProgress2].dic_code;
+      var url = "/pages/question/zhenduanbaogao?type1="+type1+"&type2="+type2;
       wx.navigateTo({
         url: url,
         success: function () { }
@@ -112,5 +91,34 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  getType1:function(){
+    var _this = this;
+    var url = util.getPath() + 'disgnosis/getDicInfoByType1' ;
+    wx.request({
+      url: url,
+      success: function (res) {
+        var _data = res.data.data;
+        _this.setData({
+          progress1:_data,
+          progressList: _data
+        });
+      }
+    });
+  },
+  getType2:function(selectType1){
+    var _this = this;
+    var url = util.getPath() + 'disgnosis/getDicInfoByType2';
+    url += "?code1=" + selectType1.dic_code;
+    wx.request({
+      url: url,
+      success: function (res) {
+        var _data = res.data.data;
+        _this.setData({
+          progress2: _data,
+          progressList: _data
+        });
+      }
+    });
   }
 })

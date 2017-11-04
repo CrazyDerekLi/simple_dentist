@@ -1,0 +1,71 @@
+<view class="container">
+  <view class="message_list">
+    <!-- <view class="message_item" bindtap="go2message">
+      <view class="message_item_photo system_1">
+        <view class="tip"></view>
+        <image src="/img/btn_message_system.png"></image>
+      </view>
+      <view class="message_title">系统消息</view>
+      <view class="message_info">您收到一条系统发来的公告信息，点击查看</view>
+      <view class="message_date">2017-06-11</view>
+    </view> -->
+    <view class="message_item" 
+       wx:for="{{unReadMessageList}}" 
+        wx:for-index="idx" 
+        wx:for-item="messageItem" 
+        data-index="{{idx}}" 
+        wx:key="{{messageItem.msg_id}}" 
+        bindtap="go2UnReadmessage"
+      >
+      <view class="message_item_photo doctor_1">
+        <view class="tip"></view>
+        <image src="/img/btn_message_doctor.png"></image>
+      </view>
+      <view class="message_title">医嘱消息</view>
+      <view class="message_info">您收到一条家庭牙医发来的信息，点击查看</view>
+      <view class="message_date">{{messageItem.msg_time}}</view>
+    </view>
+     <!-- <view class="message_item" bindtap="go2message">
+      <view class="message_item_photo doctor_1">
+        <view class="tip"></view>
+        <image src="/img/btn_message_doctor.png"></image>
+      </view>
+      <view class="message_title">医嘱消息</view>
+      <view class="message_info">您收到一条家庭牙医发来的信息，点击查看</view>
+      <view class="message_date">2017-06-11</view>
+    </view> -->
+  </view>
+  <view class="message_list">
+    <view class="message_item" 
+       wx:for="{{readMessageList}}" 
+        wx:for-index="idx" 
+        wx:for-item="messageItem" 
+        data-index="{{idx}}" 
+        wx:key="{{messageItem.msg_id}}" 
+        bindtap="go2Readmessage"
+      >
+      <view class="message_item_photo system_0">
+        <image src="/img/btn_message_system.png"></image>
+      </view>
+      <view class="message_title">医嘱消息</view>
+      <view class="message_info">您收到一条家庭牙医发来的信息，点击查看</view>
+      <view class="message_date">{{messageItem.msg_time}}</view>
+    </view>
+    <!-- <view class="message_item" bindtap="go2message">
+      <view class="message_item_photo system_0">
+        <image src="/img/btn_message_system.png"></image>
+      </view>
+      <view class="message_title">系统消息</view>
+      <view class="message_info">您收到一条系统发来的公告信息，点击查看</view>
+      <view class="message_date">2017-06-11</view>
+    </view>
+    <view class="message_item" bindtap="go2message">
+      <view class="message_item_photo doctor_0">
+        <image src="/img/btn_message_doctor.png"></image>
+      </view>
+      <view class="message_title">医嘱消息</view>
+      <view class="message_info">您收到一条家庭牙医发来的信息，点击查看</view>
+      <view class="message_date">2017-06-11</view>
+    </view> -->
+  </view>
+</view>

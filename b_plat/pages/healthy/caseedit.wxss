@@ -1,0 +1,103 @@
+.container{
+  background:#f8f8f8;
+}
+.mouth_top{
+  background: #74bee3;
+  padding:40rpx 0;
+}
+.mouth_top image{
+  width:300rpx;
+  height:300rpx;
+  margin:0 auto;
+  display: block;
+}
+.mouth_list{
+  border-bottom:1rpx solid #efefef;
+  height:110rpx;
+  border-top:1rpx solid #efefef;
+  background:#fff;
+  margin-bottom:20rpx;
+}
+.mouth_item{
+  position:relative;
+  width:12%;
+  height:110rpx;
+  float:left;
+  font-size:24rpx;
+  line-height: 40rpx;
+  text-align: center;
+  color:#b5b5b5;
+}
+.mouth_item image{
+  position:relative;
+  width:40rpx;
+  height:40rpx;
+  display: block;
+  margin:20rpx auto 0 auto;
+}
+.right,.left{
+  width:8%;
+}
+.mouth_detail_list{
+  margin-bottom:20rpx;
+  background:#fff;
+  border-top:1rpx solid #efefef;
+}
+.mouth_detail_item{
+  border-bottom:1rpx solid #efefef;
+  height:80rpx;
+  line-height:80rpx;
+  padding:0 40rpx;
+  position:relative;
+}
+.mouth_detail_info{
+  padding:30rpx 40rpx;
+  line-height:40rpx;
+  font-size:28rpx;
+  color:#7e7b7f;
+  min-height:40rpx;
+  border-bottom:1rpx solid #efefef;
+}
+.mouth_detail_item_left{
+  font-size:28rpx;
+  color:#9e9b9f;
+  float:left;
+}
+.mouth_detail_item_right{
+  font-size:28rpx;
+  color:#ccc;
+  float:right;
+  position:relative;
+}
+.mouth_detail_item_right image.enter{
+  width:12rpx;
+  height:24rpx;
+  position:absolute;
+  right:0;
+  top:28rpx;
+}
+.doctor_photo{
+  width:60rpx;
+  height:60rpx;
+  float:right;
+  position:relative;
+  margin-top:10rpx;
+  margin-right:10rpx;
+}
+.doctor_photo image{
+  position:absolute;
+  width:60rpx;
+  height:60rpx;
+  left:0;
+  top:0;
+}
+
+.mouth_detail_btn{
+  height:100rpx;
+  line-height:100rpx;
+  color:#fff;
+  background:#77daa1;
+  text-align: center;
+  border-bottom:1rpx solid #efefef;
+  font-size:32rpx;
+}

@@ -1,11 +1,11 @@
 <view class="container">
   <view class="baogao_top">
     <image src="/img/btn_mouth_1.png"></image>
-    <view class="baogao_top_title1">您90%患有</view>
-    <view class="baogao_top_title2">牙髓炎</view>
+    <view class="baogao_top_title1">您{{count||80}}%患有</view>
+    <view class="baogao_top_title2">{{result}}</view>
   </view>
   <view class="baogao_list">
-    <view class="baogao_item">
+    <!-- <view class="baogao_item">
       <view class="baogao_head">
         疾病概括
       </view>
@@ -14,17 +14,16 @@
           牙髓炎是指发生于牙髓组织的炎性病变。牙髓是主要包含神经血管的疏松结缔组织，位于牙齿内部的牙髓腔內。
         </view>
       </view>
-    </view>
+    </view> -->
     <view class="baogao_item">
       <view class="baogao_head">
         治疗方案
       </view>
       <view class="baogao_body">
-        <view>
-          建议您马上联系家庭医生或到附近诊所进行根管治疗。
-        </view>
-        <view>
-          价格透明:大约需要120元诊疗费。
+        <view wx:for="{{zlfa}}" 
+          wx:for-index="idx" 
+          wx:key="idx">
+          {{item}}
         </view>
       </view>
     </view>
@@ -33,14 +32,10 @@
         预防措施
       </view>
       <view class="baogao_body">
-        <view>
-          1、定期例行口腔检查
-        </view>  
-        <view>
-          2、早晚刷牙注意口腔卫生
-        </view>
-        <view>
-          3、定期做口腔保健水疗，有降低发病率80%
+         <view wx:for="{{yfcs}}" 
+          wx:for-index="idx" 
+          wx:key="idx">
+          {{item}}
         </view>
       </view>
     </view>

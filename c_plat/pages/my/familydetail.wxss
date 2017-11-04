@@ -109,35 +109,47 @@
 .family_detail_top{
   border-top:1rpx solid #9ed2ea;
   position:relative;
+  background:#74bee3;
 }
-.top_blue{
+.top_name{
   background: #74bee3;
-  height:160rpx;
+  height:40rpx;
+  padding-top:230rpx;
+  text-align: center;
+  font-size:40rpx;
+  color:#fff;
+  font-weight: bold;
 }
 .top_title{
-  padding-top:80rpx;
+  
   line-height:80rpx;
-  font-size:32rpx;
+  font-size:28rpx;
   text-align: center;
-  color:#7f7b7f;
-  border-bottom:1rpx solid #f2f2f2;
-  background: #fff;
+  color:#fff;
 }
 .healthy{
   position:absolute;
-  width:200rpx;
-  height:200rpx;
-  top:50rpx;
+  width:180rpx;
+  height:180rpx;
+  top:40rpx;
   left:50%;
-  margin-left:-100rpx;
+  margin-left:-80rpx;
+}
+.healthy_img_box{
+  position:absolute;
+  width:160rpx;
+  height:160rpx;
+  border:10rpx solid #f2f2f2;
+  border-radius: 160rpx;
+  overflow: hidden;
 }
 .healthy image{
-  width:200rpx;
-  height:200rpx;
+  width:160rpx;
+  height:160rpx;
 }
 .family_detail_box{
   position:relative;
-  padding:20rpx 40rpx 20rpx 200rpx;
+  padding:20rpx 40rpx 20rpx 40rpx;
   background:#fff;
 }
 .family_detail_photo{
@@ -192,7 +204,7 @@
   right:0;
   background:#fff;
 }
-.family_detail_left_btn{
+/* .family_detail_left_btn{
   background:#fff;
   color:#7e7b7f;
   height:100rpx;
@@ -212,5 +224,15 @@
   line-height:100rpx;
   font-size:32rpx;
   width:50%;
+  float:left;
+} */
+.family_detail_left_btn{
+  background:#76daa1;
+  color:#fff;
+  text-align: center;
+  height:100rpx;
+  line-height:100rpx;
+  font-size:32rpx;
+  width:100%;
   float:left;
 }

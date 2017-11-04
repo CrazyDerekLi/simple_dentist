@@ -8,15 +8,12 @@
         必填
       </view>
     </view>
-    <view class="question_body">
-      <view class="question_select_item" data-type="1" bindtap="selectYYR">
-        <image src="/img/select_{{yyr=='1'?'1':'0'}}.png"></image>
-        洗牙
-      </view>
-      <view class="question_select_item" data-type="2" bindtap="selectYYR">
-        <image src="/img/select_{{yyr=='2'?'1':'0'}}.png"></image>
-        种植牙
-      </view>
+    <view class="question_body" >
+      <picker bindchange="bindChangeUser" value="{{userIndex}}"  range="{{users}}" range-key="FUSER_NAME">
+        <view class="picker question_select_item"  style='padding-left:0;'>
+          {{users[userIndex].FUSER_NAME}}
+        </view>
+      </picker>
     </view>
   </view>
   <view class="question_list">
@@ -29,7 +26,17 @@
       </view>
     </view>
     <view class="question_body">
-      <view class="question_select_item" data-type="1" bindtap="selectYYXM">
+      <picker bindchange="bindChangeType" value="{{typeIndex}}"  range="{{typeList}}" range-key="DIC_NAME">
+        <view class="picker question_select_item"  style='padding-left:0;'>
+          {{typeName}}
+        </view>
+      </picker>
+
+      <!-- <view class='question_select_item' data-type="{{item.DIC_CODE}}" wx:for="{{typeList}}" wx:for-index="idx" wx:key="{{idx}}" bindtap='selectYYXM'>
+        <image src="/img/select_{{idx==0&&yyxm === ''?'1':yyxm == item.DIC_CODE?'1':'0'}}.png"></image>
+        {{item.DIC_NAME}}
+      </view>
+       <view class="question_select_item" data-type="1" bindtap="selectYYXM">
         <image src="/img/select_{{yyxm=='1'?'1':'0'}}.png"></image>
         洗牙
       </view>
@@ -44,7 +51,7 @@
       <view class="question_select_item" data-type="4" bindtap="selectYYXM">
         <image src="/img/select_{{yyxm=='4'?'1':'0'}}.png"></image>
         其他
-      </view>
+      </view>  -->
     </view>
   </view>
   <view class="question_list">
@@ -59,15 +66,16 @@
     <view class="question_body">
       <view class="question_select_item">
         <image src="/img/btn_edit.png"></image>
-        136-0633-8888
+        <input style='display:{{showChoose?"none":"block"}}' value='{{userTel}}' type='number' maxlength='11' placeholder='请输入联系方式' bindinput='changePhone' placeholder-style='color:#ccc;'></input>
+       
       </view>
     </view>
   </view>
   <view class="question_textarea">
-    <textarea/>
+    <textarea style='display:{{showChoose?"none":"block"}}' bindinput="changeContext" placeholder='请输入问诊内容' placeholder-style='color:#ccc;'></textarea>
   </view>
   <view class="question_btns">
-    <view class="question_left_btn" bindtap="go2Success">家庭牙医</view>
-    <view class="question_right_btn" bindtap="go2Success">全部医生可见</view>
+    <view class="question_left_btn" bindtap="sendAsk">家庭牙医</view>
+    <view class="question_right_btn" bindtap="sendAskToAll">全部医生可见</view>
   </view>
 </view>

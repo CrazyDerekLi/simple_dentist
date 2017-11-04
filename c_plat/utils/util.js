@@ -1,7 +1,9 @@
+var path = 'https://dingdongyy.net/dentist-web/';
 var appId = 'wxb36394319df47dbe'; //填写微信小程序appid  
 var secret = 'c7b62e5a7eecd261b75d88f75064294d';
-var searchWXIDUrl = "https://api.weixin.qq.com/sns/oauth2/access_token?appid="+appId+"&secret="+secret+"&grant_type=authorization_code";
-var searchPlatUserUrl = "https://dingdongyy.net/hospital-webapp/core/user/updateUserInfo";
+//var searchWXIDUrl = "https://api.weixin.qq.com/sns/oauth2/access_token?appid="+appId+"&secret="+secret+"&grant_type=authorization_code";
+var searchWXIDUrl = path+"user/getUsertoken1?appid=" + appId + "&secret=" + secret;
+var searchPlatUserUrl = path+"user/updateUserInfo";
 
 function formatTime(date) {
   var year = date.getFullYear()
@@ -46,8 +48,9 @@ function getUserInfo(cb){
                 //将来考虑失败的实现
               },
               success: function(res) { 
-                var data = res.data;
+                var data = res.data.data;
                 if(data){
+                  data = JSON.parse(data);
                   var openid = data.openid;
                   if(openid){
                     searchPlatUserUrl += '?wxid='+openid+"&username="+userInfo.nickName;
@@ -83,6 +86,23 @@ function getUserInfo(cb){
     })
   }
 }
-
+function getPath(){
+  return path;
+}
+function getCity(city) {
+  console.log(city);
+  var _cityArr = JSON.parse(city || "[]");
+  var result = '';
+  if (_cityArr.length == 3) {
+    if (_cityArr[1] == "北京市" || _cityArr[1] == "天津市" || _cityArr[1] == "上海市" || _cityArr[1] == "重庆市" || _cityArr[1] == "县") {
+      _cityArr.splice(0, 1);
+      result = _cityArr.join("");
+    }
+    result = _cityArr.join("");
+  }
+  return result;
+}
 module.exports.formatTime = formatTime;
 module.exports.getUserInfo = getUserInfo;
+module.exports.getPath = getPath;
+module.exports.getCity = getCity;

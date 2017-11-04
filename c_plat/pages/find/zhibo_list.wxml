@@ -1,0 +1,117 @@
+<view class="container">
+  <view class="zhibo_top_search">
+    <view class="zhibo_top_search_label">搜索</view>
+    <view class="zhibo_top_search_input">
+      <input  />
+    </view>
+    <view class="zhibo_top_search_shaixuan">
+      <view class="shaixuan_label">筛选</view>
+      <view class="shaixuan_btn">
+        <image src="/img/btn_shaixuan.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="zhibo_shaixuan_list">
+    <view class="zhibo_shaixuan_item selected">矫正</view>
+    <view class="zhibo_shaixuan_item">炎症</view>
+    <view class="zhibo_shaixuan_item">拔牙</view>
+    <view class="zhibo_shaixuan_item">种植牙</view>
+    <view class="zhibo_shaixuan_item">封闭</view>
+  </view>
+  <view class="zhibo_doctor_list">
+    <view class="zhibo_doctor_item" bindtap="go2Detail">
+      <view class="zhibo_status">
+        <view class="zhibo_status_circle"></view>
+        直播中
+      </view>
+      <view class="zhibo_doctor_info_box" bindtap="go2Doctor">
+        <view class="zhibo_doctor_name">
+          <view class="zhibo_doctor_name_info">
+            李天德
+          </view>
+          <view class="star">
+            <image src="/img/star_1.png"></image>
+            <image src="/img/star_1.png"></image>
+            <image src="/img/star_1.png"></image>
+            <image src="/img/star_1.png"></image>
+            <image src="/img/star_0.png"></image>
+          </view>
+        </view>
+        <view class="zhibo_doctor_info">日照口腔医院主治医师</view>
+        <view class="zhibo_doctor_users_box">
+          <view class="zhibo_doctor_user_item">
+            <image src="/img/btn_zhibo_zaixian.png"></image>
+            2.4W
+          </view>
+          <view class="zhibo_doctor_user_item">
+            <image src="/img/btn_zhibo_shoucang.png"></image>
+            2.6W
+          </view>
+        </view>
+      </view>
+    </view>
+    
+    <view class="zhibo_doctor_item" bindtap="go2Detail">
+      <view class="zhibo_status">
+        <view class="zhibo_status_circle"></view>
+        直播中
+      </view>
+      <view class="zhibo_doctor_info_box" bindtap="go2Doctor">
+        <view class="zhibo_doctor_name">
+          <view class="zhibo_doctor_name_info">
+            李天德
+          </view>
+          <view class="star">
+            <image src="/img/star_1.png"></image>
+            <image src="/img/star_1.png"></image>
+            <image src="/img/star_1.png"></image>
+            <image src="/img/star_1.png"></image>
+            <image src="/img/star_0.png"></image>
+          </view>
+        </view>
+        <view class="zhibo_doctor_info">日照口腔医院主治医师</view>
+        <view class="zhibo_doctor_users_box">
+          <view class="zhibo_doctor_user_item">
+            <image src="/img/btn_zhibo_zaixian.png"></image>
+            2.4W
+          </view>
+          <view class="zhibo_doctor_user_item">
+            <image src="/img/btn_zhibo_shoucang.png"></image>
+            2.6W
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="zhibo_doctor_item" bindtap="go2Detail">
+      <view class="zhibo_status">
+        <view class="zhibo_status_circle"></view>
+        直播中
+      </view>
+      <view class="zhibo_doctor_info_box" bindtap="go2Doctor">
+        <view class="zhibo_doctor_name">
+          <view class="zhibo_doctor_name_info">
+            李天德
+          </view>
+          <view class="star">
+            <image src="/img/star_1.png"></image>
+            <image src="/img/star_1.png"></image>
+            <image src="/img/star_1.png"></image>
+            <image src="/img/star_1.png"></image>
+            <image src="/img/star_0.png"></image>
+          </view>
+        </view>
+        <view class="zhibo_doctor_info">日照口腔医院主治医师</view>
+        <view class="zhibo_doctor_users_box">
+          <view class="zhibo_doctor_user_item">
+            <image src="/img/btn_zhibo_zaixian.png"></image>
+            2.4W
+          </view>
+          <view class="zhibo_doctor_user_item">
+            <image src="/img/btn_zhibo_shoucang.png"></image>
+            2.6W
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/main/login",
+    "pages/main/count",
+    "pages/main/zhibo",
+    
+    "pages/home/doctor_message",
+    "pages/count/morecount",
+    "pages/home/wenzhenhistory",
+    "pages/home/addcase",
+    "pages/healthy/toothedit",
+    "pages/home/addyuyue",
+    "pages/home/yuyue",
+    "pages/home/kehudetail",
+    "pages/home/userdetail",
+    "pages/home/kehu",
+    "pages/home/wenzhendetail",
+    "pages/home/jieda",
+    "pages/home/wenzhen",
+    "pages/healthy/caselist",
+    "pages/healthy/mouth",
+    "pages/healthy/caseedit"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#74bee3",
+    "navigationBarTitleText": "简约口腔",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "color": "#CCCCCC",
+    "selectedColor": "#74bee3",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "img/bar_main_selected.png",
+        "iconPath": "img/bar_main.png",
+        "pagePath": "pages/main/main",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "img/bar_find_selected.png",
+        "iconPath": "img/bar_find.png",
+        "pagePath": "pages/main/zhibo",
+        "text": "直播"
+      },
+      {
+        "selectedIconPath": "img/bar_count_selected.png",
+        "iconPath": "img/bar_count.png",
+        "pagePath": "pages/main/count",
+        "text": "统计"
+      }
+    ]
+  }
+}

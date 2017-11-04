@@ -1,0 +1,104 @@
+<view class="container">
+  <view class="yuyue_date" bindtap="go2DatePicker">
+    <view class="sanjiao_left"></view>
+      {{years[value[0]]}}年{{months[value[1]]}}月{{days[value[2]]}}日 星期{{week}}
+    <view class="sanjiao_right"></view>
+  </view>
+  <view class="yuyue_list">
+    <view class="yuyue_item">
+      <view class="yuyue_item_title">上午</view>
+      <view class="yuyue_item_users">
+        <view class="yuyue_item_user" bindtap='go2userdetail'>
+          <view class="yuyue_item_user_photo">
+            <image src="/img/family_doctor_photo.png"></image>
+          </view>
+          张三
+        </view>
+        <view class="yuyue_item_user" bindtap='go2userdetail'>
+          <view class="yuyue_item_user_photo">
+            <image src="/img/family_doctor_photo.png"></image>
+          </view>
+          张三
+        </view>
+        <view class="yuyue_item_user" bindtap='go2userdetail'>
+          <view class="yuyue_item_user_photo">
+            <image src="/img/family_doctor_photo.png"></image>
+          </view>
+          张三
+        </view>
+        <view class="yuyue_item_user" bindtap='go2userdetail'>
+          <view class="yuyue_item_user_photo">
+            <image src="/img/family_doctor_photo.png"></image>
+          </view>
+          张三
+        </view>
+      </view>
+      <view class="clear"></view>
+    </view>
+    <view class="yuyue_item">
+      <view class="yuyue_item_title">下午</view>
+      <view class="yuyue_item_users">
+        <view class="yuyue_item_user" bindtap='go2userdetail'>
+          <view class="yuyue_item_user_photo">
+            <image src="/img/family_doctor_photo.png"></image>
+          </view>
+          张三
+        </view>
+        <view class="yuyue_item_user" bindtap='go2userdetail'>
+          <view class="yuyue_item_user_photo">
+            <image src="/img/family_doctor_photo.png"></image>
+          </view>
+          张三
+        </view>
+        <view class="yuyue_item_user" bindtap='go2userdetail'>
+          <view class="yuyue_item_user_photo">
+            <image src="/img/family_doctor_photo.png"></image>
+          </view>
+          张三
+        </view>
+        <view class="yuyue_item_user" bindtap='go2userdetail'>
+          <view class="yuyue_item_user_photo">
+            <image src="/img/family_doctor_photo.png"></image>
+          </view>
+          张三
+        </view>
+        <view class="yuyue_item_user" bindtap='go2userdetail'>
+          <view class="yuyue_item_user_photo">
+            <image src="/img/family_doctor_photo.png"></image>
+          </view>
+          张三
+        </view>
+        <view class="yuyue_item_user" bindtap='go2userdetail'>
+          <view class="yuyue_item_user_photo">
+            <image src="/img/family_doctor_photo.png"></image>
+          </view>
+          张三
+        </view>
+      </view>
+      <view class="clear"></view>
+    </view>
+  </view>
+  <view class="yuyue_add" bindtap="go2addyuyue">
+    <view class="yuyue_add_btn">
+      <image src="/img/family_doctor_plus.png"></image>
+    </view>
+    <view class="yuyue_add_info">
+      添加预约
+    </view>
+  </view>
+</view>
+
+<view class="date_picker" style="display:{{showDatePicker?'block':'none'}};" >
+  <picker-view indicator-style="height: 50px;" class="date_picker_container" value="{{value}}" bindchange="bindChange">
+    <picker-view-column>
+      <view class="date_picker_item" wx:for="{{years}}">{{item}}年</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view class="date_picker_item" wx:for="{{months}}">{{item}}月</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view class="date_picker_item" wx:for="{{days}}">{{item}}日</view>
+    </picker-view-column>
+  </picker-view>
+  <view class="btn_cancel" bindtap="searchYuyue">查询</view>
+</view>

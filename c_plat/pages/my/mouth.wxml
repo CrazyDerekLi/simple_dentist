@@ -1,38 +1,19 @@
 <view class="container">
   <view class="mouth_top">
-    <image src="/img/mouth_all.png"></image>
+    <view class="mouth_top_img">
+      <image src="/img/tooth/tooth_bg.png"></image>
+      <image wx:for='{{toothShowList}}' wx:for-index="idx" wx:key="{{idx}}" src='/img/tooth/tooth_{{item.typeCode}}_{{item.y}}_{{item.x=="r"?item.count+8:item.count}}.png' ></image>
+    </view>
   </view>
   <view class="mouth_list">
-    <view class="mouth_item left"></view>
-    <view class="mouth_item">
-      <image src="/img/mouth_blue1.png"></image>
-      蛀牙
+    <view class="mouth_list_box" >
+      <view class="mouth_item" wx:for="{{toothList}}" wx:for-index="idx" wx:key="{{idx}}" style='width:{{100/toothList.length}}%;'>
+        <view class="mouth_item_img" style='background:{{item.color}};'>
+          <image src="/img/tooth/tooth_color_mask.png"></image>
+        </view>
+        {{item.name}}
+      </view>
     </view>
-    <view class="mouth_item">
-      <image src="/img/mouth_green1.png"></image>
-      炎症
-    </view>
-    <view class="mouth_item">
-      <image src="/img/mouth_gray.png"></image>
-      缺牙
-    </view>
-    <view class="mouth_item">
-      <image src="/img/mouth_orange.png"></image>
-      有病
-    </view>
-    <view class="mouth_item">
-      <image src="/img/mouth_red.png"></image>
-      缺牙
-    </view>
-    <view class="mouth_item">
-      <image src="/img/mouth_green2.png"></image>
-      有病
-    </view>
-    <view class="mouth_item">
-      <image src="/img/mouth_blue2.png"></image>
-      有病
-    </view>
-    <view class="mouth_item right"></view>
   </view>
   <view class="mouth_detail_list">
     <view class="mouth_detail_item">
@@ -63,6 +44,14 @@
       <view class="doctor_photo">
         <image src="/img/family_doctor_photo.png"></image>
       </view>
+    </view>
+  </view>
+  <view class="mouth_detail_list">
+    <view class="mouth_detail_item">
+      <view class="mouth_detail_item_left">诊疗费用：879.00元</view>
+    </view>
+    <view class="mouth_detail_btn">
+      确认支付
     </view>
   </view>
 </view>

@@ -1,0 +1,67 @@
+<view class="container">
+  <view class="q_manager_top_btns">
+    <view class="q_manager_top_left_btn">
+      <view class="btn_info">即时问诊<view class="btn_tip">3</view></view>
+    </view>
+    <view class="q_manager_top_right_btn">
+      <view class="btn_info">客户问诊<view class="btn_tip">3</view></view>
+    </view>
+  </view>
+  <view class="q_manager_message_list">
+    <view class="q_manager_message_item" bindtap='go2detail'>
+      <view class="item_photo">
+        <image src="/img/family_doctor_photo.png"></image>
+      </view>
+      <view class="item_info">
+        <view class="item_message_from">平台患者李晓明</view>
+        <view class="item_message_project">问诊项目：洗牙</view>
+        <view class="item_message_date">2017年6月22日 12:12:12</view>
+      </view>
+      <view class="item_dir">
+        距离2.8km
+      </view>
+    </view>
+    <view class="q_manager_message_item" bindtap='go2detail'>
+      <view class="item_photo">
+        <image src="/img/family_doctor_photo.png"></image>
+      </view>
+      <view class="item_info">
+        <view class="item_message_from">签约患者李晓明</view>
+        <view class="item_message_project">问诊项目：洗牙</view>
+        <view class="item_message_date">2017年6月22日 12:12:12</view>
+      </view>
+      <view class="item_dir">
+        距离2.8km
+      </view>
+    </view>
+    <view class="q_manager_message_item" bindtap='go2detail'>
+      <view class="item_photo">
+        <image src="/img/family_doctor_photo.png"></image>
+      </view>
+      <view class="item_info">
+        <view class="item_message_from">来自李晓明的消息</view>
+        <view class="item_message_project">问诊项目：洗牙</view>
+        <view class="item_message_date">2017年6月22日 12:12:12</view>
+      </view>
+      <view class="item_dir">
+        距离2.8km
+      </view>
+    </view>
+    <view class="q_manager_message_item" bindtap='go2detail'>
+      <view class="item_photo">
+        <image src="/img/family_doctor_photo.png"></image>
+      </view>
+      <view class="item_info">
+        <view class="item_message_from">来自李晓明的消息</view>
+        <view class="item_message_project">问诊项目：洗牙</view>
+        <view class="item_message_date">2017年6月22日 12:12:12</view>
+      </view>
+      <view class="item_dir">
+        距离2.8km
+      </view>
+    </view>
+  </view>
+  <view class="q_manager_bottom_btn" bindtap='go2history'>
+    历史消息
+  </view>
+</view>

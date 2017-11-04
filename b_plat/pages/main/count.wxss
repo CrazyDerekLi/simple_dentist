@@ -1,0 +1,180 @@
+.lunbo{
+    height:440rpx;
+    overflow:hidden;
+}
+.cir_bg{
+  width: 120rpx; 
+  height: 120rpx; 
+  border-radius:120rpx;
+  background:#000;
+  opacity: 0.1;
+  transform:rotateX(70deg);
+  position:absolute;
+  bottom:-40rpx;
+  left:50%;
+  margin-left:-60rpx;
+  z-index:1;
+}
+.status_box{
+  position:relative;
+  width:200rpx;
+  height:220rpx;
+  margin:0 auto;
+  padding-top:40rpx;
+}
+.status_box .status_item{
+  position:relative;
+  width:200rpx;
+  height:200rpx;
+  z-index:100;
+  border-radius: 200rpx;
+}
+.status_box image{
+  position:relative;
+  width:200rpx;
+  height:200rpx;
+}
+.healthy_title{
+  padding-top:20rpx;
+  text-align: center;
+  color:#fff;
+  font-size:32rpx;
+  height:30rpx;
+  line-height:30rpx;
+}
+.doctor_status_btn{
+  width:200rpx;
+  text-align: center;
+  border:1rpx solid #fff;
+  color:#fff;
+  height:50rpx;
+  border-radius: 50rpx;
+  margin:30rpx auto 0 auto;
+  font-size:26rpx;
+  line-height: 50rpx;
+}
+.menu_list{
+  position:relative;
+  background:#fff;
+  border-bottom:10rpx solid #f8f8f8;
+}
+.menu_item{
+  position:relative;
+  width:25%;
+  height:200rpx;
+  float:left;
+  border-left:1rpx solid #f2f2f2;
+  margin-left:-1rpx;
+  border-bottom:1rpx solid #f2f2f2;
+}
+.menu_count{
+  width:80rpx;
+  height:80rpx;
+  margin:30rpx auto 10rpx auto;
+  background:red;
+  color:#fff;
+  font-size:30rpx;
+  line-height: 80rpx;
+  border-radius: 80rpx;
+  text-align: center;
+  position:relative;
+}
+.menu_count image{
+  position:absolute;
+  width:80rpx;
+  height:80rpx;
+  left:0;
+  top:0;
+}
+.menu_title{
+  height:60rpx;
+  line-height: 60rpx;
+  font-size:30rpx;
+  color:#7d7b80;
+  text-align: center;
+}
+.clear{
+  clear:both;
+}
+.count_date_box{
+  background:#fff;
+  height:60rpx;
+  border-radius: 60rpx;
+  width:200rpx;
+  padding:0 30rpx;
+  margin:20rpx auto;
+  text-align: center;
+  line-height: 60rpx;
+  font-size:30rpx;
+  color:#7d7b80;
+}
+.count_date_year,.count_date_month,.count_date_day{
+  width:120rpx;
+  text-align: center;
+  font-size:28rpx;
+  color:#7d7b80;
+  height:30rpx;
+  line-height: 30rpx;
+  float:left;
+  margin:15rpx 0;
+}
+.count_date_month,.count_date_day{
+  border-left:1rpx solid #7d7b80;
+  margin-left:-1rpx;
+}
+.container{
+  background: #f8f8f8;
+}
+.count_list{
+  margin-top:20rpx;
+  background:#fff;
+  border-top:1rpx solid #f2f2f2;
+}
+.count_item{
+  height:100rpx;
+  line-height:100rpx;
+  font-size:30rpx;
+  border-bottom:1rpx solid #f2f2f2;
+  color:#7e7c81;
+}
+.count_item_label{
+  float:left;
+  height:100rpx;
+  padding-left:40rpx;
+}
+.count_item_number{
+  float:right;
+  height:100rpx;
+  padding-right:40rpx;
+}
+.more_count_btn_box{
+  position:absolute;
+  top:770rpx;
+  bottom:0;
+  left:0;
+  right:0;
+}
+.more_count_btn{
+  position:absolute;
+  left:50%;
+  top:50%;
+  height:60rpx;
+  width:200rpx;
+  border-radius: 60rpx;
+  text-align: center;
+  color:#fff;
+  background: #74bee3;
+  margin-left:-100rpx;
+  margin-top:-30rpx;
+  line-height: 60rpx;
+  font-size:30rpx;
+}
+.date_picker_box{
+  position:fixed;
+  z-index: 1000;
+  bottom:0;
+  left:0;
+  right:0;
+  width:auto;
+  height:400rpx;
+}

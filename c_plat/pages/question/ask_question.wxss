@@ -96,3 +96,63 @@ textarea{
   background:#76daa1;
   color:#fff;
 }
+.user_picker{
+  position:fixed;
+  background: #f8f8f8;
+  bottom:0;
+  border-top:1rpx solid #f2f2f2;
+  z-index: 100;
+  width:100%;
+  height:240px;
+}
+.user_picker_container{
+  background:#f8f8f8;
+  width: 100%; 
+  height: auto;
+  position:absolute;
+  top:0;
+  bottom:0;
+}
+.user_picker_item{
+  line-height: 60px;
+  color:#666;
+  text-align: left;
+  padding-left:150rpx;
+  font-size:32rpx;
+  position:relative;
+  z-index: 100;
+}
+.user_picker_photo{
+  width:80rpx;
+  height:80rpx;
+  position:absolute;
+  left:40rpx;
+  top:20rpx;
+  border-radius: 80rpx;
+}
+.user_picker_name{
+  line-height: 40rpx;
+  margin-top:20rpx;
+  font-size:28rpx;
+  color:#9fa1a0;
+}
+.user_picker_status{
+  line-height: 40rpx;
+  font-size:26rpx;
+  color:#ccc;
+}
+.user_picker_photo image{
+  width:80rpx;
+  height:80rpx;
+}
+.btn_cancel{
+  width:100%;
+  line-height:100rpx;
+  height:100rpx;
+  position:absolute;
+  bottom:0;
+  background:#77daa1;
+  color:#fff;
+  z-index:1000;
+  text-align: center;
+}

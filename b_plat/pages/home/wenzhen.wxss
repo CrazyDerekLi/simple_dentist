@@ -1,0 +1,114 @@
+.container{
+  background:#f8f8f8;
+  padding-bottom:120rpx;
+}
+.q_manager_top_btns{
+  height:100rpx;
+  line-height: 100rpx;
+  position:relative;
+  border:1rpx solid #f2f2f2;
+  margin-bottom: 20rpx;
+}
+.q_manager_top_btns>view{
+  width:50%;
+  background:#fff;
+  float:left;
+  height:100rpx;
+  position:relative;
+}
+.q_manager_top_right_btn{
+  
+  border-left:1rpx solid #f2f2f2;
+  margin-left:-1rpx;
+}
+.btn_info{
+  line-height:100rpx;
+  height:100rpx;
+  text-align: center;
+  position:relative;
+  font-size:30rpx;
+  color:#b9b9b9;
+}
+.btn_tip{
+  display: inline-block;
+  width:32rpx;
+  height:32rpx;
+  line-height: 32rpx;
+  background:#f38997;
+  border-radius: 32rpx;
+  text-align: center;
+  font-size:24rpx;
+  color:#fff;
+  margin-left:10rpx;
+}
+.q_manager_bottom_btn{
+  background:#77daa1;
+  color:#fff;
+  height:100rpx;
+  position:fixed;
+  bottom:0;
+  line-height: 100rpx;
+  left:0;
+  right:0;
+  border:1rpx solid #f2f2f2;
+  font-size:32rpx;
+  text-align: center;
+}
+.q_manager_message_list{
+  border-top:1rpx solid #f2f2f2;
+  background:#fff;
+}
+.q_manager_message_item{
+  border-bottom:1rpx solid #f2f2f2;
+  position:relative;
+  height:180rpx;
+}
+.item_photo{
+  position:absolute;
+  left:20rpx;
+  top:30rpx;
+  width:120rpx;
+  height:120rpx;
+  border-radius: 120rpx;
+  overflow: hidden;
+}
+.item_photo image{
+  width:120rpx;
+  height:120rpx;
+}
+.item_dir{
+  line-height:180rpx;
+  height:180rpx;
+  width:140rpx;
+  position:absolute;
+  right:10rpx;
+  font-size:26rpx;
+  color:#ccc;
+  top:0;
+}
+.item_info{
+  height:140rpx;
+  position:absolute;
+  top:25rpx;
+  left:150rpx;
+  right:160rpx;
+}
+.item_message_from{
+  height:45rpx;
+  line-height: 45rpx;
+  font-size:28rpx;
+  color:#7d7b7e;
+  position:relative;
+}
+.item_message_project{
+  height:45rpx;
+  line-height: 45rpx;
+  font-size:28rpx;
+  color:#7d7b7e;
+}
+.item_message_date{
+  height:45rpx;
+  line-height: 45rpx;
+  font-size:28rpx;
+  color:#ccc;
+}

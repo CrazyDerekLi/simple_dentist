@@ -1,16 +1,23 @@
 // pages/main/main.js
+var util = require('../../utils/util.js');
+const app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    healthy:100,
-    userList: [
-      { userid: 1, username: "章三", healthy: 0 },
-      { userid: 2, username: "李四", healthy: 10 },
-      {userid: 3, username: "王五", healthy: 100 }  
+    basePath:'',
+    FUSER_STATUS:1,
+    userList: [],
+    userCountList:[],
+    userCounts:[
+      [0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0], 
+      [0, 0, 0, 0, 0]
     ],
+    userMessage:false,
     userInfo: {},
     indicatorDots: false,
     autoplay: false,
@@ -22,7 +29,24 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setTopColor(this.data.userList[0].healthy);
+   
+  },
+  getUserNewMessage:function(){
+    var _this = this;
+    util.getUserInfo(function (info) {
+      var url = util.getPath() + 'user/getUserMessage?userid=' + info.CUS_ID+'&type=1';
+      app.ajax({ url: url }, function (res) {
+        var _data = res.data.data;
+        var flag = false;
+        if(_data.length>0){
+          flag = true;
+        }
+        _this.setData({
+          userMessage:flag
+        });
+        
+      });
+    });
   },
   go2HealthyDesc:function(event){
     var url = "/pages/healthy/healthy_desc";
@@ -39,8 +63,23 @@ Page({
       success: function () { }
     });
   },
-  go2Search:function(event){
-    var url = "/pages/question/ziwozhenduan";
+  go2xiaoxi: function () {
+    var url = "/pages/message/doctor_message_list";
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+  },
+  go2wenzhen: function () {
+    var url = "/pages/question/ask_question";
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+  },
+  go2zhenduan: function (event) {
+    //var url = "/pages/question/ziwozhenduan";
+    var url = "/pages/question/zhinengzhenduan";
     wx.navigateTo({
       url: url,
       success: function () { }
@@ -66,10 +105,10 @@ Page({
   },
   changeUser:function(event){
     var index = event.detail.current;
-    this.setTopColor(this.data.userList[index].healthy);
+    //this.setTopColor(this.data.userList[index].FUSER_STATUS);
   },
-  setTopColor:function(healthy){
-    if (healthy < 1) {
+  setTopColor: function (FUSER_STATUS){
+    if (FUSER_STATUS < 1) {
       wx.setNavigationBarColor({
         frontColor: '#ffffff',
         backgroundColor: '#f28a94',
@@ -92,7 +131,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    this.setData({
+      basePath: util.getPath()
+    });
+    this.getFamilyData();
+    this.getUserCount();
+    this.getUserNewMessage();
+    
   },
 
   /**
@@ -128,5 +173,58 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  go2UserDetail:function(event){
+    var ind = event.currentTarget.dataset.index;
+    var id = this.data.userList[ind].FUSER_ID;
+    //console.log(id);
+    var url = "/pages/my/familydetail?familyid="+id;
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+  },
+  getUserCount:function(){
+    var _this = this;
+    util.getUserInfo(function (info) {
+      var url = util.getPath() + 'user/getuserhealth?userid=' + info.CUS_ID;
+      app.ajax({ url: url },function(res){
+        var _data = res.data.data;
+        var list = [];
+        for(var i=0;i<_this.data.userCounts.length;i++){
+          var o = [];
+          for(var j=0;j<_this.data.userCounts[i].length;j++){
+            var _o = _this.data.userCounts[i][j];
+            if(_data.length>j){
+              var _u = parseInt(_data[i].hea_use||0);
+              var _a = parseInt(_data[i].hea_count||1);
+              _o = _u * 100 - _a * 100 * (j + 1) / 5 > 0 ? 100 : (_u * 100 - _a * 100 * j / 5 > 0) ? (_u * 100 - _a * 100 * j / 5) * 100 /(_a * 20):0;
+            }
+            o.push(_o);
+          }
+          list.push(o);
+        }
+
+        //console.log(_data);
+        _this.setData({
+          userCountList: _data,
+          userCounts: list
+        });
+      });
+    });
+  },
+  getFamilyData: function () {
+    var _this = this;
+    util.getUserInfo(function (info) {
+      var url = util.getPath() + 'user/getuserfamily?userid=' + info.CUS_ID;
+      app.ajax({ url: url }, function (res) {
+        var _data = res.data.data;
+        _this.setData({
+          userList: _data
+        });
+      });
+    });
+
+
   }
 })

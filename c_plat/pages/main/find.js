@@ -24,6 +24,28 @@ Page({
       success: function () { }
     });
   },
+  go2zhibo: function () {
+    var url = "/pages/find/zhibo_list";
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+  },
+  go2shequ: function () {
+    return;
+    var url = "/pages/find/gooddetail";
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+  },
+  go2shangcheng: function () {
+    var url = "/pages/find/goodList";
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */

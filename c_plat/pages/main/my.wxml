@@ -2,15 +2,22 @@
   <view class="my_top">
     <view class="my_amount_box">
       <view class="my_amount">
-        <view class="amount_title">余额（元）</view>
+        <view class="amount_title">账户余额（元）</view>
         <view class="amount_count">
-          <view class="integer">10</view>
-          <view class="decimal">.00</view>
+          5000.00
         </view>
       </view>
-      <view class="my_amount_card">
-        <view class="amount_title">银行卡</view>
-        <view class="card_amount">0</view>
+    </view>
+  </view>
+  <view class="my_top_btns">
+    <view class="my_top_left_btn">
+      <view class="btn_info">
+        提现
+      </view>
+    </view>
+    <view class="my_top_right_btn">
+      <view class="btn_info">
+        充值
       </view>
     </view>
   </view>
@@ -53,5 +60,16 @@
         尚未设置家庭医生
       </view>
     </view>
+    
   </view>
+  <!-- <view class="my_list">
+    <view class="my_item" bindtap="go2mymain">
+      <view class="my_icon">
+        <image src="/img/my_doctor.png"></image>
+      </view>
+      进入B端
+    </view>
+  </view> -->
+
+
 </view>

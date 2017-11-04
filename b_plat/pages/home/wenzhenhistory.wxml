@@ -1,0 +1,59 @@
+<view class="container">
+  <view class="q_manager_message_list">
+    <view class="q_manager_message_item" bindtap='go2detail'>
+      <view class="item_photo">
+        <image src="/img/family_doctor_photo.png"></image>
+      </view>
+      <view class="item_info">
+        <view class="item_message_from">来自李晓明的消息</view>
+        <view class="item_message_project">问诊项目：洗牙</view>
+        <view class="item_message_date">2017年6月22日 12:12:12</view>
+      </view>
+      <view class="item_dir">
+        距离2.8km
+      </view>
+    </view>
+    <view class="q_manager_message_item" bindtap='go2detail'>
+      <view class="item_photo">
+        <image src="/img/family_doctor_photo.png"></image>
+      </view>
+      <view class="item_info">
+        <view class="item_message_from">来自李晓明的消息</view>
+        <view class="item_message_project">问诊项目：洗牙</view>
+        <view class="item_message_date">2017年6月22日 12:12:12</view>
+      </view>
+      <view class="item_dir">
+        距离2.8km
+      </view>
+    </view>
+    <view class="q_manager_message_item" bindtap='go2detail'>
+      <view class="item_photo">
+        <image src="/img/family_doctor_photo.png"></image>
+      </view>
+      <view class="item_info">
+        <view class="item_message_from">来自李晓明的消息</view>
+        <view class="item_message_project">问诊项目：洗牙</view>
+        <view class="item_message_date">2017年6月22日 12:12:12</view>
+      </view>
+      <view class="item_dir">
+        距离2.8km
+      </view>
+    </view>
+    <view class="q_manager_message_item" bindtap='go2detail'>
+      <view class="item_photo">
+        <image src="/img/family_doctor_photo.png"></image>
+      </view>
+      <view class="item_info">
+        <view class="item_message_from">来自李晓明的消息</view>
+        <view class="item_message_project">问诊项目：洗牙</view>
+        <view class="item_message_date">2017年6月22日 12:12:12</view>
+      </view>
+      <view class="item_dir">
+        距离2.8km
+      </view>
+    </view>
+  </view>
+  <view class="q_manager_bottom_btn" bindtap='go2Back'>
+    返回
+  </view>
+</view>

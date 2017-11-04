@@ -1,0 +1,47 @@
+<view class="container">
+  <view class="family_detail_top">
+    <view class="top_name">王小明</view>
+    <view class="top_title">尚未检查，病发率高</view>
+    <view class="healthy">
+      <image src="/img/family_doctor_photo.png"></image>
+    </view>
+    <view class="family_detail_box">
+      <view class="family_detail_item">
+        <view class="label">姓名</view>
+        <view class="info">王小明</view>
+      </view>
+      <view class="family_detail_item">
+        <view class="label">年龄</view>
+        <view class="info">18岁</view>
+      </view>
+      <view class="family_detail_item">
+        <view class="label">性别</view>
+        <view class="info">男</view>
+      </view>
+      <view class="family_detail_item">
+        <view class="label">地区</view>
+        <view class="info">山东日照</view>
+      </view>
+      <view class="family_detail_enter">
+        <image src="/img/btn_enter.png"></image>
+      </view>
+    </view>
+  </view>
+<view class='add_case_btn' bindtap='go2addCase'>
+    <view class='add_case_img'>
+      <image src='/img/family_doctor_plus.png'></image>
+    </view>
+    <view class='add_case_info'>
+      新建病例
+    </view>
+   </view>
+  
+  <view class="family_detail_btns">
+    <view class="family_detail_left_btn" bindtap='go2caseHistory'>
+      历史病例
+    </view>
+    <view class="family_detail_right_btn" bindtap='go2yuyue'>
+      电话沟通
+    </view>
+  </view>
+</view>

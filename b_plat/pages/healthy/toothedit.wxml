@@ -1,0 +1,73 @@
+<view class="container">
+  <view class='tooth_list'>
+    <view class='tooth_item'>
+      <view class='tooth_item_label'>右上</view>
+      <view class='tooth_item_box'>
+        <view class='tooth_item_single{{typeSelectedList[0][0]!="0"?" selectedType":""}}{{showTypePickerInfo == "0,0"?" selected":""}}' bindtap='showTypePicker' data-index='0,0' style='{{typeSelectedList[0][0]!="0"?"background:"+typeList[typeSelectedList[0][0]].typeColor:""}}'>8</view>
+        <view class='tooth_item_single{{typeSelectedList[0][1]!="0"?" selectedType":""}}{{showTypePickerInfo == "0,1"?" selected":""}}' bindtap='showTypePicker' data-index='0,1' style='{{typeSelectedList[0][1]!="0"?"background:"+typeList[typeSelectedList[0][1]].typeColor:""}}'>7</view>
+        <view class='tooth_item_single{{typeSelectedList[0][2]!="0"?" selectedType":""}}{{showTypePickerInfo == "0,2"?" selected":""}}' bindtap='showTypePicker' data-index='0,2' style='{{typeSelectedList[0][2]!="0"?"background:"+typeList[typeSelectedList[0][2]].typeColor:""}}'>6</view>
+        <view class='tooth_item_single{{typeSelectedList[0][3]!="0"?" selectedType":""}}{{showTypePickerInfo == "0,3"?" selected":""}}' bindtap='showTypePicker' data-index='0,3' style='{{typeSelectedList[0][3]!="0"?"background:"+typeList[typeSelectedList[0][3]].typeColor:""}}'>5</view>
+        <view class='tooth_item_single{{typeSelectedList[0][4]!="0"?" selectedType":""}}{{showTypePickerInfo == "0,4"?" selected":""}}' bindtap='showTypePicker' data-index='0,4' style='{{typeSelectedList[0][4]!="0"?"background:"+typeList[typeSelectedList[0][4]].typeColor:""}}'>4</view>
+        <view class='tooth_item_single{{typeSelectedList[0][5]!="0"?" selectedType":""}}{{showTypePickerInfo == "0,5"?" selected":""}}' bindtap='showTypePicker' data-index='0,5' style='{{typeSelectedList[0][5]!="0"?"background:"+typeList[typeSelectedList[0][5]].typeColor:""}}'>3</view>
+        <view class='tooth_item_single{{typeSelectedList[0][6]!="0"?" selectedType":""}}{{showTypePickerInfo == "0,6"?" selected":""}}' bindtap='showTypePicker' data-index='0,6' style='{{typeSelectedList[0][6]!="0"?"background:"+typeList[typeSelectedList[0][6]].typeColor:""}}'>2</view>
+        <view class='tooth_item_single{{typeSelectedList[0][7]!="0"?" selectedType":""}}{{showTypePickerInfo == "0,7"?" selected":""}}' bindtap='showTypePicker' data-index='0,7' style='{{typeSelectedList[0][7]!="0"?"background:"+typeList[typeSelectedList[0][7]].typeColor:""}}'>1</view>
+      </view>
+    </view>
+    <view class='tooth_item'>
+      <view class='tooth_item_label'>右下</view>
+      <view class='tooth_item_box'>
+        <view class='tooth_item_single{{typeSelectedList[1][0]!="0"?" selectedType":""}}{{showTypePickerInfo == "1,0"?" selected":""}}' bindtap='showTypePicker' data-index='1,0' style='{{typeSelectedList[1][0]!="0"?"background:"+typeList[typeSelectedList[1][0]].typeColor:""}}'>8</view>
+        <view class='tooth_item_single{{typeSelectedList[1][1]!="0"?" selectedType":""}}{{showTypePickerInfo == "1,1"?" selected":""}}' bindtap='showTypePicker' data-index='1,1' style='{{typeSelectedList[1][1]!="0"?"background:"+typeList[typeSelectedList[1][1]].typeColor:""}}'>7</view>
+        <view class='tooth_item_single{{typeSelectedList[1][2]!="0"?" selectedType":""}}{{showTypePickerInfo == "1,2"?" selected":""}}' bindtap='showTypePicker' data-index='1,2' style='{{typeSelectedList[1][2]!="0"?"background:"+typeList[typeSelectedList[1][2]].typeColor:""}}'>6</view>
+        <view class='tooth_item_single{{typeSelectedList[1][3]!="0"?" selectedType":""}}{{showTypePickerInfo == "1,3"?" selected":""}}' bindtap='showTypePicker' data-index='1,3' style='{{typeSelectedList[1][3]!="0"?"background:"+typeList[typeSelectedList[1][3]].typeColor:""}}'>5</view>
+        <view class='tooth_item_single{{typeSelectedList[1][4]!="0"?" selectedType":""}}{{showTypePickerInfo == "1,4"?" selected":""}}' bindtap='showTypePicker' data-index='1,4' style='{{typeSelectedList[1][4]!="0"?"background:"+typeList[typeSelectedList[1][4]].typeColor:""}}'>4</view>
+        <view class='tooth_item_single{{typeSelectedList[1][5]!="0"?" selectedType":""}}{{showTypePickerInfo == "1,5"?" selected":""}}' bindtap='showTypePicker' data-index='1,5' style='{{typeSelectedList[1][5]!="0"?"background:"+typeList[typeSelectedList[1][5]].typeColor:""}}'>3</view>
+        <view class='tooth_item_single{{typeSelectedList[1][6]!="0"?" selectedType":""}}{{showTypePickerInfo == "1,6"?" selected":""}}' bindtap='showTypePicker' data-index='1,6' style='{{typeSelectedList[1][6]!="0"?"background:"+typeList[typeSelectedList[1][6]].typeColor:""}}'>2</view>
+        <view class='tooth_item_single{{typeSelectedList[1][7]!="0"?" selectedType":""}}{{showTypePickerInfo == "1,7"?" selected":""}}' bindtap='showTypePicker' data-index='1,7' style='{{typeSelectedList[1][7]!="0"?"background:"+typeList[typeSelectedList[1][7]].typeColor:""}}'>1</view>
+      </view>
+    </view>
+    <view class='tooth_item'>
+      <view class='tooth_item_label'>左上</view>
+      <view class='tooth_item_box'>
+        <view class='tooth_item_single{{typeSelectedList[2][0]!="0"?" selectedType":""}}{{showTypePickerInfo == "2,0"?" selected":""}}' bindtap='showTypePicker' data-index='2,0' style='{{typeSelectedList[2][0]!="0"?"background:"+typeList[typeSelectedList[2][0]].typeColor:""}}'>1</view>
+        <view class='tooth_item_single{{typeSelectedList[2][1]!="0"?" selectedType":""}}{{showTypePickerInfo == "2,1"?" selected":""}}' bindtap='showTypePicker' data-index='2,1' style='{{typeSelectedList[2][1]!="0"?"background:"+typeList[typeSelectedList[2][1]].typeColor:""}}'>2</view>
+        <view class='tooth_item_single{{typeSelectedList[2][2]!="0"?" selectedType":""}}{{showTypePickerInfo == "2,2"?" selected":""}}' bindtap='showTypePicker' data-index='2,2' style='{{typeSelectedList[2][2]!="0"?"background:"+typeList[typeSelectedList[2][2]].typeColor:""}}'>3</view>
+        <view class='tooth_item_single{{typeSelectedList[2][3]!="0"?" selectedType":""}}{{showTypePickerInfo == "2,3"?" selected":""}}' bindtap='showTypePicker' data-index='2,3' style='{{typeSelectedList[2][3]!="0"?"background:"+typeList[typeSelectedList[2][3]].typeColor:""}}'>4</view>
+        <view class='tooth_item_single{{typeSelectedList[2][4]!="0"?" selectedType":""}}{{showTypePickerInfo == "2,4"?" selected":""}}' bindtap='showTypePicker' data-index='2,4' style='{{typeSelectedList[2][4]!="0"?"background:"+typeList[typeSelectedList[2][4]].typeColor:""}}'>5</view>
+        <view class='tooth_item_single{{typeSelectedList[2][5]!="0"?" selectedType":""}}{{showTypePickerInfo == "2,5"?" selected":""}}' bindtap='showTypePicker' data-index='2,5' style='{{typeSelectedList[2][5]!="0"?"background:"+typeList[typeSelectedList[2][5]].typeColor:""}}'>6</view>
+        <view class='tooth_item_single{{typeSelectedList[2][6]!="0"?" selectedType":""}}{{showTypePickerInfo == "2,6"?" selected":""}}' bindtap='showTypePicker' data-index='2,6' style='{{typeSelectedList[2][6]!="0"?"background:"+typeList[typeSelectedList[2][6]].typeColor:""}}'>7</view>
+        <view class='tooth_item_single{{typeSelectedList[2][7]!="0"?" selectedType":""}}{{showTypePickerInfo == "2,7"?" selected":""}}' bindtap='showTypePicker' data-index='2,7' style='{{typeSelectedList[2][7]!="0"?"background:"+typeList[typeSelectedList[2][7]].typeColor:""}}'>8</view>
+      </view>
+    </view>
+    <view class='tooth_item'>
+      <view class='tooth_item_label'>左下</view>
+      <view class='tooth_item_box'>
+        <view class='tooth_item_single{{typeSelectedList[3][0]!="0"?" selectedType":""}}{{showTypePickerInfo == "3,0"?" selected":""}}' bindtap='showTypePicker' data-index='3,0' style='{{typeSelectedList[3][0]!="0"?"background:"+typeList[typeSelectedList[3][0]].typeColor:""}}'>1</view>
+        <view class='tooth_item_single{{typeSelectedList[3][1]!="0"?" selectedType":""}}{{showTypePickerInfo == "3,1"?" selected":""}}' bindtap='showTypePicker' data-index='3,1' style='{{typeSelectedList[3][1]!="0"?"background:"+typeList[typeSelectedList[3][1]].typeColor:""}}'>2</view>
+        <view class='tooth_item_single{{typeSelectedList[3][2]!="0"?" selectedType":""}}{{showTypePickerInfo == "3,2"?" selected":""}}' bindtap='showTypePicker' data-index='3,2' style='{{typeSelectedList[3][2]!="0"?"background:"+typeList[typeSelectedList[3][2]].typeColor:""}}'>3</view>
+        <view class='tooth_item_single{{typeSelectedList[3][3]!="0"?" selectedType":""}}{{showTypePickerInfo == "3,3"?" selected":""}}' bindtap='showTypePicker' data-index='3,3' style='{{typeSelectedList[3][3]!="0"?"background:"+typeList[typeSelectedList[3][3]].typeColor:""}}'>4</view>
+        <view class='tooth_item_single{{typeSelectedList[3][4]!="0"?" selectedType":""}}{{showTypePickerInfo == "3,4"?" selected":""}}' bindtap='showTypePicker' data-index='3,4' style='{{typeSelectedList[3][4]!="0"?"background:"+typeList[typeSelectedList[3][4]].typeColor:""}}'>5</view>
+        <view class='tooth_item_single{{typeSelectedList[3][5]!="0"?" selectedType":""}}{{showTypePickerInfo == "3,5"?" selected":""}}' bindtap='showTypePicker' data-index='3,5' style='{{typeSelectedList[3][5]!="0"?"background:"+typeList[typeSelectedList[3][5]].typeColor:""}}'>6</view>
+        <view class='tooth_item_single{{typeSelectedList[3][6]!="0"?" selectedType":""}}{{showTypePickerInfo == "3,6"?" selected":""}}' bindtap='showTypePicker' data-index='3,6' style='{{typeSelectedList[3][6]!="0"?"background:"+typeList[typeSelectedList[3][6]].typeColor:""}}'>7</view>
+        <view class='tooth_item_single{{typeSelectedList[3][7]!="0"?" selectedType":""}}{{showTypePickerInfo == "3,7"?" selected":""}}' bindtap='showTypePicker' data-index='3,7' style='{{typeSelectedList[3][7]!="0"?"background:"+typeList[typeSelectedList[3][7]].typeColor:""}}'>8</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='tooth_bottom_btn' bindtap='saveAndGoBack'>
+    确认提交
+  </view>
+
+</view>
+
+<view class="tooth_type_picker" style="display:{{showTypePicker?'block':'none'}};" >
+  <view class='tooth_type_title'>{{selectedRowName+selectedToothName}}</view>
+  <picker-view indicator-style="height: 40px;" class="tooth_type_picker_container" value="{{typeIndex}}" bindchange="bindChangeType">
+    <picker-view-column>
+      <view class="tooth_type_picker_item" wx:for="{{typeList}}" style='background:{{item.typeColor}}'>
+        {{item.typeName}}
+      </view>
+    </picker-view-column>
+  </picker-view>
+  <view class="btn_cancel" bindtap='hidePicker'>返回</view>
+</view>

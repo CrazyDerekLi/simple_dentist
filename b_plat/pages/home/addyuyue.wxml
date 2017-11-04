@@ -1,0 +1,148 @@
+<view class="container">
+  
+  <view class="add_yuyue_item" bindtap="go2DatePicker">
+    <view class="add_yuyue_item_title">
+      <view class="add_yuyue_item_title_label">
+        预约时间
+      </view>
+      <view class="add_yuyue_item_title_info">
+        {{years[value[0]]}}-{{months[value[1]]}}-{{days[value[2]]}} 星期{{week}} {{ams[value[3]]}}午
+      </view>
+      <view class="add_yuyue_item_title_enter">
+        <image src="/img/btn_enter_1.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="add_yuyue_item" bindtap="go2UserPicker">
+    <view class="add_yuyue_item_title">
+      <view class="add_yuyue_item_title_label">
+        预约人
+      </view>
+      <view class="add_yuyue_item_title_info">
+        {{userName}}
+      </view>
+      <view class="add_yuyue_item_title_enter">
+        <image src="/img/btn_enter_1.png"></image>
+      </view>
+    </view>
+    <view class="add_yuyue_item_title border_top">
+      <view class="add_yuyue_item_title_label">
+        电话
+      </view>
+      <view class="add_yuyue_item_title_info">
+        178888888888
+      </view>
+      <view class="add_yuyue_item_title_enter">
+        <image src="/img/btn_enter_1.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="add_yuyue_item" bindtap="go2AdPicker">
+    <view class="add_yuyue_item_title">
+      <view class="add_yuyue_item_title_label">
+        预约地点
+      </view>
+      <view class="add_yuyue_item_title_info">
+        {{addressList[addressIndex[0]]}}
+      </view>
+      <view class="add_yuyue_item_title_enter">
+        <image src="/img/btn_enter_1.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="add_yuyue_item" bindtap="go2ProjectPicker">
+    <view class="add_yuyue_item_title">
+      <view class="add_yuyue_item_title_label">
+        预约项目
+      </view>
+      <view class="add_yuyue_item_title_info">
+        {{projectList[projectIndex[0]]}}
+      </view>
+      <view class="add_yuyue_item_title_enter">
+        <image src="/img/btn_enter_1.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="add_yuyue_item">
+    <view class="add_yuyue_item_title">
+      <view class="add_yuyue_item_title_label">
+        描述
+      </view>
+    </view>
+    <view class="add_yuyue_item_body">
+      <textarea placeholder="暂无描述" style="display:{{showChoose?'none':'block'}}"/>
+    </view>
+  </view>
+  <view class="add_yuyue_bottom_btn">
+    提交预约
+  </view>
+  
+</view>
+<view class="date_picker" style="display:{{showDatePicker?'block':'none'}};" >
+  <picker-view indicator-style="height: 50px;" class="date_picker_container" value="{{value}}" bindchange="bindChange">
+    <picker-view-column>
+      <view class="date_picker_item" wx:for="{{years}}">{{item}}年</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view class="date_picker_item" wx:for="{{months}}">{{item}}月</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view class="date_picker_item" wx:for="{{days}}">{{item}}日</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view class="date_picker_item" wx:for="{{ams}}">{{item}}午</view>
+    </picker-view-column>
+  </picker-view>
+  <view class="btn_cancel" bindtap="cancelDate">返回</view>
+</view>
+<view class="user_picker" style="display:{{showUserPicker?'block':'none'}};" >
+  <view class="user_type_list" style="border:1rpx soid #f2f2f2;">
+    <view class="user_type_1 {{userType==1?'selected':''}}" bindtap="selectUserType1">意向客户</view>
+    <view class="user_type_2 {{userType==2?'selected':''}}" bindtap="selectUserType2">私人客户</view>
+  </view>
+  <picker-view indicator-style="height: 60px;" class="user_picker_container" value="{{userIndex}}" bindchange="bindChangeUser">
+    <picker-view-column>
+      <view class="user_picker_item" wx:for="{{users}}">
+        <view class="user_picker_photo">
+          <image src="/img/family_doctor_photo.png"></image>
+        </view>
+        <view class="user_picker_name">
+          姓名：{{item.name}}
+        </view>
+        <view class="user_picker_status">
+          {{item.status==0?'尚未检查，病发率高':'口腔环境非常健康'}}
+        </view>
+      </view>
+    </picker-view-column>
+  </picker-view>
+  <view class="btn_cancel" bindtap="cancelUser">返回</view>
+</view>
+<view class="address_picker" style="display:{{showAdPicker?'block':'none'}};" >
+  <picker-view indicator-style="height: 50px;" class="address_picker_container" value="{{addressIndex}}" bindchange="bindChangeAddress">
+    <picker-view-column>
+      <view class="address_picker_item" wx:for="{{addressList}}">
+        <view class="btn_address_icon">
+          <image src="/img/btn_address.png"></image>
+        </view>
+        {{item}}
+      </view>
+    </picker-view-column>
+  </picker-view>
+  <view class="btn_add_address">
+    <view class="btn_add_plus">
+      <image src="/img/family_doctor_plus.png"></image>
+    </view>
+    添加地址
+  </view>
+  <view class="btn_cancel" bindtap="cancelAddress">返回</view>
+</view>
+<view class="project_picker" style="display:{{showProjectPicker?'block':'none'}};" >
+  <picker-view indicator-style="height: 40px;" class="project_picker_container" value="{{projectIndex}}" bindchange="bindChangeProject">
+    <picker-view-column>
+      <view class="project_picker_item" wx:for="{{projectList}}">
+        {{item}}
+      </view>
+    </picker-view-column>
+  </picker-view>
+  <view class="btn_cancel" bindtap="cancelProject">返回</view>
+</view>

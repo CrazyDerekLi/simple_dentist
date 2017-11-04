@@ -1,0 +1,195 @@
+.container{
+  background:#f8f8f8;
+}
+.zhibo_top_search{
+  background:#f8f8f8;
+  height:90rpx;
+  position: relative;
+}
+.zhibo_top_search_label{
+  position:absolute;
+  left:10rpx;
+  top:0;
+  height:90rpx;
+  line-height: 90rpx;
+  width:100rpx;
+  color:#a0a0a0;
+  font-size:28rpx;
+  text-align: center;
+}
+.zhibo_top_search_input{
+  position:absolute;
+  left:100rpx;
+  right:140rpx;
+  top:15rpx;
+  height:60rpx;
+  line-height: 60rpx;
+  background:#fff;
+  border-radius: 60rpx;
+}
+.zhibo_top_search_input input{
+  position:absolute;
+  left:30rpx;
+  right:30rpx;
+  top:5rpx;
+  height:50rpx;
+  line-height: 50rpx;
+  font-size:28rpx;
+  color:#a0a0a0;
+}
+.zhibo_top_search_shaixuan{
+  position:absolute;
+  right:0;
+  top:0;
+  height:90rpx;
+  line-height: 90rpx;
+  width:140rpx;
+  color:#a0a0a0;
+  font-size:28rpx;
+}
+.shaixuan_label{
+  position:absolute;
+  left:10rpx;
+  top:0;
+  width:70rpx;
+  text-align: center;
+}
+.shaixuan_btn{
+  position:absolute;
+  left:80rpx;
+  top:0;
+  height:90rpx;
+}
+.shaixuan_btn image{
+  position:absolute;
+  left:0;
+  width:30rpx;
+  height:30rpx;
+  top:30rpx;
+}
+.zhibo_shaixuan_list{
+  height:100rpx;
+  line-height: 100rpx;
+  position:relative;
+  background: #fff;
+  border-top:1rpx solid #f2f2f2;
+  border-bottom:1rpx solid #f2f2f2;
+}
+.zhibo_shaixuan_item{
+  width:20%;
+  position:relative;
+  float:left;
+  line-height:100rpx;
+  height:100rpx;
+  text-align: center;
+  font-size:28rpx;
+  color:#9ea09f;
+  border-left:1rpx solid #f2f2f2;
+  margin-left:-1rpx;
+}
+.zhibo_doctor_list{
+  margin-top:30rpx;
+  padding:0 30rpx;
+}
+.zhibo_doctor_item{
+  background:#808080;
+  height:240rpx;
+  border-radius:10rpx;
+  border:1rpx solid #f2f2f2;
+  margin-bottom:20rpx;
+  padding:0;
+  position:relative; 
+  overflow: hidden;
+}
+.zhibo_doctor_info_box{
+  margin-left:30%;
+  height:240rpx;
+  background:#ffffff;
+  padding-left:30rpx;
+}
+.zhibo_status{
+  position:absolute;
+  left:20rpx;
+  top:10rpx;
+  color:#ffffff;
+  height:50rpx;
+  line-height: 50rpx;
+  padding-left:50rpx;
+  font-size:30rpx;
+}
+.zhibo_status_circle{
+  position:absolute;
+  width:30rpx;
+  height:30rpx;
+  border-radius: 30rpx;
+  background:#f28a95;
+  top:10rpx;
+  left:10rpx;
+}
+
+
+
+.zhibo_doctor_name{
+  font-size:32rpx;
+  font-weight:bold;
+  height:70rpx;
+  line-height:70rpx;
+  padding-top:10rpx;
+  color:#808080;
+}
+.zhibo_doctor_name_info{
+  float:left;
+  font-size:40rpx;
+  font-weight:bold;
+  height:70rpx;
+  line-height:70rpx;
+  padding-top:10rpx;
+  color:#808080;
+}
+.zhibo_doctor_info{
+  clear:both;
+  height:60rpx;
+  font-size:30rpx;
+  color:#7d7b80;
+  line-height:60rpx;
+}
+.star{
+  color:#ccc;
+  position:relative;
+  line-height:50rpx;
+  float:left;
+  margin-top:30rpx;
+  margin-left:10rpx;
+}
+.star>image{
+  float:left;
+  margin-top:5rpx;
+  margin-right:5rpx;
+  width:30rpx;
+  height:30rpx;
+}
+.zhibo_doctor_users_box{
+  position:absolute;
+  height:60rpx;
+  bottom:10rpx;
+}
+.zhibo_doctor_user_item{
+  position:relative;
+  height:60rpx;
+  float:left;
+  padding-left:50rpx;
+  font-size:30rpx;
+  color:#808080;
+  line-height: 60rpx;
+  padding-right:20rpx;
+}
+.zhibo_doctor_user_item image{
+  position:absolute;
+  left:10rpx;
+  top:15rpx;
+  width:30rpx;
+  height:30rpx;
+}
+.zhibo_shaixuan_item.selected{
+  color:#74bee3;
+}

@@ -10,28 +10,42 @@
       >
       <block wx:for="{{userList}}" wx:for-index="idx" wx:key="{{idx}}">
           <swiper-item>
-              <view style="position:relative;height:100%;background:#{{item.healthy==0?'f28a94':'74bee3'}}">
-                <view class="status_box">
-                  <image src="/img/healthy_{{item.healthy==0?0:item.healthy<healthy?1:2}}.png"></image>
-                  <view class="cir_bg"></view>
+              <view style="position:relative;height:100%;" bindtap='go2UserDetail' data-index='{{idx}}'>
+                <view class="status_box" style="overflow:hidden;border-color:#{{item.FUSER_STATUS=='0'?'f28a94':'f2f2f2'}}">
+                  <image mode='aspectFill' src="{{item.PIC_PATH?basePath+item.PIC_PATH:'/img/default_photo.png'}}"></image>
                 </view>
                 <view class="healthy_title">
-                  {{item.username}}
-                </view>
-                <view class="healthy_count_box">
-                  <image src="/img/healthy_count_bg.png"></image>
-                  <view class="healthy_count_red_bg" style="width:{{(healthy-item.healthy)*372/healthy}}rpx;display:{{item.healthy==healthy?'none':'block'}};"></view>
-                  <view class="healthy_btn_red_bg" style="display:{{item.healthy==healthy?'none':'block'}}"></view>
-                  <view class="healthy_btn_search" bindtap="go2Search" data-index="{{idx}}"></view>
-                  <view class="healthy_btn_add" bindtap="go2Add" data-index="{{idx}}"></view>
+                  {{item.FUSER_NAME}}
                 </view>
                 <view class="healthy_tip">
-                  {{item.healthy==0?'尚未检查 病发率高':item.healthy<healthy?'尚有口腔问题未解决':'口腔状态非常好'}}
+                  {{item.FUSER_STATUS=="0"?'尚未检查 病发率高':item.FUSER_STATUS==FUSER_STATUS?'尚有口腔问题未解决':'口腔状态非常好'}}
                 </view>
               </view>
           </swiper-item>
       </block>
       </swiper>
+  </view>
+  <view class="menu_list">
+    <view class="menu_item" bindtap="go2zhenduan">
+      <view class="menu_photo" style="background:#77daa1;">
+        <image src="/img/btn_ziwozhenduan.png"></image>
+      </view>
+      自我诊断
+    </view>
+    <view class="menu_item" bindtap="go2xiaoxi" style="border-left:1rpx solid #f2f2f2;margin-left:-1rpx;">
+      <view class="menu_photo" style="background:#f7b05e;">
+        <view class="tip" style='display:{{userMessage?"block":"none"}}'></view>
+        <image src="/img/btn_yizhuxiaoxi.png"></image>
+      </view>
+      
+      医嘱消息
+    </view>
+    <view class="menu_item" bindtap="go2wenzhen" style="border-left:1rpx solid #f2f2f2;margin-left:-1rpx;">
+      <view class="menu_photo" style="background:#74bee3;">
+        <image src="/img/btn_fabuwenzhen.png"></image>
+      </view>
+      马上问诊
+    </view>
   </view>
   <view class="panel-tab">
       <view class="view-item" style="padding-left:70rpx;" bindtap="go2HealthyDesc">
@@ -48,38 +62,71 @@
           <view class="project_item">
             <view class="project_item_title">免费检查</view>
             <view class="project_item_progress">
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
+              <view class="progress_item">
+                <view class='progress_item_count' style='width:{{userCounts[0][0]}}%'></view>
+              </view>
+              <view class="progress_item">
+                <view class='progress_item_count' style='width:{{userCounts[0][1]}}%'></view>
+              </view>
+              <view class="progress_item">
+                <view class='progress_item_count' style='width:{{userCounts[0][2]}}%'></view>
+              </view>
+              <view class="progress_item">
+                <view class='progress_item_count' style='width:{{userCounts[0][3]}}%'></view>
+              </view>
+              <view class="progress_item">
+                <view class='progress_item_count' style='width:{{userCounts[0][4]}}%'></view>
+              </view>
             </view>
-            <view class="project_item_tip">已完成0/4</view>
+            <view class="project_item_tip">{{userCountList.length<1||userCountList[0].hea_count==0?"需购买特权卡":("已完成"+userCountList[0].hea_use+"/"+userCountList[0].hea_count)}}</view>
           </view>
           <view class="project_item">
             <view class="project_item_title">免费洗牙</view>
             <view class="project_item_progress">
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
+              <view class="progress_item">
+                <view class='progress_item_count' style='width:{{userCounts[1][0]}}%'></view>
+              </view>
+              <view class="progress_item">
+                <view class='progress_item_count' style='width:{{userCounts[1][1]}}%'></view>
+              </view>
+              <view class="progress_item">
+                <view class='progress_item_count' style='width:{{userCounts[1][2]}}%'></view>
+              </view>
+              <view class="progress_item">
+                <view class='progress_item_count' style='width:{{userCounts[1][3]}}%'></view>
+              </view>
+              <view class="progress_item">
+                <view class='progress_item_count' style='width:{{userCounts[1][4]}}%'></view>
+              </view>
             </view>
-            <view class="project_item_tip">需购买特权卡</view>
+            <view class="project_item_tip">{{userCountList.length<2||userCountList[1].hea_count==0?"需购买特权卡":("已完成"+userCountList[1].hea_use+"/"+userCountList[1].hea_count)}}</view>
           </view>
           <view class="project_item">
             <view class="project_item_title">免费拔牙</view>
             <view class="project_item_progress">
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
+              <view class="progress_item">
+                <view class='progress_item_count' style='width:{{userCounts[2][0]}}%'></view>
+              </view>
+              <view class="progress_item">
+                <view class='progress_item_count' style='width:{{userCounts[2][1]}}%'></view>
+              </view>
+              <view class="progress_item">
+                <view class='progress_item_count' style='width:{{userCounts[2][2]}}%'></view>
+              </view>
+              <view class="progress_item">
+                <view class='progress_item_count' style='width:{{userCounts[2][3]}}%'></view>
+              </view>
+              <view class="progress_item">
+                <view class='progress_item_count' style='width:{{userCounts[2][4]}}%'></view>
+              </view>
             </view>
-            <view class="project_item_tip">需购买特权卡</view>
+            <view class="project_item_tip">{{userCountList.length<3||userCountList[2].hea_count==0?"需购买特权卡":("已完成"+userCountList[2].hea_use+"/"+userCountList[2].hea_count)}}</view>
           </view>
         </view>
       </view>
   </view>
 
-  <view class="panel-tab">
+  <!-- <view class="panel-tab">
     <view class="view-item">
       医嘱消息
       <view class="btn-enter">
@@ -106,5 +153,5 @@
         </view>
       </view>
     </view>
-  </view>
+  </view> -->
 </view>

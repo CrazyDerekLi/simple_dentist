@@ -1,7 +1,7 @@
 .lunbo{
     height:350rpx;
     overflow:hidden;
-    background:#fff;
+    background:#74bee3;
 }
 .lunbo swiper{
     height:350rpx;
@@ -12,66 +12,37 @@
   height:350rpx;
   width:840rpx;
 }
-.goods_list{
-  margin-top:10rpx;
-  position:relative;
+.container{
+  background:#f8f8f8; 
 }
-.good_item{
-  width:50%;
-  position:relative;
+.menu_list{
+  height:200rpx;
+  background: #fff;
+  border-top:1rpx solid #f2f2f2;
+  border-bottom:1rpx solid #f2f2f2;
+}
+.menu_item{
+  width:33.33%;
+  height:90rpx;
   float:left;
-  padding-top:370rpx;
-  margin-bottom:10rpx;
-}
-.good_photo{
-  position:absolute;
-  left:0;
-  right:0;
-  top:0;
-  height:360rpx;
-  z-index:1;
-}
-.good_img{
-  background:#ccc;
-  width:360rpx;
-  height:360rpx;
-  position:absolute;
-  left:50%;
-  top:0;
-  margin-left:-180rpx;
-}
-.good_img image{
-  width:360rpx;
-  height:360rpx;
-}
-.good_xinpin{
-  color:#fff;
-  position:absolute;
-  height:40rpx;
-  line-height:40rpx;
-  padding:0 10rpx;
-  background:#f38996;
+  position:relative;
+  padding-top:110rpx;
+  line-height: 60rpx;
   font-size:28rpx;
-  border-bottom-right-radius: 10rpx;
-  z-index:100;
+  text-align: center;
+  color:#808080;
 }
-.good_title{
-  height:40rpx;
-  line-height: 40rpx;
-  font-size:32rpx;
-  font-weight: bold;
-  padding-left:20rpx;
+.menu_photo{
+  position:absolute;
+  top:40rpx;
+  width:60rpx;
+  height:60rpx;
+  left:50%;
+  margin-left:-30rpx;
+  border-radius: 60rpx;
+  overflow: hidden;
 }
-.good_context{
-  height:40rpx;
-  line-height:40rpx;
-  font-size:26rpx;
-  padding-left:20rpx;
-}
-.good_amount{
-  height:40rpx;
-  line-height:40rpx;
-  color:#ff6666;
-  font-size:30rpx;
-  padding-left:20rpx;
+.menu_photo image{
+  width:60rpx;
+  height:60rpx;
 }

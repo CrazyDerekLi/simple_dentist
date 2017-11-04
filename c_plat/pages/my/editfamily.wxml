@@ -1,0 +1,53 @@
+<view class="container">
+  <view class="add_list">
+    <view class="add_item add_item_photo">
+      <view class="add_left">头像</view>
+      <view class="add_right">
+        <view class="add_photo">
+          <image src="/img/family_doctor_photo.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class="add_item">
+      <view class="add_left">姓名</view>
+      <view class="add_right">
+        <input value='{{username}}'></input>
+      </view>
+    </view>
+  </view>
+  <view class="add_list">
+    <view class="add_item">
+      <view class="add_left">年龄</view>
+      <view class="add_right">
+       <view class="add_right_label">岁</view> <input type='number' maxlength='3' value='{{userage}}'></input>
+      </view>
+    </view>
+    <picker bindchange="bindSexChange" value="{{sex}}" range="{{sexList}}">
+      <view class="add_item">
+        <view class="add_left">性别</view>
+        <view class="add_right">
+          <view class="add_right_label">
+            {{sexList[sex]}}
+          </view>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class="add_list">
+    <view class="add_item">
+      <view class="add_left">城市</view>
+      <view class="add_right">
+        日照市
+      </view>
+    </view>
+    <view class="add_item">
+      <view class="add_left">联系电话</view>
+      <view class="add_right">
+        <input type='number' maxlength='11' value='{{userphone}}'></input>
+      </view>
+    </view>
+  </view>
+  <view class="add_btn" bindtap='go2Edit'>
+    保存
+  </view>
+</view>

@@ -1,0 +1,74 @@
+<view class="container">
+  <view class="kehu_top_search">
+    <view class="kehu_top_search_label">搜索</view>
+    <view class="kehu_top_search_input">
+      <input  />
+    </view>
+    <view class="kehu_top_search_shaixuan">
+      <view class="shaixuan_label">筛选</view>
+      <view class="shaixuan_btn">
+        <image src="/img/btn_shaixuan.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="kehu_type">
+    <view class="kehu_type1 selected">意向客户</view>
+    <view class="kehu_type2">签约客户</view>
+  </view>
+  <view class="kehu_shaixuan_type">
+    <view class="kehu_shaixuan_item selected">全部</view>
+    <view class="kehu_shaixuan_item">未检查</view>
+    <view class="kehu_shaixuan_item">已预约</view>
+    <view class="kehu_shaixuan_item">待复诊</view>
+  </view>
+  <view class="kehu_list">
+    <view class="kehu_item" bindtap='go2kehuDetail'>
+      <view class='kehu_item_photo'>
+        <image src='/img/family_doctor_photo.png'></image>
+      </view>
+      <view class='kehu_item_info'>
+        <view class='kehu_item_info_name'>姓名：李晓明</view>
+        <view class='kehu_item_info_status'>尚未检查，病发率高</view>
+      </view>
+      <view class='kehu_item_dir'>
+        距离2.8km
+      </view>
+    </view>
+     <view class="kehu_item" bindtap='go2kehuDetail'>
+      <view class='kehu_item_photo'>
+        <image src='/img/family_doctor_photo.png'></image>
+      </view>
+      <view class='kehu_item_info'>
+        <view class='kehu_item_info_name'>姓名：李晓明</view>
+        <view class='kehu_item_info_status'>尚未检查，病发率高</view>
+      </view>
+      <view class='kehu_item_dir'>
+        距离2.8km
+      </view>
+    </view>
+     <view class="kehu_item" bindtap='go2kehuDetail'>
+      <view class='kehu_item_photo'>
+        <image src='/img/family_doctor_photo.png'></image>
+      </view>
+      <view class='kehu_item_info'>
+        <view class='kehu_item_info_name'>姓名：李晓明</view>
+        <view class='kehu_item_info_status'>尚未检查，病发率高</view>
+      </view>
+      <view class='kehu_item_dir'>
+        距离2.8km
+      </view>
+    </view>
+     <view class="kehu_item" bindtap='go2kehuDetail'>
+      <view class='kehu_item_photo'>
+        <image src='/img/family_doctor_photo.png'></image>
+      </view>
+      <view class='kehu_item_info'>
+        <view class='kehu_item_info_name'>姓名：李晓明</view>
+        <view class='kehu_item_info_status'>尚未检查，病发率高</view>
+      </view>
+      <view class='kehu_item_dir'>
+        距离2.8km
+      </view>
+    </view>
+  </view>
+</view>

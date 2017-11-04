@@ -1,0 +1,9 @@
+/* pages/count/morecount.wxss */
+canvas{
+  width:640rpx;
+  height:420rpx;
+  position:absolute;
+  top:0;
+  left:50%;
+  margin-left:-320rpx;
+}

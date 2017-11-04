@@ -1,115 +1,47 @@
 <view class="container">
   <view class="family_detail_top">
-    <view class="top_blue"></view>
-    <view class="top_title">尚未检查，病发率高</view>
-    <view class="healthy">
-      <image src="/img/family_healthy.png"></image>
+    <view class="top_name">
+      {{familyName}}
     </view>
-    <view class="family_detail_box">
-      <view class="family_detail_photo">
-        <image src="/img/family_doctor_photo.png"></image>
+    <view class="top_title">
+      {{familyStatus=="0"?'尚未检查 病发率高':familyStatus=='1'?'尚有口腔问题未解决':'口腔状态非常好'}}
+    </view>
+    <view class="healthy">
+      <view class='healthy_img_box'>
+        <image  mode='aspectFill' src="{{familyPhoto?basePath+familyPhoto:'/img/default_photo.png'}}"></image>
       </view>
+    </view>
+    <view class="family_detail_box" bindtap='go2edit'>
       <view class="family_detail_item">
         <view class="label">姓名</view>
-        <view class="info">王小明</view>
+        <view class="info">{{familyName}}</view>
       </view>
       <view class="family_detail_item">
         <view class="label">年龄</view>
-        <view class="info">18岁</view>
+        <view class="info">{{familyAge}}岁</view>
       </view>
       <view class="family_detail_item">
         <view class="label">性别</view>
-        <view class="info">男</view>
+        <view class="info">{{familySex=="1"?"男":"女"}}</view>
       </view>
       <view class="family_detail_item">
         <view class="label">地区</view>
-        <view class="info">山东日照</view>
+        <view class="info">{{familyCity}}</view>
       </view>
       <view class="family_detail_enter">
         <image src="/img/btn_enter.png"></image>
       </view>
     </view>
   </view>
-  <view class="panel-tab">
-      <view class="view-item" style="padding-left:70rpx;" bindtap="go2HealthyDesc">
-        <view class="btn_shoucang">
-          <image src="/img/btn_shoucang.png"></image>
-        </view>
-        全民口腔健康解决方案
-        <view class="btn-enter">
-          <image src="/img/btn_enter.png"></image>
-        </view>
-      </view>
-      <view class="view-item-body">
-        <view class="project_list">
-          <view class="project_item">
-            <view class="project_item_title">免费检查</view>
-            <view class="project_item_progress">
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
-            </view>
-            <view class="project_item_tip">已完成0/4</view>
-          </view>
-          <view class="project_item">
-            <view class="project_item_title">免费洗牙</view>
-            <view class="project_item_progress">
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
-            </view>
-            <view class="project_item_tip">需购买特权卡</view>
-          </view>
-          <view class="project_item">
-            <view class="project_item_title">免费拔牙</view>
-            <view class="project_item_progress">
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
-              <view class="progress_item"></view>
-            </view>
-            <view class="project_item_tip">需购买特权卡</view>
-          </view>
-        </view>
-      </view>
-  </view>
+  
 
-  <view class="panel-tab">
-    <view class="view-item">
-      医嘱消息
-      <view class="btn-enter">
-        <image src="/img/btn_enter.png"></image>
-      </view>
-    </view>
-    <view class="view-item-body">
-      <view class="message_list">
-        <view class="message_item" bindtap="go2DoctorMessage">
-          <view class="message_btn_sound">
-            <image src="/img/btn_sound.png"></image>
-          </view>
-          <view class="message_title">系统消息</view>
-          <view class="message_info">您收到一条家庭牙医发来的消息，点击查看</view>
-          <view class="message_date">2017年6月22日</view>
-        </view>
-        <view class="message_item" bindtap="go2DoctorMessage">
-          <view class="message_btn_sound">
-            <image src="/img/btn_sound.png"></image>
-          </view>
-          <view class="message_title">系统消息</view>
-          <view class="message_info">您收到一条家庭牙医发来的消息，点击查看</view>
-          <view class="message_date">2017年6月22日</view>
-        </view>
-      </view>
-    </view>
-  </view>
+  
   <view class="family_detail_btns">
-    <view class="family_detail_left_btn">
+    <view class="family_detail_left_btn" bindtap='go2caseHistory'>
       历史病例
     </view>
-    <view class="family_detail_right_btn">
-      立刻预约
-    </view>
+    <!-- <view class="family_detail_right_btn" bindtap='go2question'>
+      发起问诊
+    </view> -->
   </view>
 </view>

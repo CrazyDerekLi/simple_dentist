@@ -1,0 +1,125 @@
+/* pages/healthy/toothedit.wxss */
+.container{
+  background:#f8f8f8;
+}
+.tooth_list{
+  margin-top:20rpx;
+}
+.tooth_item{
+  margin-bottom:20rpx;
+  height:160rpx;
+  background:#fff;
+  position:relative;
+}
+.tooth_item_label{
+  position:absolute;
+  left:30rpx;
+  width:100rpx;
+  height:160rpx;
+  line-height: 160rpx;
+  font-size:32rpx;
+  color:#666;
+  text-align: center;
+}
+.tooth_item_box{
+  position:absolute;
+  left:130rpx;
+  right:40rpx;
+  top:40rpx;
+  bottom:40rpx;
+  height:80rpx;
+  width:auto;
+  border:1rpx solid #c6c6c6;
+  line-height: 80rpx;
+}
+.tooth_item_single{
+  position:relative;
+  width:12.5%;
+  height:80rpx;
+  border-left:1rpx solid #c6c6c6;
+  margin-left:-1rpx;
+  text-align: center;
+  float:left;
+  color:#b3b3b3;
+  font-size:30rpx;
+  line-height:80rpx;
+  z-index: 104;
+}
+.tooth_item_single.selected{
+  background:#c6c6c6;
+  color:#fff;
+  font-weight: bold;
+  font-size:60rpx;
+  height:120rpx;
+  margin-top:-20rpx;
+  line-height: 120rpx;
+  z-index:105;
+  border-left:none;
+  margin-left:0;
+}
+.tooth_item_single.selectedType{
+  color:#fff;
+}
+.tooth_bottom_btn{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  height:100rpx;
+  line-height: 100rpx;
+  background:#77daa1;
+  color:#fff;
+  font-size:30rpx;
+  text-align: center;
+}
+.tooth_type_picker{
+  position:fixed;
+  left:0;
+  right:0;
+  width:auto;
+  bottom:0;
+  height:500rpx;
+  background: #f8f8f8;
+  border-top:1rpx solid #f2f2f2;
+  box-shadow: 0 0 30rpx #666;
+}
+.tooth_type_picker_container{
+  background:#f8f8f8;
+  position:absolute;
+  left:0;
+  right:0;
+  width:auto;
+  top:100rpx;
+  height:auto;
+  bottom:100rpx;
+  z-index: 102;
+}
+.btn_cancel{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  width:auto;
+  height:100rpx;
+  line-height: 100rpx;
+  background:#77daa1;
+  color:#fff;
+  font-size:30rpx;
+  text-align: center;
+  z-index:105;
+}
+.tooth_type_picker_item{
+  font-size:32rpx;
+  text-align: center;
+  color:#fff;
+  line-height: 40px;
+  border:none;
+}
+.tooth_type_title{
+  height:100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color:#fff;
+  background: #c6c6c6;
+  font-size:36rpx;
+}

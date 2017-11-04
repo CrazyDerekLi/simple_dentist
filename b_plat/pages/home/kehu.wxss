@@ -1,0 +1,156 @@
+.container{
+  background: #f8f8f8;
+}
+.kehu_top_search{
+  background:#f8f8f8;
+  height:90rpx;
+  position: relative;
+}
+.kehu_top_search_label{
+  position:absolute;
+  left:10rpx;
+  top:0;
+  height:90rpx;
+  line-height: 90rpx;
+  width:100rpx;
+  color:#a0a0a0;
+  font-size:28rpx;
+  text-align: center;
+}
+.kehu_top_search_input{
+  position:absolute;
+  left:100rpx;
+  right:140rpx;
+  top:15rpx;
+  height:60rpx;
+  line-height: 60rpx;
+  background:#fff;
+  border-radius: 60rpx;
+}
+.kehu_top_search_input input{
+  position:absolute;
+  left:30rpx;
+  right:30rpx;
+  top:5rpx;
+  height:50rpx;
+  line-height: 50rpx;
+  font-size:28rpx;
+  color:#a0a0a0;
+}
+.kehu_top_search_shaixuan{
+  position:absolute;
+  right:0;
+  top:0;
+  height:90rpx;
+  line-height: 90rpx;
+  width:140rpx;
+  color:#a0a0a0;
+  font-size:28rpx;
+}
+.shaixuan_label{
+  position:absolute;
+  left:10rpx;
+  top:0;
+  width:70rpx;
+  text-align: center;
+}
+.shaixuan_btn{
+  position:absolute;
+  left:80rpx;
+  top:0;
+  height:90rpx;
+}
+.shaixuan_btn image{
+  position:absolute;
+  left:0;
+  width:30rpx;
+  height:30rpx;
+  top:30rpx;
+}
+.kehu_type{
+  height:100rpx;
+  line-height: 100rpx;
+  background:#fff;
+  border-bottom:1rpx solid #f2f2f2;
+  border-top:1rpx solid #f2f2f2;
+}
+.kehu_type1,.kehu_type2{
+  width:50%;
+  height:90rpx;
+  float:left;
+  text-align: center;
+  color:#a0a0a0;
+  font-size:30rpx;
+}
+.kehu_type2{
+  border-left:1rpx solid #f2f2f2;
+  margin-left:-1rpx;
+}
+
+.kehu_shaixuan_type{
+  height:90rpx;
+  line-height: 90rpx;
+  background:#fff;
+  border-bottom:1rpx solid #f2f2f2;
+}
+.kehu_shaixuan_item{
+  width:25%;
+  height:90rpx;
+  float:left;
+  text-align: center;
+  color:#a0a0a0;
+  font-size:30rpx;
+  border-left:1rpx solid #f2f2f2;
+  margin-left:-1rpx;
+}
+.selected{
+  color:#74bee1;
+}
+.kehu_list{
+  margin-top:20rpx;
+  border-top:1rpx solid #f2f2f2;
+}
+.kehu_item{
+  height:90rpx;
+  padding:30rpx;
+  background: #fff;
+  border-bottom:1rpx solid #f2f2f2;
+  position:relative;
+}
+.kehu_item_photo{
+  width:110rpx;
+  height:110rpx;
+  position:absolute;
+  left:30rpx;
+  top:20rpx;
+}
+.kehu_item_photo image{
+  width:90rpx;
+  height:90rpx;
+  position:absolute;
+  left:10rpx;
+  top:10rpx;
+}
+.kehu_item_dir{
+  position:absolute;
+  right:0;
+  top:20rpx;
+  padding-right:30rpx;
+  line-height:110rpx;
+  height:110rpx;
+  font-size:28rpx;
+  color:#ccc;
+}
+.kehu_item_info{
+  margin-left:130rpx;
+}
+.kehu_item_info_name{
+  line-height:50rpx;
+  font-size:32rpx;
+  color:#a0a0a0;
+}
+.kehu_item_info_status{
+  line-height: 30rpx;
+  font-size:28rpx;
+  color:#ccc;
+}

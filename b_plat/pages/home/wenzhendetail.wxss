@@ -1,0 +1,116 @@
+.container{
+  background:#f8f8f8;
+  padding-top:20rpx;
+  padding-bottom:100rpx;
+}
+.wenzhen_item{
+  border-bottom:1rpx solid #f2f2f2;
+  background:#fff;
+  margin-bottom:20rpx;
+  border-top:1rpx solid #f2f2f2;
+}
+.wenzhen_item_title{
+  height:90rpx;
+  line-height: 90rpx;
+  position:relative;
+  font-size:28rpx;
+  color:#ccc;
+  padding:0 30rpx;
+}
+.wenzhen_item_title_info{
+  height:90rpx;
+  line-height: 90rpx;
+  position:relative;
+  float:right;
+  font-size:28rpx;
+  color:#7d7b80;
+}
+
+.wenzhen_item_body{
+  min-height:150rpx;
+  line-height:50rpx;
+  padding:30rpx;
+  font-size:28rpx;
+  color:#7e7c81;
+  border-top:1rpx solid #f2f2f2;
+}
+.wenzhen_item_title_enter{
+  position:absolute;
+  right:30rpx;
+  top:0;
+  bottom:0;
+}
+.wenzhen_item_title_enter image{
+  position:absolute;
+  width:15rpx;
+  height:30rpx;
+  top:30rpx;
+  right:0;
+}
+.wenzhen_bottom_btns{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  height:100rpx;
+  border-top:1rpx solid #f2f2f2;
+  border-bottom:1rpx solid #f2f2f2;
+}
+.wenzhen_bottom_left_btn{
+  height:100rpx;
+  width:50%;
+  float:left;
+  line-height: 100rpx;
+  background:#fff;
+  color:#666;
+  text-align: center;
+  font-size:32rpx;
+}
+.wenzhen_bottom_right_btn{
+  height:100rpx;
+  width:50%;
+  float:left;
+  border-left:1rpx solid #f2f2f2;
+  margin-left:-1rpx;
+  line-height: 100rpx;
+  background: #77daa1;
+  color:#fff;
+  text-align: center;
+  font-size:32rpx;
+}
+.phone{
+  position:absolute;
+  right:0;
+  top:0;
+}
+.phone image{
+  width:50rpx;
+  height:50rpx;
+  top:20rpx;
+  right:0;
+  position:absolute;
+}
+.wenzhen_item_title_info.phone_title{
+  padding-right:60rpx;
+  position:relative;
+}
+.wenzhen_textarea{
+  position:relative;
+  height:220rpx;
+}
+.wenzhen_textarea textarea{
+  position:absolute;
+  left:20rpx;
+  top:0;
+  bottom:20rpx;
+  right:20rpx;
+  display: block;
+  height:auto;
+  width:auto;
+  background: #fff;
+  color:#7e7c81;
+  font-size:30rpx;
+  line-height: 32rpx;
+  padding:20rpx;
+  border:1rpx solid #f2f2f2;
+}

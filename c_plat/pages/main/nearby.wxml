@@ -9,80 +9,30 @@
     </view>
   </view>
   <view class="doctor_list show_list{{doctor?' selected':''}}">
-    <view class="doctor_item" bindtap="go2Doctor">
-      <view class="doctor_photo"></view>
-      <view class="doctor_name">李天德<view class="type_zhuan">专</view><view class="juli">距离2.8km</view></view>
+    <view class="doctor_item" bindtap="go2Doctor" wx:for="{{doctorList}}" wx:for-index="idx" wx:for-item="doctor" data-index="{{idx}}"  wx:key="{{doctor.duser_id}}">
+      <view class="doctor_photo">
+        <image src='{{doctor.pic_path?basePath+doctor.pic_path:"/img/default_photo.png"}}'></image>
+      </view>
+      <view class="doctor_name">{{doctor.duser_name||''}}<view class="type_zhuan">专</view><view class="juli">距离{{doctor.len||''}}km</view></view>
       <view class="star">
         <image src="/img/star_1.png"></image>
         <image src="/img/star_1.png"></image>
         <image src="/img/star_1.png"></image>
         <image src="/img/star_1.png"></image>
         <image src="/img/star_0.png"></image>
-        <view class="yuyue">已有346人预约</view>
+        <view class="yuyue">已有{{doctor.duser_praise}}人预约</view>
       </view>
-      <view class="doctor_info">日照口腔医院主治医师</view>
-    </view>
-    <view class="doctor_item" bindtap="go2Doctor">
-      <view class="doctor_photo"></view>
-      <view class="doctor_name">李天德<view class="type_zhuan">专</view><view class="juli">距离2.8km</view></view>
-      <view class="star">
-        <image src="/img/star_1.png"></image>
-        <image src="/img/star_1.png"></image>
-        <image src="/img/star_1.png"></image>
-        <image src="/img/star_1.png"></image>
-        <image src="/img/star_0.png"></image>
-        <view class="yuyue">已有346人预约</view>
-      </view>
-      <view class="doctor_info">日照口腔医院主治医师</view>
-    </view>
-    <view class="doctor_item" bindtap="go2Doctor">
-      <view class="doctor_photo"></view>
-      <view class="doctor_name">李天德<view class="type_zhuan">专</view><view class="juli">距离2.8km</view></view>
-      <view class="star">
-        <image src="/img/star_1.png"></image>
-        <image src="/img/star_1.png"></image>
-        <image src="/img/star_1.png"></image>
-        <image src="/img/star_1.png"></image>
-        <image src="/img/star_0.png"></image>
-        <view class="yuyue">已有346人预约</view>
-      </view>
-      <view class="doctor_info">日照口腔医院主治医师</view>
-    </view>
-    <view class="doctor_item" bindtap="go2Doctor">
-      <view class="doctor_photo"></view>
-      <view class="doctor_name">李天德<view class="type_zhuan">专</view><view class="juli">距离2.8km</view></view>
-      <view class="star">
-        <image src="/img/star_1.png"></image>
-        <image src="/img/star_1.png"></image>
-        <image src="/img/star_1.png"></image>
-        <image src="/img/star_1.png"></image>
-        <image src="/img/star_0.png"></image>
-        <view class="yuyue">已有346人预约</view>
-      </view>
-      <view class="doctor_info">日照口腔医院主治医师</view>
-    </view>
-    <view class="doctor_item" bindtap="go2Doctor">
-      <view class="doctor_photo"></view>
-      <view class="doctor_name">李天德<view class="type_zhuan">专</view><view class="juli">距离2.8km</view></view>
-      <view class="star">
-        <image src="/img/star_1.png"></image>
-        <image src="/img/star_1.png"></image>
-        <image src="/img/star_1.png"></image>
-        <image src="/img/star_1.png"></image>
-        <image src="/img/star_0.png"></image>
-        <view class="yuyue">已有346人预约</view>
-      </view>
-      <view class="doctor_info">日照口腔医院主治医师</view>
+      <view class="doctor_info">{{doctor.hos_name}}{{doctor.duser_job}}</view>
     </view>
   </view>
   <view class="show_list{{doctor?'':' selected'}}">
     <view  class="hospital_item" bindtap="go2Hospital" wx:for="{{hospitalList}}" wx:for-index="idx" wx:for-item="hospital" data-index="{{idx}}"  wx:key="{{hospital.id}}">
         <view class="image">
-          <image src="{{hospital.icon}}"></image>
+          <image src='{{hopital.pic_path?basePath+hopital.pic_path:"/img/default_photo.png"}}'></image>
         </view>
         <view class="hospital_info">
           <view class="name">
-            {{hospital.title}}
+            {{hospital.hos_name}}
           </view>
           <view class="star">
             <image src="/img/star_1.png"></image>
@@ -90,16 +40,16 @@
             <image src="/img/star_1.png"></image>
             <image src="/img/star_1.png"></image>
             <image src="/img/star_0.png"></image>
-            <view class="yuyue">已有{{hospital.person}}人预约</view>
-            <view class="juli">距离{{hospital.distance}} </view>
+            <view class="yuyue">已有{{hospital.hos_selectnum}}人预约</view>
+            <view class="juli">距离{{hospital.len}}km </view>
           </view>
           <view class="ka">
             <image src="/img/ka.png"></image>
-            无忧卡增值服务
+            {{hospital.hos_card}}
           </view>
           <view class="quan">
             <image src="/img/quan.png"></image>
-            满1000元优惠200元
+            {{hospital.hos_coupon}}
           </view>
         </view>
       </view>

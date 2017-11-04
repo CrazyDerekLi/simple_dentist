@@ -1,14 +1,37 @@
 // pages/my/familydoctor.js
+var util = require('../../utils/util.js');
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    basePath:'',
+    doctorName:'',
+    doctorHospital:'',
+    doctorStatus:'',
+    doctorPhoto:'',
+    userList:[]
   },
-  go2detail:function(){
-    var url = "/pages/my/familydetail";
+  go2detail:function(e){
+    var index = e.currentTarget.dataset.index;
+    var o = this.data.userList[index];
+    var url = "/pages/my/familydetail?familyid=" + o.FUSER_ID;
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+  },
+  go2edit:function(){
+    var url = "/pages/main/nearby";
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+  },
+  go2add:function(){
+    var url = "/pages/my/addfamily";
     wx.navigateTo({
       url: url,
       success: function () { }
@@ -18,7 +41,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    
+    
   },
 
   /**
@@ -32,7 +56,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    this.setData({
+      basePath: util.getPath()
+    });
+    this.getFamilyData();
+    this.getDoctorData();
   },
 
   /**
@@ -68,5 +96,35 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  getDoctorData:function(){
+    var _this = this;
+    util.getUserInfo(function (info) {
+      var url = util.getPath() + 'user/getfamilydocinfo?userid=' + info.CUS_ID;
+      app.ajax({ url: url }, function (res) {
+        var _data = res.data.data;
+        console.log(_data);
+        _this.setData({
+          doctorName:_data.duser_name||'',
+          doctorHospital:_data.hos_name||'',
+          doctorStatus:_data.duser_statusvarchar,
+          doctorPhoto: _data.pic_path||''
+        });
+      });
+    });
+  },
+  getFamilyData: function () {
+    var _this = this;
+    util.getUserInfo(function (info) {
+      var url = util.getPath() + 'user/getuserfamily?userid=' + info.CUS_ID;
+      app.ajax({ url: url }, function (res) {
+        var _data = res.data.data;
+        _this.setData({
+          userList: _data
+        });
+      });
+    });
+
+
   }
 })

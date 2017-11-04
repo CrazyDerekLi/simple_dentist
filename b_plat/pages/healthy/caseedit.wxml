@@ -1,0 +1,76 @@
+<view class="container">
+  <view class="mouth_top">
+    <image src="/img/mouth_all.png"></image>
+  </view>
+  <view class="mouth_list">
+    <view class="mouth_item left"></view>
+    <view class="mouth_item">
+      <image src="/img/mouth_blue1.png"></image>
+      蛀牙
+    </view>
+    <view class="mouth_item">
+      <image src="/img/mouth_green1.png"></image>
+      炎症
+    </view>
+    <view class="mouth_item">
+      <image src="/img/mouth_gray.png"></image>
+      缺牙
+    </view>
+    <view class="mouth_item">
+      <image src="/img/mouth_orange.png"></image>
+      有病
+    </view>
+    <view class="mouth_item">
+      <image src="/img/mouth_red.png"></image>
+      缺牙
+    </view>
+    <view class="mouth_item">
+      <image src="/img/mouth_green2.png"></image>
+      有病
+    </view>
+    <view class="mouth_item">
+      <image src="/img/mouth_blue2.png"></image>
+      有病
+    </view>
+    <view class="mouth_item right"></view>
+  </view>
+  <view class="mouth_detail_list">
+    <view class="mouth_detail_item">
+      <view class="mouth_detail_item_left">检查诊断</view>
+      <view class="mouth_detail_item_right">按时检查,防患未然</view>
+    </view>
+    <view class="mouth_detail_info">
+      正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+    </view>
+  </view>
+  <view class="mouth_detail_list">
+    <view class="mouth_detail_item">
+      <view class="mouth_detail_item_left">治疗计划</view>
+      <view class="mouth_detail_item_right">
+        <image class="enter" src="/img/btn_enter.png"></image>
+      </view>
+    </view>
+    <view class="mouth_detail_info">
+      正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+    </view>
+  </view>
+  <view class="mouth_detail_list">
+    <view class="mouth_detail_item">
+      <view class="mouth_detail_item_left">主治医师</view>
+      <view class="mouth_detail_item_right">
+        李医生
+      </view>
+      <view class="doctor_photo">
+        <image src="/img/family_doctor_photo.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="mouth_detail_list">
+    <view class="mouth_detail_item">
+      <view class="mouth_detail_item_left">诊疗费用：879.00元</view>
+    </view>
+    <view class="mouth_detail_btn">
+      确认支付
+    </view>
+  </view>
+</view>

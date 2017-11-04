@@ -1,44 +1,37 @@
 <view class="container">
   <view class="familydoctor_top">
     <view class="familydoctor_photo">
-      <image src="/img/family_doctor_photo.png"></image>
+      <image src="{{doctorPhoto?basePath+doctorPhoto:'/img/default_photo.png'}}"></image>
     </view>
     <view class="familydoctor_name">
-      李医生
-      <view class="btn_bao">保</view>
+      {{doctorName?doctorName:"未添加家庭医生"}}
+      <view class="btn_satus" style="display:{{doctorName?'inline-block':'none'}}">{{doctorStatus=="0"?"空闲中":doctorStatus=="1"?"忙碌":"离开"}}</view>
     </view>
     <view class="familydoctor_position">
-      日照市口腔医院主治医生
+      {{doctorHospital}}
     </view>
-    <view class="familydoctor_btn">
-      更换
+    <view class="familydoctor_btn" style="display:{{doctorName?'block':'none'}}">
+      解雇
     </view>
   </view>
   <view class="familydoctor_title">
     我的家庭成员
   </view>
   <view class="familydoctor_list">
-    <view class="familydoctor_item" bindtap="go2detail">
+    <view class='familydoctor_item' data-index='{{idx}}' wx:for="{{userList}}" wx:for-index="idx" wx:key="{{idx}}" bindtap='go2detail'>
       <view class="familydoctor_item_photo">
-        <image src="/img/family_doctor_photo.png"></image>
+        <view class='familydoctor_item_photo_box'>
+          <image src="{{item.PIC_PATH?basePath+item.PIC_PATH:'/img/default_photo.png'}}"></image>
+        </view>
       </view>
-      王小明
+       {{item.FUSER_NAME}}
       <view class="familydoctor_item_tip">
-        尚未检查，病发率高
-      </view>
-    </view>
-    <view class="familydoctor_item" bindtap="go2detail">
-      <view class="familydoctor_item_photo">
-        <image src="/img/family_doctor_photo.png"></image>
-      </view>
-      王小明
-      <view class="familydoctor_item_tip">
-        尚未检查，病发率高
+         {{item.FUSER_STATUS=="0"?'尚未检查 病发率高':item.FUSER_STATUS==FUSER_STATUS?'尚有口腔问题未解决':'口腔状态非常好'}}
       </view>
     </view>
     <view class="familydoctor_item plus" bindtap="go2add">
       <view class="familydoctor_plus">
-        <image src="/img/family_doctor_plus.png"></image>
+        <image mode='aspectFill' src="/img/family_doctor_plus.png"></image>
       </view>
       <view class="familydoctor_add">添加新成员</view>
     </view>

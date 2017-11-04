@@ -1,49 +1,12 @@
+var util = require('../../utils/util.js');
+const app = getApp()
+
 Page({
   data: {
+    basePath:'',
     doctor: true,
-    hospitalList: [
-      {
-        icon: "https://dingdongyy.net/hospital-webapp/xcx/product.png",
-        id: "1",
-        title: "日照市口腔医院",
-        address: "山东省日照市东港区",
-        phone: "15863149556",
-        person: 346,
-        latitude: 0,
-        longitude: 0,
-        distance: "2.8km"
-      }, {
-        icon: "https://dingdongyy.net/hospital-webapp/xcx/product.png",
-        id: "2",
-        title: "口腔医学院",
-        address: "山东省日照市东港区",
-        phone: "0531-2221122",
-        person: 26,
-        latitude: 0,
-        longitude: 0,
-        distance: "2.9km"
-      }, {
-        icon: "https://dingdongyy.net/hospital-webapp/xcx/product.png",
-        id: "1",
-        title: "日照市口腔医院",
-        address: "山东省日照市东港区",
-        phone: "15863149556",
-        person: 346,
-        latitude: 0,
-        longitude: 0,
-        distance: "2.8km"
-      }, {
-        icon: "https://dingdongyy.net/hospital-webapp/xcx/product.png",
-        id: "2",
-        title: "口腔医学院",
-        address: "山东省日照市东港区",
-        phone: "0531-2221122",
-        person: 26,
-        latitude: 0,
-        longitude: 0,
-        distance: "2.9km"
-      }
-    ]
+    hospitalList: [],
+    doctorList: []
   },
   closeMsg: function () {
     var that = this;
@@ -57,15 +20,19 @@ Page({
       doctor: doctor
     });
   },
-  go2Doctor: function () {
-    var url = "/pages/hospital/doctor";
+  go2Doctor: function (e) {
+    var index = e.currentTarget.dataset.index;
+    var doctor = this.data.doctorList[index];
+    var url = "/pages/hospital/doctor?doctorid="+doctor.duser_id;
     wx.navigateTo({
       url: url,
       success: function () { }
     });
   },
-  go2Hospital: function () {
-    var url = "/pages/hospital/hospital";
+  go2Hospital: function (e) {
+    var index = e.currentTarget.dataset.index;
+    var hospital = this.data.hospitalList[index];
+    var url = "/pages/hospital/hospital?hospitalid="+hospital.hos_id;
     wx.navigateTo({
       url: url,
       success: function () { }
@@ -89,6 +56,57 @@ Page({
   },
   onShow: function () {
     // 页面显示
+    this.setData({
+      basePath: util.getPath()
+    });
+    this.getDList();
+    this.getOList();
+  },
+  getDList:function(){
+    var _this = this;
+    wx.getLocation({
+      success: function (res) {
+        var latitude = res.latitude
+        var longitude = res.longitude
+        var url = util.getPath() + 'doctor/getdoctorInfo';
+        var params = {
+          longitade: longitude,
+          latitude: latitude,
+          raidus: 10000
+        };
+        app.ajax({ url: url, data: params }, function (res) {
+          var _data = res.data.data;
+          console.log(_data);
+          _this.setData({
+            doctorList: _data
+          });
+        });
+      }
+    });
+  },
+  getOList:function(){
+    var _this = this;
+    wx.getLocation({
+      success: function (res) {
+        var latitude = res.latitude
+        var longitude = res.longitude
+        var url = util.getPath() + 'hospital/gethospitalInfo';
+        var params = {
+          longitade: longitude,
+          latitude: latitude,
+          raidus:10000
+        };
+        app.ajax({ url: url ,data:params}, function (res) {
+          var _data = res.data.data;
+          console.log(_data);
+          _this.setData({
+            hospitalList: _data
+          });
+        });
+      }
+    });
+
+    
   },
   onHide: function () {
     // 页面隐藏

@@ -1,0 +1,55 @@
+<view class="container">
+  <view class="lunbo">
+    <view style="position:relative;height:100%;background:#74bee3;">
+      <view class="status_box">
+        <view class="status_item">
+          <image src="/img/family_doctor_photo.png"></image>
+        </view>
+        <view class="cir_bg"></view>
+      </view>
+      <view class="healthy_title">
+        李医生
+      </view>
+      <view class="doctor_status_btn">
+        空闲中
+      </view>
+    </view>
+  </view>
+  <view class="menu_list">
+    <view class="menu_item" bindtap="go2wenzhen">
+      <view class="menu_count" style="background:#e88590">
+        <image src='/img/img_wenzhen.png'></image>
+      </view>
+      <view class="menu_title">
+        问诊管理
+      </view>
+    </view>
+    <view class="menu_item" bindtap="go2yuyue">
+      <view class="menu_count" style="background:#eeab5d">
+        <image src='/img/img_yuyue.png'></image>
+      </view>
+      <view class="menu_title">
+        预约管理
+      </view>
+    </view>
+    <view class="menu_item" bindtap="go2jieda">
+      <view class="menu_count" style="background:#72b6d9">
+        <image src='/img/img_jieda.png'></image>
+      </view>
+      <view class="menu_title">
+        解答管理
+      </view>
+    </view>
+    <view class="menu_item" bindtap="go2kehu">
+      <view class="menu_count" style="background:#7bc498">
+        <image src='/img/img_kehu.png'></image>
+      </view>
+      <view class="menu_title">
+        客户管理
+      </view>
+    </view>
+    <!-- <view class="menu_item">
+    </view> -->
+    <view class="clear"></view>
+  </view>
+</view>

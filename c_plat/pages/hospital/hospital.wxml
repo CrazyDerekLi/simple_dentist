@@ -16,7 +16,11 @@
       机构简介
     </view>
     <view class="accordion_body">
-      组织机构简介，组织机构简介，组织机构简介，组织机构简介，组织机构简介，组织机构简介，组织机构简介，组织机构简介，组织机构简介。
+      <view wx:for="{{jgjj}}" 
+          wx:for-index="idx" 
+          wx:key="idx">
+          {{item}}
+        </view>
     </view>
   </view>
   <view class="accordion_box">
@@ -24,15 +28,15 @@
     荣誉资质
   </view>
   <view class="accordion_body">
-    <view class="ryzz_img_list">
+    <!-- <view class="ryzz_img_list">
       <view class="ryzz_img">
         <image src="https://dingdongyy.net/hospital-webapp/xcx/ryzz.png"></image>
       </view>
       <view class="ryzz_img">
         <image src="https://dingdongyy.net/hospital-webapp/xcx/ryzz.png"></image>
       </view>
-    </view>
-    <view class="ryzz_info_list">
+    </view> -->
+    <!-- <view class="ryzz_info_list">
       <view class="ryzz_info_item">
         <image src="/img/ryzz_star.png"></image>
         2016荣获中国十佳口腔门诊
@@ -45,7 +49,7 @@
         <image src="/img/ryzz_star.png"></image>
         2017年最佳牙科诊所
       </view>
-    </view>
+    </view> -->
   </view>
 </view>
   <view class="accordion_box selected">
@@ -54,23 +58,15 @@
     </view>
     <view class="accordion_body">
       <view class="zjtd_list">
-        <view class="zjtd_item">
-          <image src="{{userInfo.avatarUrl}}"></image>
-          王天德
-        </view>
-        <view class="zjtd_item">
-          <image src="{{userInfo.avatarUrl}}"></image>
-          王天德
-        </view>
-        <view class="zjtd_item">
-          <image src="{{userInfo.avatarUrl}}"></image>
-          王天德
+        <view class="zjtd_item" bindtap="go2Doctor" wx:for="{{hospitalInfo.HOS_EXPERTS}}"  wx:for-index="idx" wx:for-item="doctor" data-index="{{idx}}"  wx:key="{{doctor.duser_id}}">
+          <image src='{{doctor.userpic_path?basePath+doctor.userpic_path:"/img/default_photo.png"}}'></image>
+          {{doctor.duser_name}}
         </view>
       </view>
     </view>
   </view>
   <view class="hospital_btns">
-    <view class="hospital_btn">
+    <view class="hospital_btn" bindtap='go2wenzhen'>
       马上问诊
     </view>
   </view>

@@ -1,0 +1,111 @@
+<view class="container">
+  <view class="mouth_top {{mouthEditShow?'edit':''}}"  bindtap='hideEdit' bindlongtap='showMouthEdit'>
+    <view class='mouth_status_box'>
+      <image class='mouth_bg' src="/img/mouth_all.png"></image>
+    </view>
+    <view class='mouth_edit_btn' bindtap='go2EditPage'>编辑状态</view>
+  </view>
+  <view class="mouth_list" bindtap='hideEdit'>
+    <view class="mouth_item left"></view>
+    <view class="mouth_item">
+      <image src="/img/mouth_blue1.png"></image>
+      蛀牙
+    </view>
+    <view class="mouth_item">
+      <image src="/img/mouth_green1.png"></image>
+      炎症
+    </view>
+    <view class="mouth_item">
+      <image src="/img/mouth_gray.png"></image>
+      缺牙
+    </view>
+    <view class="mouth_item">
+      <image src="/img/mouth_orange.png"></image>
+      有病
+    </view>
+    <view class="mouth_item">
+      <image src="/img/mouth_red.png"></image>
+      缺牙
+    </view>
+    <view class="mouth_item">
+      <image src="/img/mouth_green2.png"></image>
+      有病
+    </view>
+    <view class="mouth_item">
+      <image src="/img/mouth_blue2.png"></image>
+      有病
+    </view>
+    <view class="mouth_item right"></view>
+  </view>
+  <view class='mouth_info_list'>
+    <view class='mouth_user' bindtap='hideEdit'>
+      <view class='mouth_info_label'>当前用户</view>
+      <view class='mouth_info_body'>李晓明</view>
+    </view>
+    <view class='mouth_date' bindtap='showDatePicker'>
+      <view class='mouth_info_label'>选择时间</view>
+      <view class='mouth_info_body'>{{years[value[0]]}}-{{months[value[1]]}}-{{days[value[2]]}} 星期{{week}} {{ams[value[3]]}}午</view>
+    </view>
+  </view>
+  <view class="mouth_detail_list" bindtap='showJiancha'>
+    <view class="mouth_detail_item">
+      <view class="mouth_detail_item_left">检查诊断</view>
+      <view class="mouth_detail_item_right">（请输入检查诊断详情）</view>
+    </view>
+    <view class="mouth_detail_info">
+      <view wx:for='{{jianchaArray}}'> {{item}}</view>
+    </view>
+  </view>
+  <view class="mouth_detail_list" bindtap='showJihua'>
+    <view class="mouth_detail_item">
+      <view class="mouth_detail_item_left">治疗计划</view>
+      <view class="mouth_detail_item_right">
+        （请输入治疗计划）
+      </view>
+    </view>
+    <view class="mouth_detail_info">
+      <view wx:for='{{jihuaArray}}'> {{item}}</view>
+    </view>
+  </view>
+  <view class="mouth_detail_list">
+    <view class="mouth_detail_item" bindtap='showAmount'>
+      <view class="mouth_detail_item_left">诊疗费用：{{amount}} 元</view>
+    </view>
+    <view class="mouth_detail_btn" bindtap='saveAndGoBack'>
+      确认提交
+    </view>
+  </view>
+
+  
+
+
+</view>
+<view class='edit_box' style='display:{{jianchaShow?"block":"none"}}'>
+  <textarea bindinput='setJiancha' bindconfirm='hideEdit' maxlength="-1"></textarea>
+  <view class='edit_back_btn' bindtap='hideEdit'>返回</view>
+</view>
+<view class='edit_box' style='display:{{jihuaShow?"block":"none"}}'>
+  <textarea bindinput='setJihua' bindconfirm='hideEdit' maxlength="-1"></textarea>
+  <view class='edit_back_btn' bindtap='hideEdit'>返回</view>
+</view>
+<view class='edit_box' style='display:{{amountShow?"block":"none"}}'>
+  <input bindinput='setAmount' bindconfirm='hideEdit' value='{{amount}}' type='digit'></input>
+  <view class='edit_back_btn' bindtap='hideEdit'>返回</view>
+</view>
+<view class="date_picker" style="display:{{dateShow?'block':'none'}};" >
+  <picker-view indicator-style="height: 50px;" class="date_picker_container" value="{{value}}" bindchange="bindChange">
+    <picker-view-column>
+      <view class="date_picker_item" wx:for="{{years}}">{{item}}年</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view class="date_picker_item" wx:for="{{months}}">{{item}}月</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view class="date_picker_item" wx:for="{{days}}">{{item}}日</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view class="date_picker_item" wx:for="{{ams}}">{{item}}午</view>
+    </picker-view-column>
+  </picker-view>
+  <view class="btn_cancel" bindtap="hideEdit">返回</view>
+</view>

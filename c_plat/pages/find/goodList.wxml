@@ -1,0 +1,57 @@
+<view class="container">
+  <view class="lunbo">
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:for-index="idx" wx:key="{{idx}}">
+          <swiper-item>
+              <view style="position:relative;height:100%;">
+                  <image src="{{item}}" class="slide_image" style=""/>
+              </view>
+          </swiper-item>
+      </block>
+      </swiper>
+  </view>
+  <view class="goods_list">
+    <view class="good_item" bindtap="go2detail">
+      <view class="good_photo">
+        <view class="good_img">
+          <view class="good_xinpin">新品</view>
+          <image src=""></image>
+        </view>
+      </view>
+      <view class="good_title">飞利浦充电式电动牙刷</view>
+      <view class="good_context">充电式成人牙刷</view>
+      <view class="good_amount">¥358.00</view>
+    </view>
+    <view class="good_item" bindtap="go2detail">
+      <view class="good_photo">
+        <view class="good_img">
+          <image src=""></image>
+        </view>
+      </view>
+      <view class="good_title">飞利浦充电式电动牙刷</view>
+      <view class="good_context">充电式成人牙刷</view>
+      <view class="good_amount">¥358.00</view>
+    </view>
+    <view class="good_item" bindtap="go2detail">
+      <view class="good_photo">
+        <view class="good_img">
+          <image src=""></image>
+        </view>
+      </view>
+      <view class="good_title">飞利浦充电式电动牙刷</view>
+      <view class="good_context">充电式成人牙刷</view>
+      <view class="good_amount">¥358.00</view>
+    </view>
+    <view class="good_item" bindtap="go2detail">
+      <view class="good_photo">
+        <view class="good_img">
+          <image src=""></image>
+        </view>
+      </view>
+      <view class="good_title">飞利浦充电式电动牙刷</view>
+      <view class="good_context">充电式成人牙刷</view>
+      <view class="good_amount">¥358.00</view>
+    </view>
+  </view>
+</view>

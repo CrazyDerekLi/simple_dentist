@@ -1,0 +1,75 @@
+.container{
+  background:#f8f8f8;
+  padding-bottom:100rpx;
+}
+.add_list{
+  border-top:1rpx solid #efefef;
+  margin-bottom:20rpx;
+}
+.add_item{
+  line-height:100rpx;
+  height:100rpx;
+  border-bottom:1rpx solid #efefef;
+  position:relative;
+  background:#fff;
+}
+.add_item_photo,.add_item_photo .add_left{
+  height:180rpx;
+  line-height:180rpx;
+}
+.add_left{
+  height:100rpx;
+  line-height:100rpx;
+  float:left;
+  padding-left:40rpx;
+  position:relative;
+  font-size:32rpx;
+  color:#7e7b7f;
+}
+.add_right{
+  height:100rpx;
+  line-height:100rpx;
+  float:right;
+  padding-right:40rpx;
+  position:relative;
+  font-size:32rpx;
+  color:#b5b5b6;
+}
+.add_right input{
+  height:100rpx;
+  line-height:100rpx;
+  text-align: right;
+  float:right;
+}
+.add_right_label{
+  height:100rpx;
+  line-height: 100rpx;
+  text-align: left;
+  float:right;
+}
+.add_photo{
+  position:absolute;
+  right:40rpx;
+  top:0;
+  width:180rpx;
+  height:180rpx;
+}
+.add_photo image{
+  position:absolute;
+  width:140rpx;
+  height:140rpx;
+  top:20rpx;
+  right:0;
+}
+.add_btn{
+  position:fixed;
+  bottom:0;
+  height:100rpx;
+  left:0;
+  right:0;
+  border-top:1rpx solid #efefef;
+  background:#76daa1;
+  text-align: center;
+  line-height: 100rpx;
+  color:#fff;
+}

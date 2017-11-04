@@ -1,0 +1,20 @@
+<!--pages/main/jianshe.wxml-->
+<view class='container'>
+  <view class='top_logo'>
+    <view class='top_logo_box'>
+      <image src='/img/logo_info.png'></image>
+    </view>
+  </view>
+  <view class='jianshe_info'>
+    <view>非常抱歉，您所在的城市暂时未开通此服务</view>
+    <view>我们正在努力开拓中...</view>
+  </view>
+  <view class='jianshe_btn'>
+    <view class='jianshe_btn_qidai'>敬请期待</view>
+  </view>
+  <view class='jianshe_bottom'>
+    <view class='jianshe_bottom_img'>
+      <image src='/img/yinsi_info.png'></image>
+    </view>
+  </view>
+</view>

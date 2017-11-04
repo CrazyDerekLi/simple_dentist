@@ -1,0 +1,75 @@
+/* pages/main/jianshe.wxss */
+.top_logo{
+  height:400rpx;
+  position:relative;
+  background:#74bee3;
+}
+.top_logo_box{
+  position:absolute;
+  left:50%;
+  width:260rpx;
+  height:260rpx;
+  top:50%;
+  margin-top:-130rpx;
+  margin-left:-130rpx;
+}
+.top_logo_box image{
+  width:260rpx;
+  height:260rpx;
+}
+.jianshe_info{
+  color:#9e9b9f;
+  line-height: 50rpx;
+  font-size:28rpx;
+  text-align:center;
+  padding:30rpx 0;
+}
+
+
+
+.jianshe_bottom{
+  height:100rpx;
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  width:auto;
+  border-top:1rpx solid #f2f2f2;
+  background: #f8f8f8;
+}
+.jianshe_bottom_img{
+  width:294rpx;
+  height:32rpx;
+  position:absolute;
+  left:50%;
+  margin-left:-147rpx;
+  top:34rpx;
+}
+.jianshe_bottom_img image{
+  width:294rpx;
+  height:32rpx;
+}
+.jianshe_btn{
+  position:absolute;
+  top:560rpx;
+  bottom:100rpx;
+  width:auto;
+  height:auto;
+  left:0;
+  right:0;
+}
+.jianshe_btn_qidai{
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:300rpx;
+  height:90rpx;
+  background:#76daa1;
+  line-height: 90rpx;
+  text-align: center;
+  margin-left:-150rpx;
+  margin-top:-45rpx;
+  color:#fff;
+  border-radius: 90rpx;
+  font-size:32rpx;
+}

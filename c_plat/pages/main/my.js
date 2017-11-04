@@ -7,6 +7,13 @@ Page({
   data: {
   
   },
+  go2mymain:function(){
+    var url = "/pages/my/doctor/main";
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+  },
   go2zhangdan:function(){
     var url = "/pages/my/zhangdan";
     wx.navigateTo({

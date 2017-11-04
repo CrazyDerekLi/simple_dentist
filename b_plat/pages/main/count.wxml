@@ -1,0 +1,40 @@
+<view class="container">
+  <view class="lunbo">
+    <view style="position:relative;height:100%;background:#74bee3;">
+      <view class="status_box">
+        <view class="status_item">
+          <image src="/img/family_doctor_photo.png"></image>
+        </view>
+        <view class="cir_bg"></view>
+      </view>
+      <view class="healthy_title">
+        李医生
+      </view>
+      <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+        <view class='count_date_box picker'>
+          {{ date }}
+        </view>
+      </picker>
+      
+    </view>
+  </view>
+  <view class='count_list'>
+    <view class='count_item'>
+      <view class='count_item_label'>成交量</view>
+      <view class='count_item_number'>6000元</view>
+    </view>
+    <view class='count_item'>
+      <view class='count_item_label'>接单量</view>
+      <view class='count_item_number'>30单</view>
+    </view>
+    <view class='count_item'>
+      <view class='count_item_label'>预约量</view>
+      <view class='count_item_number'>20人</view>
+    </view>
+  </view>
+  <view class='more_count_btn_box'>
+    <view class='more_count_btn' bindtap='go2more'>
+      更多统计
+    </view>
+  </view>
+</view>

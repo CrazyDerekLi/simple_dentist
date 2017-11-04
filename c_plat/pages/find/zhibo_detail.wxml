@@ -1,0 +1,63 @@
+<view class="container">
+  <view class="user_box">
+    <view class="zhibo_doctor_name">
+      <view class="zhibo_doctor_name_info">
+        李天德
+      </view>
+      <view class="star">
+        <image src="/img/star_1.png"></image>
+        <image src="/img/star_1.png"></image>
+        <image src="/img/star_1.png"></image>
+        <image src="/img/star_1.png"></image>
+        <image src="/img/star_0.png"></image>
+      </view>
+    </view>
+    <view class="zhibo_doctor_info">日照口腔医院主治医师</view>
+    <view class="btn_add_family_doctor">
+      <view class="btn_heng"></view>
+      <view class="btn_shu"></view>
+      设为家庭医生
+    </view>
+  </view>
+  <view class="zhibo_info">
+    <view class="zhibo_zaixian">在线234人</view>
+    <view class="btn_zhibo_shoucang">
+      <image src="/img/btn_zhibo_shoucang_white.png"></image>
+    </view>
+    <view class="btn_zhibo_message">
+      <image src="/img/btn_zhibo_message_white.png"></image>
+    </view>
+  </view>
+  <view class="zhibo_message">
+    <view class="zhibo_message_item">
+      <view class="zhibo_message_item_user">Born:</view>
+      <view class="zhibo_message_item_info">洗牙多少钱？洗牙多少钱？洗牙多少钱？洗牙多少钱？</view>
+    </view>
+    <view class="zhibo_message_item">
+      <view class="zhibo_message_item_user">Born:</view>
+      <view class="zhibo_message_item_info">洗牙多少钱？洗牙多少钱？洗牙多少钱？洗牙多少钱？洗牙多少钱？洗牙多少钱？洗牙多少钱？洗牙多少钱</view>
+    </view>
+  </view>
+  <view class="zhibo_goods_list">
+    <view class="zhibo_goods_list_box">
+      <view class="zhibo_good_item">
+        <view class="zhibo_good_amount">¥256.00</view>
+      </view>
+      <view class="zhibo_good_item">
+        <view class="zhibo_good_amount">¥256.00</view>
+      </view>
+      <view class="zhibo_good_item">
+        <view class="zhibo_good_amount">¥256.00</view>
+      </view>
+      <view class="zhibo_good_item">
+        <view class="zhibo_good_amount">¥256.00</view>
+      </view>
+      <view class="zhibo_good_item">
+        <view class="zhibo_good_amount">¥256.00</view>
+      </view>
+    </view>
+  </view>
+  <view class="zhibo_system_tip">
+    简约口腔，提供技术支持
+  </view>
+</view>

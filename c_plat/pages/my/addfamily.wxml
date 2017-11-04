@@ -1,17 +1,19 @@
 <view class="container">
   <view class="add_list">
-    <view class="add_item add_item_photo">
+    <view class="add_item add_item_photo" bindtap='choosePhoto'>
       <view class="add_left">头像</view>
       <view class="add_right">
         <view class="add_photo">
-          <image src="/img/family_doctor_photo.png"></image>
+          <view class='add_photo_box'>
+            <image mode="aspectFill" src="{{filePath?filePath:'/img/default_photo.png'}}"></image>
+          </view>
         </view>
       </view>
     </view>
     <view class="add_item">
       <view class="add_left">姓名</view>
       <view class="add_right">
-        李晓明
+        <input bindinput='changeName' value='{{name}}'></input>
       </view>
     </view>
   </view>
@@ -19,31 +21,38 @@
     <view class="add_item">
       <view class="add_left">年龄</view>
       <view class="add_right">
-        14岁
+       <view class="add_right_label">岁</view> <input type='number' maxlength='3' bindinput='changeAge' value='{{age}}'></input>
       </view>
     </view>
-    <view class="add_item">
-      <view class="add_left">性别</view>
-      <view class="add_right">
-        男
+    <picker bindchange="bindSexChange" value="{{sex}}" range="{{sexList}}">
+      <view class="add_item">
+        <view class="add_left">性别</view>
+        <view class="add_right">
+          <view class="add_right_label">
+            {{sexList[sex]}}
+          </view>
+        </view>
       </view>
-    </view>
+    </picker>
   </view>
   <view class="add_list">
     <view class="add_item">
       <view class="add_left">城市</view>
-      <view class="add_right">
-        日照市
-      </view>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+       <view class="add_right picker">
+          {{(region[0]||"")+((region[1]=="县"||region[1]=="北京市"||region[1]=="天津市"||region[1]=="上海市"||region[1]=="重庆市"?"":region[1])||"")+(region[2]||"")}}
+        </view>
+  </picker>
+     
     </view>
     <view class="add_item">
       <view class="add_left">联系电话</view>
       <view class="add_right">
-        15508777789
+        <input type='number' bindinput='changeTel' maxlength='11' value='{{tel}}'></input>
       </view>
     </view>
   </view>
-  <view class="add_btn">
-    确认添加
+  <view class="add_btn" bindtap='saveData'>
+    {{btnContent}}
   </view>
 </view>

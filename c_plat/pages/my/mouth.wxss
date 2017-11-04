@@ -5,11 +5,19 @@
   background: #74bee3;
   padding:40rpx 0;
 }
-.mouth_top image{
+.mouth_top_img{
   width:300rpx;
   height:300rpx;
   margin:0 auto;
   display: block;
+  position:relative;
+}
+.mouth_top_img image{
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
 }
 .mouth_list{
   border-bottom:1rpx solid #efefef;
@@ -18,9 +26,13 @@
   background:#fff;
   margin-bottom:20rpx;
 }
+.mouth_list_box{
+  height:110rpx;
+  width:80%;
+  margin:0 auto;
+}
 .mouth_item{
   position:relative;
-  width:12%;
   height:110rpx;
   float:left;
   font-size:24rpx;
@@ -28,12 +40,18 @@
   text-align: center;
   color:#b5b5b5;
 }
-.mouth_item image{
+.mouth_item .mouth_item_img{
   position:relative;
   width:40rpx;
   height:40rpx;
   display: block;
   margin:20rpx auto 0 auto;
+}
+.mouth_item  .mouth_item_img image{
+  position:relative;
+  width:40rpx;
+  height:40rpx;
+  display: block;
 }
 .right,.left{
   width:8%;
@@ -74,7 +92,7 @@
   height:24rpx;
   position:absolute;
   right:0;
-  top:38rpx;
+  top:28rpx;
 }
 .doctor_photo{
   width:60rpx;
@@ -90,4 +108,14 @@
   height:60rpx;
   left:0;
   top:0;
+}
+
+.mouth_detail_btn{
+  height:100rpx;
+  line-height:100rpx;
+  color:#fff;
+  background:#77daa1;
+  text-align: center;
+  border-bottom:1rpx solid #efefef;
+  font-size:32rpx;
 }

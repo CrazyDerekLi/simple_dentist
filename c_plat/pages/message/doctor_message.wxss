@@ -94,3 +94,19 @@
   line-height: 100rpx;
   font-size:36rpx;
 }
+.ask_user_info{
+  height:90rpx;
+  line-height: 90rpx;
+  position:relative;
+  padding:0 40rpx;
+  font-size:28rpx;
+  color:#7e7c81;
+}
+.ask_user_info_user{
+  height:90rpx;
+  float:left;
+}
+.ask_user_info_type{
+  height:90rpx;
+  float:right;
+}
