@@ -25,28 +25,30 @@
     </view>
   </view>
   <view class="doctor_detail">
-    <view class="doctor_detail_item">
+    <view class="doctor_detail_item" style="display:{{doctorInfo.duser_remake?'block':'none'}}">
       医生简介
+    </view>
+    <view class="doctor_detail_item" style="display:{{doctorInfo.duser_remake?'block':'none'}}">
       <view wx:for="{{ysjj}}" 
           wx:for-index="idx" 
           wx:key="idx">
           {{item}}
         </view>
     </view>
-    <view class="doctor_detail_item">
+    <view class="doctor_detail_item" style="display:{{doctorInfo.duser_context?'block':'none'}}">
       医学教育背景
     </view>
-    <view class="doctor_detail_item">
+    <view class="doctor_detail_item" style="display:{{doctorInfo.duser_context?'block':'none'}}">
       <view wx:for="{{jybj}}" 
           wx:for-index="idx" 
           wx:key="idx">
           {{item}}
         </view>
     </view>
-    <view class="doctor_detail_item">
+    <view class="doctor_detail_item" style="display:{{doctorInfo.duser_fruit?'block':'none'}}">
       学术研究成果
     </view>
-    <view class="doctor_detail_item">
+    <view class="doctor_detail_item" style="display:{{doctorInfo.duser_fruit?'block':'none'}}">
       <view wx:for="{{yjcg}}" 
           wx:for-index="idx" 
           wx:key="idx">

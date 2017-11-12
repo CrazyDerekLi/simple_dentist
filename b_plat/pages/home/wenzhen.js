@@ -1,3 +1,4 @@
+var util = require('../../utils/util.js');
 // pages/my/doctor/questionmanager.js
 Page({
 
@@ -5,7 +6,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    jswz:[],
+    jswzCount:0,
+    khwz:[],
+    khwzCount:0,
+    showList:[],
+    tab:"0"
   },
 
   /**
@@ -26,7 +32,8 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.getJSWZ();
+    this.getKHWZ();
   },
 
   /**
@@ -43,7 +50,14 @@ Page({
 
   },
   go2detail: function (event) {
-    var url = "/pages/home/wenzhendetail";
+    var index = event.currentTarget.dataset.index;
+    var id = this.data.showList[index].qus_id;
+    var wzr = this.data.showList[index].dic_name;
+    var wzxm = this.data.showList[index].dic_name;
+    var wznr = this.data.showList[index].qus_context;
+    var wzlxfs = this.data.showList[index].dic_name;
+    var wzrcode = this.data.showList[index].qus_fuserId;
+    var url = "/pages/home/wenzhendetail?questionid=" + id + "&wzr=" + wzr + "&wzxm=" + wzxm + "&wznr=" + wznr + "&wzlxfs=" + wzlxfs + "&wzrcode=" + wzrcode;
     wx.navigateTo({
       url: url,
       success: function () { }
@@ -75,5 +89,65 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  getJSWZ:function(){
+    var _this = this;
+    util.getDoctorID(function(doctorid){
+      var url = util.getPath() + 'doctor/getDocQuesInfo';
+      var params = {
+        docid: doctorid,
+        vailtype: 1,
+        raidus: 10000
+      };
+      util.ajax({ url: url, data: params }, function (res) {
+        var _data = res.data.data;
+        console.log(_data);
+        _this.setData({
+          jswz: _data,
+          jswzCount:_data.length
+        });
+        if(_this.data.tab == "0"){
+          _this.setData({
+            showList:_data
+          });
+        }
+      });
+    });
+    
+  },
+  getKHWZ:function(){
+    var _this = this;
+    util.getDoctorID(function (doctorid) {
+      var url = util.getPath() + 'doctor/getDocQuesInfoByDocId';
+      var params = {
+        docid: doctorid,
+        vailtype: 1
+      };
+      util.ajax({ url: url, data: params }, function (res) {
+        var _data = res.data.data;
+        console.log(_data);
+        _this.setData({
+          khwz: _data,
+          khwzCount: _data.length
+        });
+        if (_this.data.tab == "1") {
+          _this.setData({
+            showList: _data
+          });
+        }
+      });
+    });
+  },
+  showJSWZ:function(){
+    this.setData({
+      tab:"0",
+      showList:this.data.jswz
+    });
+  },
+  showKHWZ:function(){
+    this.setData({
+      tab: "1",
+      showList: this.data.khwz
+    });
   }
 })

@@ -1,11 +1,26 @@
-// pages/main/my.js
+var util = require('../../utils/util.js');
+const app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    money:"0.00"
+  },
+  getUserMoney:function(){
+    var _this = this;
+    util.getUserInfo(function (info) {
+      var url = util.getPath() + 'user/getmoney?userid=' + info.CUS_ID;
+      app.ajax({ url: url }, function (res) {
+        var _data = res.data.data;
+        console.log(_data);
+        _this.setData({
+          money: _data
+        });
+      });
+    });
   },
   go2mymain:function(){
     var url = "/pages/my/doctor/main";
@@ -53,7 +68,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    this.getUserMoney();
   },
 
   /**

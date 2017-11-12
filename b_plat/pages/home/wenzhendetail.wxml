@@ -3,7 +3,7 @@
     <view class="wenzhen_item_title">
       问诊人
       <view class="wenzhen_item_title_info">
-        李小敏
+        {{wzr}}
       </view>
     </view>
   </view>
@@ -11,18 +11,18 @@
     <view class="wenzhen_item_title">
       问诊项目
       <view class="wenzhen_item_title_info">
-        洗牙
+        {{wzxm}}
       </view>
     </view>
     <view class="wenzhen_item_body">
-      描述：暂无描述
+      描述：{{wznr?wznr:"暂无描述"}}
     </view>
   </view>
   <view class="wenzhen_item">
     <view class="wenzhen_item_title">
       联系方式
       <view class="wenzhen_item_title_info phone_title">
-        136-0633-8888
+        {{wzlxfs}}
         <view class='phone'>
           <image src='/img/phone.png'></image>
         </view>
@@ -38,10 +38,10 @@
     </view>
   </view>
   <view class='wenzhen_textarea'>
-    <textarea placeholder='请输入回复消息'></textarea>
+    <textarea placeholder='请输入回复消息' bindinput="changeMsg"></textarea>
   </view>
   <view class="wenzhen_bottom_btns">
-    <view class="wenzhen_bottom_left_btn">标为意向客户</view>
-    <view class="wenzhen_bottom_right_btn">标记并回复</view>
+    <view class="wenzhen_bottom_left_btn" bindtap="setYXKH">标为意向客户</view>
+    <view class="wenzhen_bottom_right_btn" bindtap="setMessage">标记并回复</view>
   </view>
 </view>

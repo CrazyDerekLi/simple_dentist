@@ -51,6 +51,13 @@
   font-size:32rpx;
   color:#7e7b7f;
 }
+.titleInfo{
+  height:100rpx;
+  line-height:100rpx;
+  padding:0 40rpx;
+  font-size:32rpx;
+  color:#7e7b7f;
+}
 .title2{
   height:50rpx;
   line-height:50rpx;

@@ -5,151 +5,15 @@
     <view class="zhangdan_btn {{tab=='3'?'selected':''}}" data-tab="3" bindtap="clickTab">充值</view>
     <view class="zhangdan_btn {{tab=='4'?'selected':''}}" data-tab="4" bindtap="clickTab">转出</view>
   </view>
-  <view class="zhangdan_list {{tab=='1'?'selected':''}}">
+  <view class="zhangdan_list selected" wx:for="{{showList}}"  wx:for-index="idx" wx:for-item="zd" data-index="{{idx}}"  wx:key="{{zd.duser_id}}">
     <view class="zhangdan_item">
       <view class="zhangdan_item_left">
-        <view class="title1">在线支付</view>
-        <view class="title2">余额：0.00</view>
+        <view class="titleInfo">{{zd.ordercode}}</view>
+        <!-- <view class="title2">余额：0.00</view> -->
       </view>
       <view class="zhangdan_item_right">
-        <view class="title2">2017-06-29</view>
-        <view class="title1">-6554.00</view>
-      </view>
-    </view>
-    <view class="zhangdan_item">
-      <view class="zhangdan_item_left">
-        <view class="title1">在线支付</view>
-        <view class="title2">余额：0.00</view>
-      </view>
-      <view class="zhangdan_item_right">
-        <view class="title2">2017-06-29</view>
-        <view class="title1">-6554.00</view>
-      </view>
-    </view>
-    <view class="zhangdan_item">
-      <view class="zhangdan_item_left">
-        <view class="title1">在线支付</view>
-        <view class="title2">余额：0.00</view>
-      </view>
-      <view class="zhangdan_item_right">
-        <view class="title2">2017-06-29</view>
-        <view class="title1">-6554.00</view>
-      </view>
-    </view>
-    <view class="zhangdan_item">
-      <view class="zhangdan_item_left">
-        <view class="title1">在线支付</view>
-        <view class="title2">余额：0.00</view>
-      </view>
-      <view class="zhangdan_item_right">
-        <view class="title2">2017-06-29</view>
-        <view class="title1">-6554.00</view>
-      </view>
-    </view>
-    <view class="zhangdan_item">
-      <view class="zhangdan_item_left">
-        <view class="title1">在线支付</view>
-        <view class="title2">余额：0.00</view>
-      </view>
-      <view class="zhangdan_item_right">
-        <view class="title2">2017-06-29</view>
-        <view class="title1">-6554.00</view>
-      </view>
-    </view>
-  </view>
-  <view class="zhangdan_list {{tab=='2'?'selected':''}}">
-    <view class="zhangdan_item">
-      <view class="zhangdan_item_left">
-        <view class="title1">在线支付</view>
-        <view class="title2">余额：0.00</view>
-      </view>
-      <view class="zhangdan_item_right">
-        <view class="title2">2017-06-29</view>
-        <view class="title1">-6554.00</view>
-      </view>
-    </view>
-    <view class="zhangdan_item">
-      <view class="zhangdan_item_left">
-        <view class="title1">在线支付</view>
-        <view class="title2">余额：0.00</view>
-      </view>
-      <view class="zhangdan_item_right">
-        <view class="title2">2017-06-29</view>
-        <view class="title1">-6554.00</view>
-      </view>
-    </view>
-    <view class="zhangdan_item">
-      <view class="zhangdan_item_left">
-        <view class="title1">在线支付</view>
-        <view class="title2">余额：0.00</view>
-      </view>
-      <view class="zhangdan_item_right">
-        <view class="title2">2017-06-29</view>
-        <view class="title1">-6554.00</view>
-      </view>
-    </view>
-    <view class="zhangdan_item">
-      <view class="zhangdan_item_left">
-        <view class="title1">在线支付</view>
-        <view class="title2">余额：0.00</view>
-      </view>
-      <view class="zhangdan_item_right">
-        <view class="title2">2017-06-29</view>
-        <view class="title1">-6554.00</view>
-      </view>
-    </view>
-  </view>
-  <view class="zhangdan_list {{tab=='3'?'selected':''}}">
-    <view class="zhangdan_item">
-      <view class="zhangdan_item_left">
-        <view class="title1">在线支付</view>
-        <view class="title2">余额：0.00</view>
-      </view>
-      <view class="zhangdan_item_right">
-        <view class="title2">2017-06-29</view>
-        <view class="title1">-6554.00</view>
-      </view>
-    </view>
-    <view class="zhangdan_item">
-      <view class="zhangdan_item_left">
-        <view class="title1">在线支付</view>
-        <view class="title2">余额：0.00</view>
-      </view>
-      <view class="zhangdan_item_right">
-        <view class="title2">2017-06-29</view>
-        <view class="title1">-6554.00</view>
-      </view>
-    </view>
-    <view class="zhangdan_item">
-      <view class="zhangdan_item_left">
-        <view class="title1">在线支付</view>
-        <view class="title2">余额：0.00</view>
-      </view>
-      <view class="zhangdan_item_right">
-        <view class="title2">2017-06-29</view>
-        <view class="title1">-6554.00</view>
-      </view>
-    </view>
-  </view>
-  <view class="zhangdan_list {{tab=='4'?'selected':''}}">
-    <view class="zhangdan_item">
-      <view class="zhangdan_item_left">
-        <view class="title1">在线支付</view>
-        <view class="title2">余额：0.00</view>
-      </view>
-      <view class="zhangdan_item_right">
-        <view class="title2">2017-06-29</view>
-        <view class="title1">-6554.00</view>
-      </view>
-    </view>
-    <view class="zhangdan_item">
-      <view class="zhangdan_item_left">
-        <view class="title1">在线支付</view>
-        <view class="title2">余额：0.00</view>
-      </view>
-      <view class="zhangdan_item_right">
-        <view class="title2">2017-06-29</view>
-        <view class="title1">-6554.00</view>
+        <view class="title2">{{zd.ordertime}}</view>
+        <view class="title1">{{tab=="3"?"+":"-"}}{{zd.ordermoney}}</view>
       </view>
     </view>
   </view>

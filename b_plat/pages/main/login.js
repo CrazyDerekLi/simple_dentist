@@ -1,3 +1,4 @@
+var util = require('../../utils/util.js');
 // pages/main/login.js
 Page({
 
@@ -5,9 +6,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    code:''
   },
-
+  bindChangeCode:function(e){
+    this.setData({
+      code:e.detail.value
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -62,5 +67,29 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  go2login:function(){
+    var _this = this;
+    util.getUserInfo(function (openid) {
+      var url = util.getPath() + 'login/vailuser?code=' + _this.data.code +"&wxid="+openid;
+      util.ajax({ url: url }, function (res) {
+        var _data = res.data.data;
+        if(_data!==""){
+          wx.setStorageSync("doctorid", _data);
+          wx.navigateBack({
+            delta:1
+          })
+        }else{
+          wx.showToast({
+            title:"验证码无效",
+            image:"/img/btn_close_gray.png"
+          });
+          setTimeout(function(){
+            wx.hideToast();
+          },3000);
+        }
+        
+      });
+    });
   }
 })

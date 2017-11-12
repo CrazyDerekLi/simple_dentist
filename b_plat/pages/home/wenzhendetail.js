@@ -1,3 +1,5 @@
+var util = require('../../utils/util.js');
+
 // pages/my/doctor/wenzhendetail.js
 Page({
 
@@ -5,16 +7,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    questionid:'',
+    content:'',
+    msgData:{}
   },
-
+  changeMsg:function(e){
+    var value = e.detail.value;
+    this.setData({
+      content:value
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.setData({
+      questionid: options.questionid || '',
+      wzr: options.wzr || '',
+      wzxm: options.wzxm || '',
+      wznr: options.wznr || '',
+      wzlxfs: options.wzlxfs || '',
+      wzrcode: options.wzrcode||''
+    });
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -76,5 +91,27 @@ Page({
       url: url,
       success: function () { }
     });
+  },
+  setMessage:function(){
+    var _this = this;
+    util.getDoctorID(function (doctorid) {
+      var url = util.getPath() + 'doctor/replyQuesInfo';
+      var params = {
+        docid: doctorid,
+        qusid: _this.data.questionid,
+        content: _this.data.content,
+        type: 0
+      };
+      util.ajax({ url: url, data: params }, function (res) {
+        var _data = res.data.data;
+        wx.navigateBack({
+          delta:1
+        });
+
+      });
+    });
+  },
+  setYXKH:function(){
+    
   }
 })

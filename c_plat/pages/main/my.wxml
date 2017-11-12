@@ -4,7 +4,7 @@
       <view class="my_amount">
         <view class="amount_title">账户余额（元）</view>
         <view class="amount_count">
-          5000.00
+          {{money||"0.00"}}
         </view>
       </view>
     </view>
@@ -28,7 +28,7 @@
       </view>
       卡包
       <view class="my_item_tip">
-        您尚未成为会员
+        <!-- 您尚未成为会员 -->
       </view>
     </view>
     <view class="my_item" bindtap="go2zhangdan">
@@ -40,7 +40,7 @@
         查看历史纪录
       </view>
     </view>
-    <view class="my_item" bindtap="go2cart">
+    <!-- <view class="my_item" bindtap="go2cart">
       <view class="my_icon">
         <image src="/img/my_cart.png"></image>
       </view>
@@ -48,7 +48,7 @@
       <view class="my_item_tip">
         您有两个商品尚未付款
       </view>
-    </view>
+    </view> -->
   </view>
   <view class="my_list">
     <view class="my_item" bindtap="go2familydoctor">
@@ -60,7 +60,7 @@
         尚未设置家庭医生
       </view>
     </view>
-    
+
   </view>
   <!-- <view class="my_list">
     <view class="my_item" bindtap="go2mymain">

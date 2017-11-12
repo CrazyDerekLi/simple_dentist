@@ -3,12 +3,11 @@
     <view style="position:relative;height:100%;background:#74bee3;">
       <view class="status_box">
         <view class="status_item">
-          <image src="/img/family_doctor_photo.png"></image>
+          <image src='{{doctorInfo.pic_path?basePath+doctorInfo.pic_path:"/img/default_photo.png"}}'></image>
         </view>
-        <view class="cir_bg"></view>
       </view>
       <view class="healthy_title">
-        李医生
+        {{doctorInfo.duser_name}}
       </view>
       <view class="doctor_status_btn">
         空闲中

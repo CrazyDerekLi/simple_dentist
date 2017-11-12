@@ -29,6 +29,9 @@
   font-size:30rpx;
   color:#b9b9b9;
 }
+.btn_info.selected{
+  color:#74bee3;
+}
 .btn_tip{
   display: inline-block;
   width:32rpx;

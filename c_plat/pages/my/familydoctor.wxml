@@ -10,7 +10,7 @@
     <view class="familydoctor_position">
       {{doctorHospital}}
     </view>
-    <view class="familydoctor_btn" style="display:{{doctorName?'block':'none'}}">
+    <view class="familydoctor_btn" style="display:{{doctorName?'block':'none'}}" bindtap='fireFamilyDoctor'>
       解雇
     </view>
   </view>

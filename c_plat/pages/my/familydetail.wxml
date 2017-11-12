@@ -33,8 +33,27 @@
       </view>
     </view>
   </view>
-  
-
+ 
+<view class='case_list'>
+    <view class='case_head'>
+      当前病例
+    </view>
+    <view class='case_body'>
+      <view class='case_item' wx:for="{{caseList}}"  wx:for-index="idx" wx:for-item="case" data-index="{{idx}}"  wx:key="{{case.cases_id}}" bindtap='go2caseDetail'>
+        <view class='case_img'>
+          <image src='/img/case_curr.png'></image>
+        </view>
+        <view class='case_item_info'>
+          <view class='case_item_info_title'>{{case.cases_result}}</view>
+          <view>东港区医院主治医师：李晓强</view>
+          <view>{{case.cases_time}}</view>
+        </view>
+        <view class='case_enter'>
+          <image src='/img/btn_enter_1.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
   
   <view class="family_detail_btns">
     <view class="family_detail_left_btn" bindtap='go2caseHistory'>

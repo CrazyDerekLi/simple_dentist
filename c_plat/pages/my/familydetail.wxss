@@ -236,3 +236,72 @@
   width:100%;
   float:left;
 }
+.case_head,.case_date{
+  height:80rpx;
+  line-height: 80rpx;
+  position:relative;
+  padding:0 30rpx;
+  font-size:30rpx;
+}
+.case_date{
+  position:absolute;
+  right:0;
+  top:0;
+}
+.case_body{
+  background:#fff;
+  border-top:1rpx solid #f2f2f2;
+}
+.case_item{
+  height:120rpx;
+  padding:20rpx;
+  border-bottom:1rpx solid #f2f2f2;
+  position:relative;
+}
+.case_img{
+  position:absolute;
+  left:40rpx;
+  top:20rpx;
+  width:120rpx;
+  height:120rpx;
+}
+.case_img image{
+  display: block;
+  width:90rpx;
+  height:90rpx;
+  position:absolute;
+  left:15rpx;
+  top:15rpx;
+}
+.case_item_info{
+  padding-left:150rpx;
+}
+.case_enter{
+  position:absolute;
+  right:30rpx;
+  top:20rpx;
+  height:120rpx;
+}
+.case_enter image{
+  position:absolute;
+  display: block;
+  right:0;
+  top:45rpx;
+  width:15rpx;
+  height:30rpx;
+}
+.case_item_info view{
+  height:38rpx;
+  line-height:38rpx;
+  font-size:28rpx;
+  color:#ccc;
+}
+.case_item_info view.case_item_info_title{
+  height:44rpx;
+  line-height: 44rpx;
+  font-size:30rpx;
+  color:#7e7c81;
+}
+.history .case_item_info view.case_item_info_title{
+  color:#c7c7c7;
+}

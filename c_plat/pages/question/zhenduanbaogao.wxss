@@ -3,7 +3,7 @@
   padding-bottom:100rpx;
 }
 .baogao_top{
-  height:220rpx;
+  height:240rpx;
   border-top:1rpx solid #9ed2ea;
   background: #74bee3;
   position:relative;
@@ -25,10 +25,12 @@
 .baogao_top_title2{
   color:#fff;
   font-size:60rpx;
-  float:left;
   font-weight: bold;
-  line-height: 230rpx;
-  padding-left:10rpx;
+  line-height: 60rpx;
+  padding-left:0rpx;
+  position:absolute;
+  left:450rpx;
+  top:130rpx;
 }
 .baogao_item{
   margin-bottom:20rpx;

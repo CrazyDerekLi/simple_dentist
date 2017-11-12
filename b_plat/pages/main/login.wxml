@@ -3,8 +3,8 @@
     <image src='/img/login_logo.png'></image>
   </view>
   <view class='login_password'>
-    <input value='' placeholder='请输入密码登陆'></input>
-    <view class='login_btn'>登陆</view>
+    <input value='' placeholder='请输入密码登陆' bindinput="bindChangeCode"></input>
+    <view class='login_btn' bindtap="go2login">登陆</view>
   </view>
   <view class='bg'>
     <image src='/img/login_bg.png'></image>

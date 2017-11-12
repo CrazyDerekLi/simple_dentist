@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/home/wenzhen",
     "pages/main/main",
     "pages/main/login",
     "pages/main/count",
@@ -17,7 +18,6 @@
     "pages/home/kehu",
     "pages/home/wenzhendetail",
     "pages/home/jieda",
-    "pages/home/wenzhen",
     "pages/healthy/caselist",
     "pages/healthy/mouth",
     "pages/healthy/caseedit"

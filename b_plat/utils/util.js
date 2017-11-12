@@ -21,16 +21,10 @@ function formatNumber(n) {
 }
 
 function getUserInfo(cb) {
-  var userInfo = undefined;
-  try {
-    var storageUserInfo = wx.getStorageSync("userInfo");
-    userInfo = JSON.parse(storageUserInfo);
-  } catch (e) {
-
-  }
+  var openid = wx.getStorageSync("openid");
   var that = this;
-  if (userInfo) {
-    typeof cb == "function" && cb(userInfo)
+  if (openid) {
+    typeof cb == "function" && cb(openid)
   } else {
     wx.login({
       success: function (loginCode) {
@@ -53,29 +47,8 @@ function getUserInfo(cb) {
                   data = JSON.parse(data);
                   var openid = data.openid;
                   if (openid) {
-                    searchPlatUserUrl += '?wxid=' + openid + "&username=" + userInfo.nickName;
-                    searchPlatUserUrl = encodeURI(searchPlatUserUrl);
-                    console.log(searchPlatUserUrl);
-                    wx.request({
-                      url: searchPlatUserUrl,
-                      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-                      header: {
-                        'content-type': 'application/json'
-                      },
-                      fail: function (e) {
-                        //将来考虑失败的实现
-                      },
-                      success: function (res) {
-                        var data = JSON.parse(res.data.data);
-                        if (data) {
-                          for (var key in data) {
-                            userInfo[key] = data[key];
-                          }
-                        }
-                        var res = wx.setStorageSync("userInfo", JSON.stringify(userInfo));
-                        typeof cb == "function" && cb(userInfo)
-                      }
-                    })
+                    wx.setStorageSync("openid",openid);
+                    typeof cb == "function" && cb(openid)
                   }
                 }
               }
@@ -87,71 +60,18 @@ function getUserInfo(cb) {
   }
 }
 function getDoctorID(cb) {
-  var doctorid = '';
-  var doctorwxid = '';
-  try {
-    doctorid = wx.getStorageSync("doctorid");
-    doctorwxid = wx.getStorageSync("doctorwxid");
-  } catch (e) {
+  var doctorid = wx.getStorageSync("doctorid");
+  var doctorwxid = wx.getStorageSync("doctorwxid");
+  if(!doctorid){
+    var url = "/pages/main/login";
+    wx.navigateTo({
+      url: url,
+      success: function () { }
+    });
+  }else{
+    typeof cb == "function" && cb(doctorid)
+  }
 
-  }
-  var that = this;
-  if (doctorid) {
-    typeof cb == "function" && cb(doctorid);
-  } else {
-    wx.login({
-      success: function (loginCode) {
-        wx.getUserInfo({
-          success: function (res) {
-            var code = loginCode.code;
-            searchWXIDUrl += "&code=" + code;
-            var userInfo = res.userInfo || {};
-            wx.request({
-              url: searchWXIDUrl,
-              header: {
-                'content-type': 'application/json'
-              },
-              fail: function (e) {
-                //将来考虑失败的实现
-              },
-              success: function (res) {
-                var data = res.data.data;
-                if (data) {
-                  data = JSON.parse(data);
-                  var openid = data.openid;
-                  if (openid) {
-                    searchPlatUserUrl += '?wxid=' + openid + "&username=" + userInfo.nickName;
-                    searchPlatUserUrl = encodeURI(searchPlatUserUrl);
-                    console.log(searchPlatUserUrl);
-                    wx.request({
-                      url: searchPlatUserUrl,
-                      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-                      header: {
-                        'content-type': 'application/json'
-                      },
-                      fail: function (e) {
-                        //将来考虑失败的实现
-                      },
-                      success: function (res) {
-                        var data = JSON.parse(res.data.data);
-                        if (data) {
-                          for (var key in data) {
-                            userInfo[key] = data[key];
-                          }
-                        }
-                        var res = wx.setStorageSync("userInfo", JSON.stringify(userInfo));
-                        typeof cb == "function" && cb(userInfo)
-                      }
-                    })
-                  }
-                }
-              }
-            })
-          }
-        })
-      }
-    })
-  }
 }
 function getPath() {
   return path;
@@ -169,9 +89,28 @@ function getCity(city) {
   }
   return result;
 }
+function goAjax(ajaxObj, cbTrue, cbFalse){
+  ajaxObj.success = function (data, statusCode, header) {
+    wx.hideLoading();
+    if (cbTrue) {
+      cbTrue(data, statusCode, header);
+    }
+  };
+  ajaxObj.fail = function (data, statusCode, header) {
+    wx.hideLoading();
+    if (cbFalse) {
+      cbFalse(data, statusCode, header);
+    }
+  };
+  wx.showLoading({
+    title: '数据加载中...',
+    mask: true
+  });
+  wx.request(ajaxObj);
+}
 module.exports.formatTime = formatTime;
 module.exports.getUserInfo = getUserInfo;
 module.exports.getDoctorID = getDoctorID;
 module.exports.getPath = getPath;
 module.exports.getCity = getCity;
-
+module.exports.ajax = goAjax

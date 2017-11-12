@@ -12,7 +12,8 @@ Page({
     doctorHospital:'',
     doctorStatus:'',
     doctorPhoto:'',
-    userList:[]
+    userList:[],
+    userid:''
   },
   go2detail:function(e){
     var index = e.currentTarget.dataset.index;
@@ -41,8 +42,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
-    
+    var _this = this;
+    util.getUserInfo(function (res) {
+      _this.setData({
+        userid: res.CUS_ID
+      });
+    });
   },
 
   /**
@@ -110,6 +115,24 @@ Page({
           doctorStatus:_data.duser_statusvarchar,
           doctorPhoto: _data.pic_path||''
         });
+      });
+    });
+  },
+  fireFamilyDoctor:function(){
+    var _this = this;
+    if (!this.data.userid) return;
+    var params = {
+      userid: this.data.userid
+    };
+    var url = util.getPath() + 'user/delfamilydoc';
+    app.ajax({ url: url, data: params }, function (res) {
+      var _data = res.data.data;
+      console.log(_data);
+      _this.setData({
+        doctorName: '',
+        doctorHospital: '',
+        doctorStatus: '',
+        doctorPhoto: ''
       });
     });
   },

@@ -1,24 +1,43 @@
-// pages/my/zhangdan.js
+var util = require('../../utils/util.js');
+const app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    tab:"1"
+    tab:"1",
+    showList:[],
+    zdList:{}
   },
   clickTab:function(event){
     console.log(event);
     var tab = event.currentTarget.dataset.tab;
     this.setData({
-      tab:tab
+      tab:tab,
+      showList:this.data.zdList[tab]||[]
+    });
+  },
+  getZD: function () {
+    var _this = this;
+    util.getUserInfo(function (info) {
+      var url = util.getPath() + 'user/getmyorders?userid=' + info.CUS_ID;
+      app.ajax({ url: url }, function (res) {
+        var _data = res.data.data;
+        console.log(_data);
+        _this.setData({
+          zdList: _data,
+          showList:_data[_this.data.tab]||[]
+        });
+      });
     });
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.getZD();
   },
 
   /**
@@ -32,7 +51,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    this.getZD();
   },
 
   /**

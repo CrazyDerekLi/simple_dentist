@@ -2,12 +2,10 @@ var util = require('utils/util.js');
 App({
   onLaunch: function () {
     //调用API从本地缓存中获取数据
-    util.getDoctorID(function (info) {
-      console.log(info);
-    });
+    
 
   },
-  getLocation: function () {
+  getLocation: function (cb) {
     var result = undefined;
     wx.getLocation({
       success: function (res) {
@@ -15,9 +13,9 @@ App({
         var longitude = res.longitude
         result = { latitude: latitude, longitude: longitude };
         wx.setStorageSync('location', JSON.stringify(location));
+        typeof cb == "function" && cb(result);
       }
     });
-    return result;
   },
   ajax: function (ajaxObj, cbTrue, cbFalse) {
     ajaxObj.success = function (data, statusCode, header) {

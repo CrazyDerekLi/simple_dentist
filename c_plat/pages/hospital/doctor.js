@@ -9,6 +9,7 @@ Page({
   data: {
     doctorInfo: {},
     doctorid:'',
+    userid:'',
     ysjj:[],
     jybj:[],
     yjcg:[]
@@ -18,6 +19,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var _this = this;
+    util.getUserInfo(function(res){
+      _this.setData({
+        userid:res.CUS_ID
+      });
+    });
     this.setData({
       basePath: util.getPath()
     });
@@ -40,9 +47,6 @@ Page({
       url: url,
       success: function () { }
     });
-  },
-  setFamilyDoctor:function(){
-
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -94,6 +98,41 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  go2SetFamilyDoctor:function(){
+    var _this = this;
+    if (!this.data.doctorid || !this.data.userid) return;
+    var params = {
+      docid: this.data.doctorid,
+      userid: this.data.userid
+    };
+    var url = util.getPath() + 'doctor/setfamilydoc';
+    app.ajax({ url: url, data: params }, function (res) {
+      var _data = res.data.data;
+      //console.log(_data);
+    });
+  },
+  setFamilyDoctor:function(){
+    var _this = this;
+    util.getUserInfo(function (info) {
+      var url = util.getPath() + 'user/getfamilydocinfo?userid=' + info.CUS_ID;
+      app.ajax({ url: url }, function (res) {
+        var _data = res.data.data;
+        //console.log(_data);
+        if (_data.duser_name==undefined){
+          _this.go2SetFamilyDoctor();
+        }else{
+          wx.showToast({
+            mask:true,
+            image:"/img/btn_close_gray.png",
+            title: "已经设置过家庭医生，请先解雇家庭医生"+_data.duser_name
+          });
+          setTimeout(function(){
+            wx.hideToast();
+          },2000);
+        }
+      });
+    });
   },
   getDoctorInfo:function(doctorid){
     var _this = this;

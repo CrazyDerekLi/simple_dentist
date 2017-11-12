@@ -14,7 +14,8 @@ Page({
     familyName: '',
     familyAge:'',
     familySex:'1',
-    familyCity:""
+    familyCity:"",
+    caseList:[]
   },
 
   /**
@@ -26,6 +27,7 @@ Page({
       basePath: util.getPath()
     });
     this.getFamilyDetailData(options.familyid || '');
+    this.getCaseInfo(options.familyid || '');
   },
 
   /**
@@ -39,6 +41,7 @@ Page({
    */
   onShow: function () {
     this.getFamilyDetailData(this.data.id || '');
+    this.getCaseInfo(this.data.id || '');
   },
   go2edit:function(){
     var url = "/pages/my/addfamily?familyid="+this.data.id;
@@ -109,6 +112,22 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  getCaseInfo: function (id) {
+    var _this = this;
+      var url = util.getPath() + 'doctor/getcasesinfo';
+      var params = {
+        userid: id,
+        isavailable: 1
+      };
+      app.ajax({ url: url, data: params }, function (res) {
+        var _data = res.data.data;
+        _data = [{ "cases_noon": "1", "cases_cost": "1", "ispay": "1", "cases_id": "1", "cases_result": "1", "cases_time": 1509978968000, "cases_resid": "1", "cases_userid": "1", "cases_plan": "1", "available": "1" }, { "cases_noon": "1", "cases_cost": "100", "ispay": "2", "cases_id": "2", "cases_result": "123", "cases_time": 1509979021000, "cases_resid": "2", "cases_userid": "1", "cases_plan": "123", "available": "2" }];
+        console.log(_data);
+        _this.setData({
+          caseList:_data
+        });
+      });
   },
   getFamilyDetailData:function(id){
     if(id){
