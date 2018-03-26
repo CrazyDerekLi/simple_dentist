@@ -1,0 +1,47 @@
+<view class="container">
+  <view class="zwzd_select_top">
+    <view class='zwzd_select_top_img'>
+      <image src='/img/btn_question.png'></image>
+    </view>
+    <view class='zwzd_select_top_title'>
+      请选择您遇到的问题
+    </view>
+  </view>
+  <view class='zwzd_select_box' style='display:{{select=="1"?"block":"none"}};'>
+    <view class='zwzd_select_item' bindtap='go2Select2'>
+      牙齿疼痛
+    </view>
+    <view class='zwzd_select_item' bindtap='go2Select2'>
+      塞牙
+    </view>
+    <view class='zwzd_select_item' bindtap='go2Select2'>
+      牙松动
+    </view>
+    <view class='zwzd_select_item' bindtap='go2Select2'>
+      牙齿不齐／拥挤／地包天
+    </view>
+    <view class='zwzd_select_item' bindtap='go2Select2'>
+      龋齿
+    </view>
+  </view>
+  <view class='zwzd_select_box' style='display:{{select=="2"?"block":"none"}};'>
+    <view class='zwzd_select_item' bindtap='go2Detail'>
+      牙齿疼痛1
+    </view>
+    <view class='zwzd_select_item' bindtap='go2Detail'>
+      塞牙1
+    </view>
+    <view class='zwzd_select_item' bindtap='go2Detail'>
+      牙松动1
+    </view>
+    <view class='zwzd_select_item' bindtap='go2Detail'>
+      牙齿不齐／拥挤／地包天1
+    </view>
+    <view class='zwzd_select_item' bindtap='go2Detail'>
+      龋齿1
+    </view>
+  </view>
+  <view class='banquan'>
+    简约口腔 © 版权所有
+  </view>
+</view>

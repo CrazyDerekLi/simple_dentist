@@ -1,0 +1,72 @@
+{
+  "pages":[
+    "pages/main/index",
+    "pages/my/jiating/familycasedetail",
+    "pages/my/index",
+    "pages/my/jiating/familycases",
+    "pages/my/jiating/familydetail",
+    "pages/my/jiating/addfamily",
+    "pages/my/jiating/jiatingchengyuan",
+    "pages/my/jiating/doctor_detail",
+    "pages/nearby/doctor/doctor_detail",
+    "pages/my/youhui/youhui",
+    "pages/my/yuyue/fbyy",
+    "pages/my/yuyue/yuyue",
+    "pages/my/zhangdan/zhangdan",
+    "pages/my/zhangdan/zhangdandetail",
+    "pages/find/index",
+    "pages/nearby/index",
+    "pages/find/cantuan/cantuan",
+    "pages/find/taocan/taocan",
+    "pages/find/mianfei/mianfeiqiang",
+    "pages/main/fbyy/fbyy",
+    "pages/main/kepu/kepu",
+    "pages/main/fbwz/fbwz",
+    "pages/main/jjwz/jjwzgdy",
+    "pages/main/fzxq/fzxq",
+    "pages/main/zwzd/zwzddetail",
+    "pages/main/zwzd/zwzdselect",
+    "pages/main/zwzd/zwzdgdy",
+    "pages/nearby/hospital/hospital_detail",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "简约口腔",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#CCCCCC",
+    "selectedColor": "#43adf9",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "img/index_1_s.png",
+        "iconPath": "img/index_1.png",
+        "pagePath": "pages/main/index",
+        "text": "今日"
+      },
+      {
+        "selectedIconPath": "img/index_2_s.png",
+        "iconPath": "img/index_2.png",
+        "pagePath": "pages/nearby/index",
+        "text": "附近"
+      },
+      {
+        "selectedIconPath": "img/index_3_s.png",
+        "iconPath": "img/index_3.png",
+        "pagePath": "pages/find/index",
+        "text": "发现"
+      },
+      {
+        "selectedIconPath": "img/index_4_s.png",
+        "iconPath": "img/index_4.png",
+        "pagePath": "pages/my/index",
+        "text": "我的"
+      }
+    ]
+  }
+}

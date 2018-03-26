@@ -1,0 +1,57 @@
+<view class="container">
+  <view class='taocan_top'>
+    <view class='taocan_shihui'>实惠</view>
+    <view class='taocan_top_title'>儿童护牙套餐</view>
+    <view class='taocan_top_info'>让孩子的童年更快乐！</view>
+  </view>
+  <view class='taocan_item'>
+    <view class='taocan_item_title' style='border:none;'>套餐项目</view>
+    <view class='taocan_item_body'>
+      <view class="table">
+        <view class="tr">
+            <view class="th">名称</view>
+            <view class="th">作用</view>
+            <view class="th">原价</view>
+            <view class="th">套餐价</view>
+        </view>
+        <view class="tr">
+            <view class="td">口腔检查</view>
+            <view class="td">建立病例</view>
+            <view class="td">50元</view>
+            <view class="td text_red">免费</view>
+        </view>
+        <view class="tr">
+            <view class="td">牙齿涂氟</view>
+            <view class="td">防止蛀牙</view>
+            <view class="td">60元</view>
+            <view class="td text_red">10元</view>
+        </view>
+        <view class="tr">
+            <view class="td">窝沟封闭</view>
+            <view class="td">预防龋齿</view>
+            <view class="td">200元</view>
+            <view class="td text_red">100元</view>
+        </view>
+        <view class="tr">
+            <view class="td">电动牙刷</view>
+            <view class="td">保护牙齿</view>
+            <view class="td">199元</view>
+            <view class="td text_red">120元</view>
+        </view>
+    </view>
+    </view>
+  </view>
+
+  <view class='taocan_item'>
+    <view class='taocan_item_title'>套餐优势</view>
+    <view class='taocan_item_body'></view>
+  </view>
+
+  <view class='taocan_item'>
+    <view class='taocan_item_title'>选择门诊</view>
+    <view class='taocan_item_body'></view>
+  </view>
+  <view class='taocan_bottom_btn'>
+    购买
+  </view>
+</view>

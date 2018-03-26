@@ -1,0 +1,68 @@
+/* pages/find/index.wxss */
+.lunbo{
+    height:400rpx;
+    overflow:hidden;
+    background:#ccc;
+}
+.lunbo swiper{
+    height:400rpx;
+}
+.slide_image{
+  position:relative;
+  display: block;
+  height:400rpx;
+  width:840rpx;
+}
+.find_tabs{
+  height:100rpx;
+  position:relative;
+  border-top:1rpx solid #f2f2f2;
+  border-bottom:1rpx solid #f2f2f2;
+}
+.find_tab{
+  height:100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size:28rpx;
+  color:#b3b3b3;
+  float:left;
+}
+.find_tab.select_tab{
+  color:#808080;
+}
+.find_view_box{
+  border-top:1rpx solid #f2f2f2;
+}
+.find_view_item{
+  height:120rpx;
+  line-height: 120rpx;
+  font-size:32rpx;
+  position:relative;
+  border-bottom: 1rpx solid #f2f2f2;
+  padding:0 100rpx 0 140rpx;
+  color:#999;
+}
+.find_view_item_left{
+  position:absolute;
+  left:60rpx;
+  width:60rpx;
+  height:60rpx;
+  top:30rpx;
+}
+.find_view_item_left image{
+  width:60rpx;
+  height:60rpx;
+  display: block;
+}
+.find_view_item_right{
+  position:absolute;
+  right:30rpx;
+  width:30rpx;
+  height:30rpx;
+  top:45rpx;
+}
+.find_view_item_right image{
+  width:30rpx;
+  height:30rpx;
+  display: block;
+}

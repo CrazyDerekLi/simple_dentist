@@ -1,0 +1,89 @@
+/* pages/main/fzxq/fzxq.wxss */
+.container{
+  padding-bottom:100rpx;
+}
+.yy_item{
+  height:100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+  padding:0 50rpx;
+  position:relative;
+  font-size:28rpx;
+}
+.yy_item_title{
+  float:left;
+  color:#b3b3b3;
+}
+.yy_item_info{
+  float:right;
+  color:#7e7b7f;
+}
+.yy_center_btns{
+  border-top:1rpx solid #f2f2f2;
+  border-bottom:1rpx solid #f2f2f2;
+  height:200rpx;
+  position:relative;
+}
+.yy_center_left_btn,.yy_center_right_btn{
+  float:left;
+  position:relative;
+  width:50%;
+  height:100rpx;
+  padding:60rpx 0 40rpx 0;
+}
+.yy_center_right_btn{
+  border-left:1rpx solid #f2f2f2;
+  margin-left:-1rpx;
+}
+.yy_center_left_btn image,.yy_center_right_btn image{
+  display: block;
+  width:50rpx;
+  height:50rpx;
+  margin:0 auto;
+}
+.yy_center_name{
+  text-align: center;
+  line-height: 50rpx;
+  font-size:26rpx;
+  color:#59bdf9;
+}
+.yy_bottom_btn{
+  position:fixed;
+  height:100rpx;
+  line-height: 100rpx;
+  font-size:30rpx;
+  text-align: center;
+  background: #59bdf9;
+  color:#fff;
+  left:0;
+  right:0;
+  bottom:0;
+  border-top:1rpx solid #f2f2f2;
+}
+.yy_wxts{
+  position:absolute;
+  top:740rpx;
+  bottom:100rpx;
+  left:0;
+  right:0;
+}
+.yy_wxts_box{
+  height:160rpx;
+  position:absolute;
+  top:50%;
+  margin-top:-100rpx;
+  left:0;
+  right:0;
+}
+.yy_wxts_title{
+  text-align: center;
+  font-size:36rpx;
+  line-height: 80rpx;
+  color:#808080;
+}
+.yy_wxts_info{
+  text-align: center;
+  font-size:26rpx;
+  line-height: 40rpx;
+  color:#b3b3b3;
+}

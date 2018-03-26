@@ -1,0 +1,44 @@
+<view class="container">
+  <view class='jiating_top'>
+    <view class='jiating_top_box' bindtap='go2addphoto'>
+      <view class='jiating_top_photo'>
+        <image src="{{filePath?filePath:'/img/user_photo_default.png'}}"></image>
+      </view>
+      <view class='jiating_top_title' style='display:{{filePath?"none":"block"}}'>
+        尚未设置
+      </view>
+      <view class='jiating_top_info' style='display:{{filePath?"none":"block"}}'>
+        点击添加头像照片
+      </view>
+    </view>
+  </view>
+  <view class='form_box'>
+    <view class='form_item'>
+      <view class='form_item_info'>
+        <input bindinput='changeName' value='{{name}}'></input>
+      </view>
+      <view class='form_item_title'>姓名</view>
+    </view>
+     <picker mode="date" value="{{date}}" start="2015-09-01" end="2018-09-01" bindchange="bindDateChange">
+    <view class='form_item'>
+      <view class='form_item_info'>{{date}}</view>
+      <view class='form_item_title'>生日</view>
+    </view>
+    </picker>
+    <picker bindchange="bindSexChange" value="{{sex}}" range="{{sexList}}">
+    <view class='form_item'>
+      <view class='form_item_info'>{{sexList[sex]}}</view>
+      <view class='form_item_title'>性别</view>
+    </view>
+    </picker>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class='form_item'>
+      <view class='form_item_info'>{{array[index]}}</view>
+      <view class='form_item_title'>城市</view>
+    </view>
+    </picker>
+  </view>
+  <view class='jiating_bottom_btn'>
+    确认添加
+  </view>
+</view>

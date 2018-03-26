@@ -1,0 +1,73 @@
+<view class="container">
+  <view class='jiating_top' style='display:{{doctor=="1"?"block":"none"}};'>
+    <view class='jiating_top_box' bindtap='go2Fujin'>
+      <view class='jiating_top_photo'>
+        <image src='/img/btn_family_doctor_d.png'></image>
+      </view>
+      <view class='jiating_top_title'>
+        尚未设置家庭医生
+      </view>
+    </view>
+  </view>
+  <view class='jiating_top' style='display:{{doctor=="2"?"block":"none"}};'>
+    <view class='jiating_top_box' bindtap='go2Doctor'>
+      <view class='jiating_top_photo'>
+        <image src='/img/btn_family_photo_index.png'></image>
+      </view>
+      <view class='jiating_top_title'>
+        李天德
+      </view>
+      <view class='jiating_top_info'>
+        日照市口腔医院主治医师
+      </view>
+    </view>
+  </view>
+
+  <view class='split_no_border'></view>
+
+  <view class='jiating_box'>
+    <view class='jiating_box_title'>我的家庭成员</view>
+    <view class='jiating_list_box'  style='display:{{family=="2"?"block":"none"}}'>
+      <view class='jiating_item' bindtap='go2familydetail'>
+        <view class='jiating_item_left'>
+          <image src='/img/user_photo_default.png'></image>
+        </view>
+        <view class='jiating_item_center'>
+          李晓明
+        </view>
+        <view class='jiating_item_enter'>
+          <image src='/img/btn_enter.png'></image>
+        </view>
+      </view>
+      <view class='jiating_item' bindtap='go2familydetail'>
+        <view class='jiating_item_left'>
+          <image src='/img/user_photo_default.png'></image>
+        </view>
+        <view class='jiating_item_center'>
+          李晓明
+        </view>
+        <view class='jiating_item_enter'>
+          <image src='/img/btn_enter.png'></image>
+        </view>
+      </view>
+      
+    </view>
+    <view class='jiating_item' style='display:{{family=="1"?"block":"none"}}'>
+      <view class='jiating_item_left'>
+        <image src='/img/user_photo_default.png'></image>
+      </view>
+      <view class='jiating_item_center'>
+        未设置
+      </view>
+    </view>
+
+    
+    
+    <view class='jiating_wxts' style='display:{{doctor=="1"?"block":"none"}};'>
+      <view class='jiating_wxts_title'>温馨提示</view>
+      <view class='jiating_wxts_info'>设置家庭牙医更方便，随时随地沟通</view>
+      <view class='jiating_wxts_info'>贴心保护您和家人的口腔健康</view>
+    </view>
+  </view>
+  <view class='jiating_bottom_btn' bindtap='go2add'>添加新成员</view>
+</view>

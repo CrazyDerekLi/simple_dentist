@@ -1,0 +1,40 @@
+<view class='container'>
+  <view class='zhangdan_top'>
+    李晓明2018-02-12账单
+  </view>
+
+  <view class='split_no_border'></view>
+  
+  <view class='zhangdan_box'>
+    <view class='zhangdan_item'>
+      <view class='zhangdan_title'>口腔检查工具</view>
+      <view class='zhangdan_amount'>10.00</view>
+    </view>
+    <view class='zhangdan_item'>
+      <view class='zhangdan_title'>超声波口腔洁治</view>
+      <view class='zhangdan_amount'>280.00</view>
+    </view>
+    <view class='zhangdan_item text_red'>
+      合计：¥290.00
+    </view>
+  </view>
+
+  <!-- <view class='split_no_border'></view>
+
+  <view class='zhangdan_box'>
+    <view class='zhangdan_item text_red'>
+      使用优惠包减免：100.00
+    </view>
+    <view class='zhangdan_item'>
+      其他优惠减免：10.00
+    </view>
+  </view> -->
+
+  <view class='split_no_border'></view>
+
+  <view class='zhangdan_box'>
+    <view class='zhangdan_item'>
+      实收：¥80.00
+    </view>
+  </view>
+</view>

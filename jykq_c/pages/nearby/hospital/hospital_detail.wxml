@@ -1,0 +1,92 @@
+<view class="container">
+  <view class="lunbo">
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:for-index="idx" wx:key="{{idx}}">
+          <swiper-item>
+              <view style="position:relative;height:100%;">
+                  <image src="{{item}}" class="slide_image" style=""/>
+              </view>
+          </swiper-item>
+      </block>
+      </swiper>
+  </view>
+  <view class='pingfen_box'>
+    <view class='pingfen_title'>
+      综合评分95分
+    </view>
+    <view class='pingfen_body'>
+      <view class='pingfen_body_left'>
+        <view class='pingfen_body_left_box'>
+          <view class='pingfen_item'>
+            <view class='pingfen_item_name'>医疗环境</view>
+            <view class='pingfen_item_stars'>
+              <image src='/img/star_s.png'></image>
+              <image src='/img/star_s.png'></image>
+              <image src='/img/star_s.png'></image>
+              <image src='/img/star_s.png'></image>
+              <image src='/img/star_d.png'></image>
+            </view>
+          </view>
+          <view class='pingfen_item'>
+            <view class='pingfen_item_name'>服务态度</view>
+            <view class='pingfen_item_stars'>
+              <image src='/img/star_s.png'></image>
+              <image src='/img/star_s.png'></image>
+              <image src='/img/star_s.png'></image>
+              <image src='/img/star_s.png'></image>
+              <image src='/img/star_s.png'></image>
+            </view>
+          </view>
+          <view class='pingfen_item'>
+            <view class='pingfen_item_name'>顾客满意度</view>
+            <view class='pingfen_item_stars'>
+              <image src='/img/star_s.png'></image>
+              <image src='/img/star_s.png'></image>
+              <image src='/img/star_s.png'></image>
+              <image src='/img/star_s.png'></image>
+              <image src='/img/star_d.png'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='pingfen_body_right'>
+        <view class='pingfen_logo'>
+          <image src='/img/btn_logo_1.png'></image>
+        </view>
+        <view class='pingfen_body_right_title'>平台认证</view>
+      </view>
+    </view>
+  </view>
+  <view class='hospital_item'>
+    <view class='hospital_item_title'>
+      <view class='line'></view>
+      <view class='hospital_item_title_name'>医疗团队</view>
+    </view>
+    <view class='hospital_item_body'>
+      <view class='hospital_item_doctor_photo'></view>
+      <view class='hospital_item_doctor_photo'></view>
+      <view class='hospital_item_doctor_photo'></view>
+      <view class='hospital_item_doctor_photo'></view>
+      <view class='hospital_item_doctor_photo'></view>
+      <view class='hospital_item_doctor_photo'></view>
+      <view class='hospital_item_doctor_photo'></view>
+      <view class='hospital_item_doctor_photo'></view>
+      <view class='hospital_item_doctor_photo'></view>
+      <view class='hospital_item_doctor_photo'></view>
+    </view>
+  </view>
+  <view class='hospital_item'>
+    <view class='hospital_item_title'>
+      <view class='line'></view>
+      <view class='hospital_item_title_name'>荣誉资质</view>
+    </view>
+    <view class='hospital_item_body'>
+    123123
+    </view>
+  </view>
+  <view class='hospital_bottom_btns'>
+    <view class='hospital_bottom_left_btn'>直播问诊</view>
+    <view class='hospital_bottom_right_btn' bindtap='go2YY'>预约</view>
+  </view>
+</view>

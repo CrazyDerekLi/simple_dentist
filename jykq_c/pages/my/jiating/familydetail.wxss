@@ -1,0 +1,133 @@
+.container{
+  padding-bottom:100rpx;
+}
+.jiating_top{
+  padding:50rpx 0 50rpx 0;
+  border-bottom:1rpx solid #f2f2f2;
+  position: relative;
+}
+.jiating_top_box{
+  position:relative;
+}
+.jiating_top_photo{
+  width:240rpx;
+  height:240rpx;
+  margin:0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 240rpx;
+}
+.jiating_top_photo image{
+  display: block;
+  width:100%;
+  height:100%;
+}
+.jiating_top_title{
+  margin-top:10rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size:30rpx;
+  color:#808080;
+}
+.jiating_top_info{
+  line-height: 30rpx;
+  font-size:22rpx;
+  text-align: center;
+  color:#b3b3b3;
+}
+.jiating_bottom_btn{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  height:100rpx;
+  line-height: 100rpx;
+  background: #59bdf9;
+  color:#fff;
+  font-size:30rpx;
+  text-align: center;
+}
+.family_detail{
+  padding:20rpx 60rpx;
+  position:relative;
+  border-bottom:1rpx solid #f2f2f2;
+}
+.family_item{
+  height:40rpx;
+  position:relative;
+  line-height: 40rpx;
+  font-size:24rpx;
+}
+.family_item_title{
+  float:left;
+  color:#b3b3b3;
+}
+.family_item_info{
+  float:left;
+  margin-left:30rpx;
+  color:#808080;
+}
+.family_enter{
+  width:30rpx;
+  height:30rpx;
+  position:absolute;
+  right:30rpx;
+  top:50%;
+  margin-top:-15rpx;
+}
+.family_enter image{
+  display: block;
+  width:100%;
+  height:100%;
+}
+.family_jianshi{
+  position:relative;
+}
+.family_jianshi_title{
+  height:100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size:28rpx;
+  color:#b2b2b2;
+  border-bottom:1rpx solid #f2f2f2;
+}
+.family_jianshi_body{
+  padding:40rpx 40rpx;
+}
+.family_jianshi_item{
+  height:50rpx;
+  line-height: 50rpx;
+  font-size:24rpx;
+  position:relative;
+}
+.jianshi_title{
+  width:120rpx;
+  color:#b3b3b3;
+  position:absolute;
+  left:0;
+  top:0;
+  text-align: center;
+}
+.jianshi_progress_info{
+  position:absolute;
+  width:140rpx;
+  color:#808080;
+  right:0;
+  top:0;
+  text-align: center;
+}
+.jianshi_line{
+  position:absolute;
+  left:130rpx;
+  right:150rpx;
+  height:20rpx;
+  top:15rpx;
+  background: #f2f2f2;
+}
+.jianshi_progress_line{
+  position:absolute;
+  left:0;
+  height:20rpx;
+  top:0;
+  background:#6ccc4f; 
+}

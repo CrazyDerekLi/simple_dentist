@@ -1,0 +1,175 @@
+/* pages/find/mianfei/mianfeiqiang.wxss */
+.mianfei_top{
+  background: #f0f5f8;
+  position:relative;
+}
+.xianshi{
+  float:left;
+  width:100rpx;
+  height:50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  background: #f38996;
+  color:#fff;
+  font-size:28rpx;
+}
+.leiji{
+  float:right;
+  height:70rpx;
+  padding-right:20rpx;
+  line-height: 70rpx;
+  font-size:26rpx;
+  color:#b3b3b3;
+}
+.mianfei_top_body{
+  position:relative;
+  padding:60rpx 0 30rpx 0;
+}
+.mianfei_top_body_img{
+  position:relative;
+  width:240rpx;
+  height:240rpx;
+  margin:0 auto 10rpx auto;
+}
+.mianfei_top_body_img image{
+  display: block;
+  width:100%;
+  height:100%;
+}
+.mianfei_top_body_title{
+  height:60rpx;
+  text-align: center;
+  font-size:56rpx;
+  line-height: 60rpx;
+  font-weight: bold;
+  color:#808080;
+  margin-bottom:10rpx;
+}
+.mianfei_top_body_info{
+  line-height: 50rpx;
+  text-align: center;
+  font-size:28rpx;
+  color:#808080;
+  position:relative;
+  height:50rpx;
+}
+.mianfei_top_body_info_info{
+  position:relative;
+  width:400rpx;
+  background: #f0f5f8;
+  z-index: 100;
+  margin:0 auto;
+}
+.mianfei_top_body_line{
+  width:100%;
+  height:1rpx;
+  background:  #b3b3b3;
+  position:absolute;
+  z-index: 99;
+  top:25rpx;
+}
+.mianfei_guize{
+  padding:10rpx 60rpx 40rpx 60rpx;
+  background: #59bdf9;
+  position:relative;
+}
+.mianfei_guize_title{
+  height:100rpx;
+  line-height: 100rpx;
+  width:300rpx;
+  margin:0 auto;
+  text-align: center;
+  font-size:32rpx;
+  font-weight: bold;
+  color:#fff;
+  position:relative;
+}
+.mianfei_guize_title_info{
+  height:100rpx;
+  position:relative;
+  width:160rpx;
+  background: #59bdf9;
+  margin: 0 auto;
+  z-index: 100;
+}
+.mianfei_guize_title_line{
+  height:1rpx;
+  background: #fff;
+  position:absolute;
+  top:50rpx;
+  z-index: 99;
+  width:100%;
+}
+.yuanquan1{
+  position:absolute;
+  left:0;
+  top:49rpx;
+  width:6rpx;
+  height:6rpx;
+  border-radius: 6rpx;
+  background: #fff;
+}
+.yuanquan2{
+  position:absolute;
+  right:0;
+  top:49rpx;
+  width:6rpx;
+  height:6rpx;
+  border-radius: 6rpx;
+  background: #fff;
+}
+.mianfei_guize_info{
+  font-size:22rpx;
+  line-height: 30rpx;
+  color:#fff;
+}
+.container{
+  padding-bottom:100rpx;
+}
+.mianfei_bottom_btn{
+  background: #b3b3b3;
+  color:#fff;
+  text-align: center;
+  height:100rpx;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  font-size:30rpx;
+  line-height: 100rpx;
+}
+.mianfei_tieshi{
+  padding:20rpx 0;
+  position:relative;
+}
+.mianfei_tieshi_title{
+  width:180rpx;
+  height:80rpx;
+  margin:0 auto;
+  padding-left:30rpx;
+  position:relative;
+}
+.mianfei_tieshi_title_img{
+  position:absolute;
+  height:30rpx;
+  width:30rpx;
+  top:25rpx;
+  left:0;
+}
+.mianfei_tieshi_title_img image{
+  display: block;
+  width:100%;
+  height:100%;
+}
+.mianfei_tieshi_title_info{
+  line-height: 80rpx;
+  text-align: center;
+  font-size:34rpx;
+  color:#999;
+}
+.mianfei_tieshi_info{
+  text-align: center;
+  font-size:22rpx;
+  line-height: 30rpx;
+  color:#999;
+}

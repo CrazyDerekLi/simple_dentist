@@ -1,0 +1,57 @@
+<view class="container">
+  <view class="mouth_top">
+    <view class="mouth_top_img">
+      <image src="/img/tooth/tooth_bg.png"></image>
+      <image wx:for='{{toothShowList}}' wx:for-index="idx" wx:key="{{idx}}" src='/img/tooth/tooth_{{item.typeCode}}_{{item.y}}_{{item.x=="r"?item.count+8:item.count}}.png' ></image>
+    </view>
+  </view>
+  <view class="mouth_list">
+    <view class="mouth_list_box" >
+      <view class="mouth_item" wx:for="{{toothList}}" wx:for-index="idx" wx:key="{{idx}}" style='width:{{100/toothList.length}}%;'>
+        <view class="mouth_item_img" style='background:{{item.color}};'>
+          <image src="/img/tooth/tooth_color_mask.png"></image>
+        </view>
+        {{item.name}}
+      </view>
+    </view>
+  </view>
+  <view class="mouth_detail_list" style='border-top:1rpx solid #f2f2f2;'>
+    <view class="mouth_detail_item">
+      检查诊断
+    </view>
+    <view class="mouth_detail_info">
+      正文正文正文正文正文正文正文正文正文正文正文
+    </view>
+  </view>
+  <view class="mouth_detail_list">
+    <view class="mouth_detail_item">
+      治疗计划
+    </view>
+    <view class="mouth_detail_info" style='padding:0;border-bottom:0;'>
+      <view class="table">
+        <view class="tr">
+            <view class="th">治疗项目</view>
+            <view class="th">数量</view>
+            <view class="th">价格</view>
+        </view>
+        <view class="tr">
+            <view class="td">牙齿涂氟</view>
+            <view class="td">防止蛀牙</view>
+            <view class="td">60元</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='split_no_border' style='border-bottom:1rpx solid #f2f2f2;'></view>
+  <view class="mouth_detail_list">
+    <view class="mouth_detail_item">
+      <view class="mouth_detail_item_left">主治医师</view>
+      <view class="mouth_detail_item_right">
+        李医生
+      </view>
+      <view class="doctor_photo">
+        <image src="/img/doctor_photo_d.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

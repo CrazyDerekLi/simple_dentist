@@ -1,0 +1,173 @@
+.container{
+  margin-bottom:100rpx;
+}
+.doctor_detail_top{
+  position:relative;
+  border-bottom:1rpx solid #f2f2f2;
+  padding:60rpx 0;
+}
+.doctor_detail_top_photo{
+  display: block;
+  width:200rpx;
+  height:200rpx;
+  margin:0 auto;
+  border-radius: 200rpx;
+}
+.doctor_detail_top_photo image{
+  display: block;
+  width:200rpx;
+  height:200rpx;
+}
+.doctor_detail_top_name{
+  text-align: center;
+  font-size:36rpx;
+  color:#808080;
+  line-height: 60rpx;
+  margin-top:10rpx;
+}
+.doctor_detail_top_hospital{
+  text-align: center;
+  font-size:26rpx;
+  color:#b3b3b3;
+  line-height: 40rpx;
+}
+.doctor_detail_renzheng{
+  border-bottom:1rpx solid #f2f2f2;
+  height:100rpx;
+}
+.doctor_detail_left_renzheng{
+  width:50%;
+  float: left;
+  height:100rpx;
+}
+.doctor_detail_right_renzheng{
+  width:50%;
+  float: left;
+  height:100rpx;
+  border-left:1rpx solid #f2f2f2;
+  margin-left: -1rpx;
+}
+.renzheng_l{
+  width:40%;
+  height:100rpx;
+  float:left;
+  position:relative;
+  line-height: 100rpx;
+}
+.renzheng_r{
+  width:60%;
+  height:100rpx;
+  float:left;
+  text-align: left;
+  line-height: 100rpx;
+  font-size:28rpx;
+  color:#999;
+  position:relative;
+}
+.renzheng_l image{
+  display: block;
+  position:absolute;
+  width:60rpx;
+  height:60rpx;
+  right:10rpx;
+  top:20rpx;
+}
+.project_item{
+  border-bottom:1rpx solid #f2f2f2;
+}
+.project_title{
+  height:100rpx;
+  text-align: center;
+  font-size:30rpx;
+  font-weight: bold;
+  line-height: 100rpx;
+  color:#666;
+  border-bottom:1rpx solid #f2f2f2;
+}
+.project_context{
+  min-height: 40rpx;
+  padding:30rpx 60rpx;
+  line-height:40rpx;
+  font-size:24rpx;
+  color:#b3b3b3;
+}
+.doctor_btns{
+  border-top:1rpx solid #f2f2f2;
+  height:100rpx;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+}
+.doctor_left_btn{
+  width:50%;
+  float:left;
+  height:100rpx;
+  color:#808080;
+  background: #fff;
+  text-align: center;
+  line-height: 100rpx;
+  font-size:32rpx;
+}
+.doctor_right_btn{
+  width:50%;
+  float:left;
+  height:100rpx;
+  color:#fff;
+  background: #59bdf9;
+  text-align: center;
+  line-height: 100rpx;
+  font-size:32rpx;
+  border-left:1rpx solid #f2f2f2;
+  margin-left:-1rpx;
+}
+.chart_title{
+  text-align: center;
+  line-height: 80rpx;
+  font-size:30rpx;
+  font-weight: bold;
+  color:#74bee3;
+  margin-top:20rpx;
+}
+.chart_line_box{
+  position:relative;
+  height:20rpx;
+}
+.chart_line{
+  float:left;
+  position:relative;
+  height:20rpx;
+}
+.bg_1{
+  background: #ffcc66;
+}
+.bg_2{
+  background: #f38996;
+}
+.bg_3{
+  background: #59bdf9;
+}
+.bg_4{
+  background: #cccccc;
+}
+.chart_legend{
+  padding:10rpx 0;
+  height:60rpx;
+}
+.chart_legend_item{
+  width:25%;
+  float:left;
+  position:relative;
+  height:60rpx;
+  line-height: 60rpx;
+}
+.chart_legend_icon{
+  position:absolute;
+  left:20rpx;
+  height:20rpx;
+  top:20rpx;
+  width:20rpx;
+}
+.chart_legend_title{
+  padding-left:50rpx;
+}

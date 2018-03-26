@@ -1,0 +1,45 @@
+<view class="container">
+  <view class="yy_box">
+    <view class='yy_item'>
+      <view class='yy_item_title'>预约人</view>
+      <view class='yy_item_info'>李晓明</view>
+    </view>
+    <view class='yy_item'>
+      <view class='yy_item_title'>预约项目</view>
+      <view class='yy_item_info'>口腔正畸</view>
+    </view>
+    <view class='yy_item'>
+      <view class='yy_item_title'>预约时间</view>
+      <view class='yy_item_info'>2018/02/24/下午4:00</view>
+    </view>
+    <view class='yy_item'>
+      <view class='yy_item_title'>预约医生</view>
+      <view class='yy_item_info'>世同齿科主治医师 王大夫</view>
+    </view>
+    <view class='yy_item'>
+      <view class='yy_item_title'>地址</view>
+      <view class='yy_item_info'>日照市北京路345号世同齿科</view>
+    </view>
+  </view>
+  <view class='split_no_border'></view>
+  <view class='yy_center_btns'>
+    <view class='yy_center_left_btn'>
+      <image src='/img/btn_daohang.png'></image>
+      <view class='yy_center_name'>导航</view>
+    </view>
+    <view class='yy_center_right_btn'>
+      <image src='/img/btn_dianhua.png'></image>
+      <view class='yy_center_name'>电话</view>
+    </view>
+  </view>
+  <view class='yy_wxts'>
+    <view class='yy_wxts_box'>
+      <view class='yy_wxts_title'>温馨提示</view>
+      <view class='yy_wxts_info'>请按照预约时间及时就诊</view>
+      <view class='yy_wxts_info'>如果迟到1小时本次预约将自动取消</view>
+    </view>
+  </view>
+  <view class='yy_bottom_btn'>
+    我已到达约定地点
+  </view>
+</view>

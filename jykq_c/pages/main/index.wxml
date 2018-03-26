@@ -1,0 +1,129 @@
+<view class="container">
+  <view class='main_top_box'>
+    <view class='main_top_item hide'>
+      <view class='main_top_item_photo'>
+        <image src='/img/user_photo_default.png'></image>
+      </view>
+      <view class='main_top_item_username main_top_item_username_none'>
+        尚未设置
+      </view>
+      <view class='main_top_item_status'>
+        点击进入设置个人中心
+      </view>
+    </view>
+    <swiper 
+      indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" 
+      interval="{{interval}}" 
+      duration="{{duration}}"
+      current="0" 
+      bindchange="changeUser"
+      style='height:370rpx;'
+      >
+      <block wx:for="{{userList}}" wx:for-index="idx" wx:key="{{idx}}">
+        <swiper-item>
+          <view class='main_top_item' bindtap='go2familydetail'>
+            <view class='main_top_item_photo'>
+              <image src='/img/btn_family_photo_index.png'></image>
+            </view>
+            <view class='main_top_item_username '>
+              {{item.username}}
+            </view>
+            <view class='main_top_item_status'>
+            {{item.status=='1'?'口腔健康实时防护中':'您的口腔状况非常健康'}}
+            </view>
+          </view>
+        </swiper-item>
+      </block>
+      </swiper>
+    
+
+  </view>
+
+  <view class='main_center_box'>
+    <view class='main_center_item' bindtap='go2FZXQ'>
+      <view class='main_center_item_left'>
+        <image src='/img/btn_info.png'></image>
+      </view>
+      <view class='main_center_item_center'>
+        <view class='main_center_item_center_title'>
+        复诊提醒
+        </view>
+        <view class='main_center_item_center_context'>
+        复诊时间2018年4月8日09:00
+        </view>
+      </view>
+      <view class='main_center_item_right'>
+        <image src='/img/btn_enter.png'></image>
+      </view>
+    </view>
+
+    <view class='main_center_item'>
+      <view class='main_center_item_left'>
+        <image src='/img/btn_info.png'></image>
+      </view>
+      <view class='main_center_item_center'>
+        <view class='main_center_item_center_title'>
+        您有3项口腔治疗
+        </view>
+        <view class='main_center_item_center_context'>
+        为了您的口腔健康，请尽快治疗
+        </view>
+      </view>
+      <view class='main_center_item_right'>
+        <image src='/img/btn_enter.png'></image>
+      </view>
+    </view>
+
+    <view class='main_center_item' bindtap='go2KP'>
+      <view class='main_center_item_left'>
+        <image src='/img/btn_info.png'></image>
+      </view>
+      <view class='main_center_item_center'>
+        <view class='main_center_item_center_title'>
+        尚未口腔检查
+        </view>
+        <view class='main_center_item_center_context'>
+        免费口腔检查
+        </view>
+      </view>
+      <view class='main_center_item_right'>
+        <image src='/img/btn_enter.png'></image>
+      </view>
+    </view>
+
+    <view class='main_center_item' bindtap='go2JJWZ'>
+      <view class='main_center_item_left'>
+        <image src='/img/btn_add.png'></image>
+      </view>
+      <view class='main_center_item_center'>
+        <view class='main_center_item_center_title'>
+        紧急问诊
+        </view>
+        <view class='main_center_item_center_context'>
+        发布需求，让医生找到我
+        </view>
+      </view>
+      <view class='main_center_item_right'>
+        <image src='/img/btn_enter.png'></image>
+      </view>
+    </view>
+
+    <view class='main_center_item' bindtap='go2ZWZD'>
+      <view class='main_center_item_left'>
+        <image src='/img/btn_search.png'></image>
+      </view>
+      <view class='main_center_item_center'>
+        <view class='main_center_item_center_title'>
+        自我诊断
+        </view>
+        <view class='main_center_item_center_context'>
+        一分钟便可找到病因及治疗价格
+        </view>
+      </view>
+      <view class='main_center_item_right'>
+        <image src='/img/btn_enter.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

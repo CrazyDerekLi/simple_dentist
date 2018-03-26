@@ -1,0 +1,59 @@
+<view class="container">
+  <view class='jiating_top'>
+    <view class='jiating_top_box' bindtap='go2addphoto'>
+      <view class='jiating_top_photo'>
+        <image src="{{filePath?filePath:'/img/btn_family_photo_d.png'}}"></image>
+      </view>
+      <view class='jiating_top_title'>
+        李晓明
+      </view>
+      <view class='jiating_top_info'>
+        口腔状况非常健康
+      </view>
+    </view>
+  </view>
+  <view class='family_detail'>
+    <view class='family_item'>
+      <view class='family_item_title'>姓名</view>
+      <view class='family_item_info'>李晓明</view>
+    </view>
+
+    <view class='family_item'>
+      <view class='family_item_title'>年龄</view>
+      <view class='family_item_info'>18岁</view>
+    </view>
+
+    <view class='family_item'>
+      <view class='family_item_title'>性别</view>
+      <view class='family_item_info'>男</view>
+    </view>
+
+    <view class='family_item'>
+      <view class='family_item_title'>地区</view>
+      <view class='family_item_info'>日照市</view>
+    </view>
+    <view class='family_enter'>
+      <image src='/img/btn_enter.png'></image>
+    </view>
+  </view>
+  <view class='family_jianshi'>
+    <view class='family_jianshi_title'>口腔健康监视</view>
+    <view class='family_jianshi_body'>
+      <view class='family_jianshi_item'>
+        <view class='jianshi_title'>健康检查</view>
+        <view class='jianshi_line'>
+          <view class='jianshi_progress_line' style="width:50%;"></view>
+        </view>
+        <view class='jianshi_progress_info'>已完成1/2</view>
+      </view>
+      <view class='family_jianshi_item'>
+        <view class='jianshi_title'>口腔洁治</view>
+        <view class='jianshi_line'>
+          <view class='jianshi_progress_line' style="width:66%;"></view>
+        </view>
+        <view class='jianshi_progress_info'>已完成2/3</view>
+      </view>
+    </view>
+  </view>
+  <view class='jiating_bottom_btn' bindtap='go2cases'>查看病例</view>
+</view>

@@ -1,0 +1,56 @@
+.container{
+  padding-bottom:100rpx;
+}
+.jjwz_top{
+  height:400rpx;
+  background: #f0f5f8;
+}
+.jjwz_btn{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  width:auto;
+  height:100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color:#fff;
+  background: #59bdf9;
+  font-size:32rpx;
+}
+.jjwz_box{
+  padding-bottom:50rpx;
+  position:relative;
+}
+.jjwz_title{
+  position:absolute;
+  top:-50rpx;
+  width:200rpx;
+  margin-left:-100rpx;
+  line-height: 50rpx;
+  height:50rpx;
+  left:50%;
+  border-radius: 10rpx 10rpx 0 0 ;
+  text-align: center;
+  font-size: 28rpx;
+  color:#fff;
+}
+.jjwz_info{
+  padding:40rpx;
+  font-size:24rpx;
+  line-height: 55rpx;
+  border-top:1rpx solid #f2f2f2;
+  color:#808080;
+}
+.title_blue{
+  background: #59bdf9;
+}
+.title_orange{
+  background:#ffcc66;
+}
+.jjwz_top{
+  text-align: center;
+  line-height: 200rpx;
+  color:#59bdf9;
+  font-size:40rpx;
+}

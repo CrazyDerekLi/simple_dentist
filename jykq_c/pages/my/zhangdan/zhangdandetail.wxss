@@ -1,0 +1,49 @@
+/* pages/my/zhangdan/zhangdandetail.wxss */
+.container{
+  padding-bottom:100rpx;
+}
+.zhangdan_bottom_btn{
+  height:100rpx;
+  line-height: 100rpx;
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  border-top:1rpx solid #f2f2f2;
+  text-align: center;
+  font-size:30rpx;
+  background: #59bdf9;
+  color:#fff;
+}
+.zhangdan_top{
+  border-bottom:1rpx solid #f2f2f2;
+  font-size:36rpx;
+  height:100rpx;
+  text-align: center;
+  color:#808080;
+  line-height: 100rpx;
+}
+.zhangdan_box{
+  border-top:1rpx solid #f2f2f2;
+}
+.zhangdan_item{
+  border-bottom:1rpx solid #f2f2f2;
+  height:100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size:28rpx;
+  color:#b3b3b3;
+}
+.zhangdan_title{
+  width:50%;
+  float:left;
+}
+.zhangdan_amount{
+  width:50%;
+  float:left;
+  border-left:1rpx solid #f2f2f2;
+  margin-left:-1rpx;
+}
+.text_red{
+  color:#f38996;
+}

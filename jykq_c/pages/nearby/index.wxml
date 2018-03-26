@@ -1,0 +1,174 @@
+<view class="container">
+  <view class='nearby_tabs'>
+    <view class='nearby_tab_left {{tab=="hospital"?"":"selected"}}' bindtap='change2Doctor'>附近医生</view>
+    <view class='nearby_tab_right {{tab=="hospital"?"selected":""}}' bindtap='change2Hospital'>附近门诊</view>
+  </view>
+  <view class='split_line'></view>
+  <view class='nearby_doctor_box {{tab=="hospital"?"hide":"show"}}'>
+    <view class='nearby_doctor_item' bindtap='go2DoctorDetail'>
+      <view class='nearby_doctor_item_left'>
+        <view class='doctor_photo_box'>
+          <image src='/img/doctor_photo_d.png'></image>
+        </view>
+        <view class='btn_jian'>
+          <image src='/img/btn_jian.png'></image>
+        </view>
+      </view>
+      <view class='nearby_doctor_item_center'>
+        <view class='nearby_doctor_item_center_title'>
+          <view class='doctor_title'>
+          李天德
+          </view>
+          <view class='renzheng'>
+            <image src='/img/btn_renzheng.png'></image>
+          </view>
+        </view>
+        <view class='nearby_doctor_item_center_context'>
+          日照口腔医院主治医师
+        </view>
+        <view class='nearby_doctor_item_center_context'>
+          综合评分：93分
+        </view>
+      </view>
+      <view class='nearby_doctor_item_right'>
+        700m
+      </view>
+    </view>
+
+    <view class='nearby_doctor_item' bindtap='go2DoctorDetail'>
+      <view class='nearby_doctor_item_left'>
+        <view class='doctor_photo_box'>
+          <image src='/img/doctor_photo_d.png'></image>
+        </view>
+        <view class='btn_jian'>
+          <image src='/img/btn_jian.png'></image>
+        </view>
+      </view>
+      <view class='nearby_doctor_item_center'>
+        <view class='nearby_doctor_item_center_title'>
+          <view class='doctor_title'>
+          李天德
+          </view>
+          <view class='renzheng'>
+            <image src='/img/btn_renzheng.png'></image>
+          </view>
+        </view>
+        <view class='nearby_doctor_item_center_context'>
+          日照口腔医院主治医师
+        </view>
+        <view class='nearby_doctor_item_center_context'>
+          综合评分：93分
+        </view>
+      </view>
+      <view class='nearby_doctor_item_right'>
+        700m
+      </view>
+    </view>
+
+    <view class='nearby_doctor_item' bindtap='go2DoctorDetail'>
+      <view class='nearby_doctor_item_left'>
+        <view class='doctor_photo_box'>
+          <image src='/img/doctor_photo_d.png'></image>
+        </view>
+        <view class='btn_jian'>
+          <image src='/img/btn_jian.png'></image>
+        </view>
+      </view>
+      <view class='nearby_doctor_item_center'>
+        <view class='nearby_doctor_item_center_title'>
+          <view class='doctor_title'>
+          李天德
+          </view>
+          <view class='renzheng'>
+            <image src='/img/btn_renzheng.png'></image>
+          </view>
+        </view>
+        <view class='nearby_doctor_item_center_context'>
+          日照口腔医院主治医师
+        </view>
+        <view class='nearby_doctor_item_center_context'>
+          综合评分：93分
+        </view>
+      </view>
+      <view class='nearby_doctor_item_right'>
+        700m
+      </view>
+    </view>
+  </view>
+  <view class='nearby_hospital_box {{tab=="hospital"?"show":"hide"}}'>
+    <view class='nearby_hospital_item' bindtap='go2HospitalDetail'>
+      <view class='nearby_hospital_item_left'>
+        <view class='hospital_photo_box'>
+        
+        </view>
+        <view class='btn_jian'>
+          <image src='/img/btn_jian.png'></image>
+        </view>
+      </view>
+      <view class='nearby_hospital_item_center'>
+        <view class='nearby_hospital_item_center_title'>
+          <view class='hospital_title'>
+          日照世同口腔
+          </view>
+          <view class='renzheng'>
+            <image src='/img/btn_renzheng.png'></image>
+          </view>
+        </view>
+        <view class='nearby_hospital_item_center_context'>
+          <view class='star_box'>
+             <image src='/img/star_s.png'></image>
+            <image src='/img/star_s.png'></image>
+            <image src='/img/star_s.png'></image>
+            <image src='/img/star_s.png'></image>
+            <image src='/img/star_d.png'></image>
+          </view>
+          <view class='pingfen'>综合评分98分</view>
+        </view>
+      </view>
+      <view class='nearby_hospital_item_right'>
+        <view class='nearby_hospital_item_right_btn'>
+         <image src='/img/btn_juli_s.png'></image>
+        </view>
+        <view class='nearby_hospital_item_right_juli'>1112.8km</view>
+      </view>
+    </view>
+
+    <view class='nearby_hospital_item' bindtap='go2HospitalDetail'>
+      <view class='nearby_hospital_item_left'>
+        <view class='hospital_photo_box'>
+        
+        </view>
+        <view class='btn_jian'>
+          <image src='/img/btn_jian.png'></image>
+        </view>
+      </view>
+      <view class='nearby_hospital_item_center'>
+        <view class='nearby_hospital_item_center_title'>
+          <view class='hospital_title'>
+          日照世同口腔
+          </view>
+          <view class='renzheng'>
+            <image src='/img/btn_renzheng.png'></image>
+          </view>
+        </view>
+        <view class='nearby_hospital_item_center_context'>
+          <view class='star_box'>
+             <image src='/img/star_s.png'></image>
+            <image src='/img/star_s.png'></image>
+            <image src='/img/star_s.png'></image>
+            <image src='/img/star_s.png'></image>
+            <image src='/img/star_d.png'></image>
+          </view>
+          <view class='pingfen'>综合评分98分</view>
+        </view>
+      </view>
+      <view class='nearby_hospital_item_right'>
+        <view class='nearby_hospital_item_right_btn'>
+         <image src='/img/btn_juli_s.png'></image>
+        </view>
+        <view class='nearby_hospital_item_right_juli'>1112.8km</view>
+      </view>
+    </view>
+
+  </view>
+</view>

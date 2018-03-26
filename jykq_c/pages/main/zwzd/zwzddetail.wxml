@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="zwzd_select_top">
+    <view class='zwzd_select_top_img'>
+      <image src='/img/btn_answer.png'></image>
+    </view>
+    <view class='zwzd_select_top_title'>
+      您90%患有牙髓炎
+    </view>
+  </view>
+  <view class='result_item'>
+    <view class='result_title'>疾病概况</view>
+    <view class='result_body text_left'>
+      牙髓炎是指发生于牙髓组织的炎性病变。牙髓是主要包含神经血管的疏松结缔组织，位于牙齿内部的牙髓腔内。深龋、楔状缺损等牙体硬组织疾病如不能得到及时有效地控制和治疗，均可引发牙髓炎，成为口腔中最为多发和常见的疾病之一。
+    </view>
+  </view>
+  <view class='result_item'>
+    <view class='result_title'>治疗方案</view>
+    <view class='result_body text_center'>
+      建议您马上联系家庭一生或到附近诊所进行根管治疗。
+    </view>
+  </view>
+  <view class='result_item'>
+    <view class='result_title'>预防措施</view>
+    <view class='result_body text_center'>
+      1、定期例行口腔检查
+    </view>
+  </view>
+  <view class='result_btn'>
+    返回首页
+  </view>
+</view>

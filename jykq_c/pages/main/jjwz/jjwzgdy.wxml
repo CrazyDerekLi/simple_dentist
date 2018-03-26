@@ -1,0 +1,22 @@
+<view class="container">
+  <view class='jjwz_top'>
+    <view>就像滴滴打车一样简单</view>
+  </view>
+  <view class='jjwz_box'>
+    <view class='jjwz_title title_blue'>使用说明</view>
+    <view class='jjwz_info'>
+      您只需要填写问诊需求并发布，您附近的医生会第一时间接收到信息，让医生主动联系你，流程简单、快捷，非常适合遭遇意外伤害需要急诊的患者。
+    </view>
+  </view>
+  <view class='jjwz_box'>
+    <view class='jjwz_title title_orange'>使用说明</view>
+    <view class='jjwz_info'>
+      <view>1、简约口腔平台所有牙医均具备职业医师证书，请放心联系</view>
+      <view>2、简约口腔平台所有牙医均具备职业医师证书，请放心联系</view>
+      <view>3、简约口腔平台所有牙医均具备职业医师证书，请放心联系</view>
+    </view>
+  </view>
+  <view class='jjwz_btn' bindtap='go2Fbwz'>
+    继续
+  </view>
+</view>

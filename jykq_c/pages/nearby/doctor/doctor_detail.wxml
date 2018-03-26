@@ -1,0 +1,76 @@
+<view class="container">
+  <view class='doctor_detail_top'>
+    <view class='doctor_detail_top_photo'>
+      <image src='/img/btn_family_photo_index.png'></image>
+    </view>
+    <view class='doctor_detail_top_name'>
+      李天德
+    </view>
+    <view class='doctor_detail_top_hospital'>
+      日照市口腔医院主治医师
+    </view>
+  </view>
+  <view class='doctor_detail_renzheng'>
+    <view class='doctor_detail_left_renzheng'>
+      <view class='renzheng_l'>
+        <image src='/img/btn_shenfen.png'></image>
+      </view>
+      <view class='renzheng_r'>
+        身份认证
+      </view>
+    </view>
+    <view class='doctor_detail_right_renzheng'>
+      <view class='renzheng_l'>
+        <image src='/img/btn_zhiye.png'></image>
+      </view>
+      <view class='renzheng_r'>
+        职业医师认证
+      </view>
+    </view>
+  </view>
+  <view class='project_item'>
+    <view class='project_title'>
+      综合评分95分
+    </view>
+    <view class='project_context' style='padding-top:0;padding-bottom:0;'>
+      <view class='chart_title'>治疗病例 3768</view>
+      <view class='chart_line_box'>
+        <view class='chart_line bg_1' style='width:10%;'></view>
+        <view class='chart_line bg_2' style='width:40%;'></view>
+        <view class='chart_line bg_3' style='width:30%;'></view>
+        <view class='chart_line bg_4' style='width:20%;'></view>
+      </view>
+      <view class='chart_legend'>
+        <view class='chart_legend_item'>
+          <view class='chart_legend_icon bg_1'></view>
+          <view class='chart_legend_title'>正畸10%</view>
+        </view>
+        <view class='chart_legend_item'>
+          <view class='chart_legend_icon bg_2'></view>
+          <view class='chart_legend_title'>种植40%</view>
+        </view>
+        <view class='chart_legend_item'>
+          <view class='chart_legend_icon bg_3'></view>
+          <view class='chart_legend_title'>修复30%</view>
+        </view>
+        <view class='chart_legend_item'>
+          <view class='chart_legend_icon bg_4'></view>
+          <view class='chart_legend_title'>其他20%</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='project_item'>
+    <view class='project_title'>
+      学术成果获奖介绍
+    </view>
+    <view class='project_context'>
+      介绍介绍介绍介绍介绍介绍介绍介绍
+    </view>
+  </view>
+  <view class='doctor_btns'>
+    <view class='doctor_left_btn' bindtap='go2WZ'>咨询</view>
+    <view class='doctor_right_btn' bindtap='setFamilyDoctor'>设置家庭医生</view>
+  </view>
+</view>

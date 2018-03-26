@@ -1,0 +1,156 @@
+.nearby_tabs{
+  height:100rpx;
+}
+.nearby_tab_left,.nearby_tab_right{
+  font-size:30rpx;
+  line-height: 100rpx;
+  text-align: center;
+  width:50%;
+  float:left;
+  color:#b3b3b3;
+}
+.nearby_tab_right{
+  border-left:1rpx solid #f2f2f2;
+  margin-left:-1rpx;
+}
+.nearby_tabs .selected{
+  color:#808080;
+}
+.nearby_hospital_item{
+  height:100rpx;
+  border-bottom:1rpx solid #f2f2f2;
+  position:relative;
+  padding:50rpx 100rpx 50rpx 200rpx;
+}
+.nearby_doctor_item{
+  height:120rpx;
+  border-bottom:1rpx solid #f2f2f2;
+  position:relative;
+  padding:40rpx 100rpx 40rpx 200rpx;
+}
+.nearby_hospital_item_left,.nearby_doctor_item_left{
+  position:absolute;
+  left:30rpx;
+  top:30rpx;
+  width:140rpx;
+  height:140rpx;
+}
+.hospital_photo_box,.doctor_photo_box{
+  width:140rpx;
+  height:140rpx;
+  border-radius: 140rpx;
+  overflow: hidden;
+}
+.hospital_photo_box{
+  background: #ccc;
+}
+.doctor_photo_box image{
+  width:140rpx;
+  height:140rpx;
+  display: block;
+}
+.btn_jian{
+  position:absolute;
+  right:5rpx;
+  top:5rpx;
+  width:40rpx;
+  height:40rpx;
+}
+.btn_jian image{
+  display: block;
+  width:40rpx;
+  height:40rpx;
+}
+.nearby_hospital_item_center_title,.nearby_doctor_item_center_title{
+  height:60rpx;
+  line-height: 60rpx;
+  font-size:32rpx;
+  color:#808080;
+}
+.nearby_hospital_item_center_context{
+  height:40rpx;
+  line-height: 40rpx;
+  font-size:28rpx;
+  color:#b3b3b3;
+}
+.nearby_doctor_item_center_context{
+  height:30rpx;
+  line-height: 30rpx;
+  font-size:24rpx;
+  color:#b3b3b3;
+}
+.hospital_title,.doctor_title{
+  height:60rpx;
+  line-height: 60rpx;
+  float:left;
+}
+.renzheng{
+  float:left;
+  height:60rpx;
+  display: block;
+  width:80rpx;
+  margin-left:10rpx;
+}
+.renzheng image{
+  display: block;
+  width:80rpx;
+  height:40rpx;
+  margin-top:10rpx;
+}
+.star_box{
+  height:40rpx;
+  width:160rpx;
+  float:left;
+}
+.star_box image{
+  display: block;
+  width:30rpx;
+  height:30rpx;
+  margin:3rpx 2rpx 8rpx 0;
+  float:left;
+}
+.pingfen{
+  height:40rpx;
+  line-height: 40rpx;
+  float:left;
+  font-size:26rpx;
+  margin-left:10rpx;
+}
+.nearby_hospital_item_right{
+  width:100rpx;
+  position:absolute;
+  right:20rpx;
+  height:100rpx;
+  top:50rpx;
+}
+.nearby_hospital_item_right_btn{
+  width:60rpx;
+  height:60rpx;
+  margin:0 auto;
+  position:relative;
+}
+.nearby_hospital_item_right_btn image{
+  display: block;
+  width:40rpx;
+  height:40rpx;
+  margin:10rpx;
+}
+.nearby_hospital_item_right_juli{
+  height:40rpx;
+  text-align: center;
+  font-size:26rpx;
+  color:#b3b3b3;
+  position:absolute;
+  right:0;
+  top:60rpx;
+  line-height: 40rpx;
+}
+.nearby_doctor_item_right{
+  height:120rpx;
+  line-height: 120rpx;
+  position:absolute;
+  right:60rpx;
+  top:40rpx;
+  font-size:30rpx;
+  color:#b3b3b3;
+}

@@ -1,0 +1,69 @@
+/* pages/my/jiating/addfamily.wxss */
+.container{
+  padding-bottom:100rpx;
+}
+.jiating_top{
+  padding:50rpx 0 50rpx 0;
+  border-bottom:1rpx solid #f2f2f2;
+  position: relative;
+}
+.jiating_top_box{
+  position:relative;
+}
+.jiating_top_photo{
+  width:240rpx;
+  height:240rpx;
+  margin:0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 240rpx;
+}
+.jiating_top_photo image{
+  display: block;
+  width:100%;
+  height:100%;
+}
+.jiating_top_title{
+  margin-top:10rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size:30rpx;
+  color:#808080;
+}
+.jiating_top_info{
+  line-height: 30rpx;
+  font-size:22rpx;
+  text-align: center;
+  color:#b3b3b3;
+}
+.jiating_bottom_btn{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  height:100rpx;
+  line-height: 100rpx;
+  background: #59bdf9;
+  color:#fff;
+  font-size:30rpx;
+  text-align: center;
+}
+.form_item input{
+  height:100rpx;
+  line-height:100rpx;
+  text-align: right;
+  float:right;
+}
+.form_item{
+  border-bottom:1rpx solid #f2f2f2;
+  height:100rpx;
+  line-height: 100rpx;
+  font-size:26rpx;
+  padding:0 40rpx;
+  color:#b3b3b3;
+}
+.form_item_info{
+  color:#808080;
+  float:right;
+
+}

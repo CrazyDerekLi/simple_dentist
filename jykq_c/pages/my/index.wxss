@@ -1,0 +1,36 @@
+/* pages/my/index.wxss */
+.my_view_item{
+  height:120rpx;
+  line-height: 120rpx;
+  position:relative;
+  border-bottom:1rpx solid #f2f2f2;
+  border-top:1rpx solid #f2f2f2;
+  margin-top:-1rpx;
+  padding:0 100rpx 0 110rpx;
+   font-size:30rpx;
+   color:#7e7b7f;
+}
+.my_view_icon{
+  position:absolute;
+  left:40rpx;
+  width:50rpx;
+  top:35rpx;
+  height:50rpx;
+}
+.my_view_icon image{
+  display: block;
+  width:50rpx;
+  height:50rpx;
+}
+.my_view_enter{
+  position:absolute;
+  width:30rpx;
+  height:30rpx;
+  top:45rpx;
+  right:30rpx;
+}
+.my_view_enter image{
+  display: block;
+  width:30rpx;
+  height:30rpx;
+}

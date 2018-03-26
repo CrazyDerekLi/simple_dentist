@@ -1,0 +1,48 @@
+<view class="container">
+
+  <view class='split_no_border'></view>
+
+  <view class='my_view_item' bindtap='go2zhangdan'>
+    <view class="my_view_icon">
+      <image src='/img/btn_zhangdan.png'></image>
+    </view>
+    <view class='my_view_title'>账单</view>
+    <view class='my_view_enter'>
+      <image src='/img/btn_enter.png'></image>
+    </view>
+  </view>
+
+  <view class='my_view_item' bindtap='go2youhui'>
+    <view class="my_view_icon">
+      <image src='/img/btn_youhui.png'></image>
+    </view>
+    <view class='my_view_title'>优惠</view>
+    <view class='my_view_enter'>
+      <image src='/img/btn_enter.png'></image>
+    </view>
+  </view>
+
+  <view class='split_no_border'></view>
+
+  <view class='my_view_item' bindtap='go2yuyue'>
+    <view class="my_view_icon">
+      <image src='/img/btn_yuyue.png'></image>
+    </view>
+    <view class='my_view_title'>预约</view>
+    <view class='my_view_enter'>
+      <image src='/img/btn_enter.png'></image>
+    </view>
+  </view>
+
+<view class='split_no_border'></view>
+
+  <view class='my_view_item' bindtap='go2jiatingchengyuan'>
+    <view class="my_view_icon">
+      <image src='/img/btn_jiating.png'></image>
+    </view>
+    <view class='my_view_title'>家庭成员</view>
+    <view class='my_view_enter'>
+      <image src='/img/btn_enter.png'></image>
+    </view>
+  </view>
+</view>

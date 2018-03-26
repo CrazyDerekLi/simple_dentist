@@ -1,0 +1,16 @@
+<view class="container">
+  <view class='zwzd_top'>
+    <view class='zwzd_top_img'>
+      <image src='/img/btn_ziwozhenduan.png'></image>
+    </view>
+  </view>
+  <view class='zwzd_body'>
+    <view class='zwzd_title'>自我诊断</view>
+    <view class='zwzd_content'>您只需要花几分钟时间进行自我诊断</view>
+    <view class='zwzd_content'>就可以获得来自权威专家的就医指导建议</view>
+    <view class='zwzd_content'>以及相对透明的诊疗价格</view>
+  </view>
+  <view class='jjwz_btn' bindtap='go2Select'>
+    开始
+  </view>
+</view>

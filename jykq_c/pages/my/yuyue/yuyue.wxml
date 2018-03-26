@@ -1,0 +1,25 @@
+<view class='container'>
+  <view class='split_no_border'></view>
+  <view class='zhangdan_box'>
+    <view class='zhangdan_item' bindtap='go2detail'>
+      <view class='zhangdan_item_title'>世同齿科－项目1</view>
+      <view class='zhangdan_item_date'>李晓明</view>
+      <view class='zhangdan_item_amount'>2018-02-12</view>
+    </view>
+    <view class='zhangdan_item' bindtap='go2detail'>
+      <view class='zhangdan_item_title'>世同齿科－项目2</view>
+      <view class='zhangdan_item_date'>李晓明</view>
+      <view class='zhangdan_item_amount'>2018-02-13</view>
+    </view>
+    <view class='zhangdan_item' bindtap='go2detail'>
+      <view class='zhangdan_item_title'>世同齿科－项目3</view>
+      <view class='zhangdan_item_date'>李晓明</view>
+      <view class='zhangdan_item_amount'>2018-02-14</view>
+    </view>
+    <view class='zhangdan_item' bindtap='go2detail'>
+      <view class='zhangdan_item_title'>世同齿科－项目4</view>
+      <view class='zhangdan_item_date'>李晓明</view>
+      <view class='zhangdan_item_amount'>2018-02-15</view>
+    </view>
+  </view>
+</view>

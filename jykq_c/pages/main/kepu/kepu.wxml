@@ -1,0 +1,22 @@
+<view class="container">
+  <view class='jjwz_top'>
+    <view>牙医推荐一年两次口腔检查</view>
+  </view>
+  <view class='jjwz_box'>
+    <view class='jjwz_title title_blue'>健康科普</view>
+    <view class='jjwz_info'>
+      因为人的牙齿在不断生长，特别是少年儿童，日常生活使用中。因为人的牙齿在不断生长，特别是少年儿童，日常生活使用中。因为人的牙齿在不断生长，特别是少年儿童，日常生活使用中。
+    </view>
+  </view>
+  <view class='jjwz_box'>
+    <view class='jjwz_title title_orange'>温馨提示</view>
+    <view class='jjwz_info'>
+      <view>1、口腔检查请提醒医生建立永久病例。</view>
+      <view>2、建立病例，随时随地查看，跟踪治疗效果。</view>
+      <view>3、您可以去发现获取更多项目，一次性就诊解决多个问题。</view>
+    </view>
+  </view>
+  <view class='jjwz_btn'>
+    挑门诊
+  </view>
+</view>

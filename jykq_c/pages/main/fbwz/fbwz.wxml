@@ -1,0 +1,85 @@
+<!--pages/main/fbwz/fbwz.wxml-->
+<view class='container'>
+  <view class='split_no_border'></view>
+  <view class='view_item'>
+    <view class='view_title'>
+      <view class='text_float_left'>请选择预约人</view>
+      <view class='text_float_right'>必填</view>
+    </view>
+    <view class='view_body'>
+      <view class='select_box'>
+        <view class='select_item'>
+          <view class='select_icon'>
+            <image src='/img/radio_s.png'></image>
+          </view>
+          <view class='select_title'>李小敏</view>
+        </view>
+        <view class='select_item'>
+          <view class='select_icon'>
+            <image src='/img/radio_d.png'></image>
+          </view>
+          <view class='select_title'>李大叔</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='view_item'>
+    <view class='view_title'>
+      <view class='text_float_left'>请选择您预约的项目</view>
+      <view class='text_float_right'>必填</view>
+    </view>
+    <view class='view_body'>
+      <view class='select_box'>
+        <view class='select_item'>
+          <view class='select_icon'>
+            <image src='/img/radio_s.png'></image>
+          </view>
+          <view class='select_title'>口腔检查</view>
+        </view>
+        <view class='select_item'>
+          <view class='select_icon'>
+            <image src='/img/radio_d.png'></image>
+          </view>
+          <view class='select_title'>洗牙</view>
+        </view>
+        <view class='select_item'>
+          <view class='select_icon'>
+            <image src='/img/radio_d.png'></image>
+          </view>
+          <view class='select_title'>牙齿正畸</view>
+        </view>
+        <view class='select_item'>
+          <view class='select_icon'>
+            <image src='/img/radio_d.png'></image>
+          </view>
+          <view class='select_title'>种植牙</view>
+        </view>
+        <view class='select_item'>
+          <view class='select_icon'>
+            <image src='/img/radio_d.png'></image>
+          </view>
+          <view class='select_title'>其他</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='view_item' style='border-bottom:1rpx solid #f2f2f2;'>
+    <view class='view_title'>
+      <view class='text_float_left'>请确认您的联系方式</view>
+      <view class='text_float_right'>必填</view>
+    </view>
+    <view class='view_body'>
+      <view class='select_box'>
+        <view class='select_item'>
+          <view class='select_icon'>
+            <image src='/img/btn_edit.png'></image>
+          </view>
+          <view class='select_title'>136-0633-8888</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='view_btn'>
+    发布紧急问诊
+  </view>
+</view>

@@ -1,0 +1,35 @@
+/* pages/main/fbwz/fbwz.wxss */
+.container{
+  padding-bottom:100rpx;
+  background: #fff;
+}
+.text_float_left{
+  float:left;
+  font-size:28rpx;
+  color:#ccc;
+}
+.text_float_right{
+  float:right;
+  font-size:28rpx;
+  color:#ccc;
+}
+.view_btn{
+  border-top:1rpx solid #f2f2f2;
+  color:#fff;
+  background: #59bdf9;
+  height:100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size:30rpx;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+}
+.yyxm{
+  height:100rpx;
+  line-height: 100rpx;
+  font-size:28rpx;
+  padding:0 50rpx;
+  color:#808080;
+}

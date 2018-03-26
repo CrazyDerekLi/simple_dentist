@@ -1,0 +1,73 @@
+<view class="container">
+  <view class="lunbo">
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:for-index="idx" wx:key="{{idx}}">
+          <swiper-item>
+              <view style="position:relative;height:100%;">
+                  <image src="{{item}}" class="slide_image" style=""/>
+              </view>
+          </swiper-item>
+      </block>
+      </swiper>
+  </view>
+  <view class='find_tabs'>
+    <view class='find_tab {{tab=="1"?"select_tab":""}}' style='width:33%;' bindtap='go2Tab1'>免费抢</view>
+    <view class='find_tab {{tab=="2"?"select_tab":""}}' style='width:34%;border-left:1rpx solid #f2f2f2;margin-left:-1rpx;' bindtap='go2Tab2'>套餐</view>
+    <view class='find_tab {{tab=="3"?"select_tab":""}}' style='width:33%;border-left:1rpx solid #f2f2f2;margin-left:-1rpx;' bindtap='go2Tab3'>参团</view>
+  </view>
+  <view class='split_no_border'></view>
+  <view class='find_view_box' style='display:{{tab=="1"?"block":"none"}};'>
+    <view class='find_view_item' bindtap='go2mianfeiqiang'>
+      <view class='find_view_item_left'>
+        <image src='/img/btn_quan_1.png'></image>
+      </view>
+      <view class='find_view_item_center'>口腔洁治－免费洗牙券</view>
+      <view class='find_view_item_right'>
+        <image src='/img/btn_enter.png'></image>
+      </view>
+    </view>
+    <view class='find_view_item' bindtap='go2mianfeiqiang'>
+      <view class='find_view_item_left'>
+        <image src='/img/btn_quan_2.png'></image>
+      </view>
+      <view class='find_view_item_center'>免费拔牙</view>
+      <view class='find_view_item_right'>
+        <image src='/img/btn_enter.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='find_view_box' style='display:{{tab=="2"?"block":"none"}};'>
+    <view class='find_view_item' bindtap='go2taocan'>
+      <view class='find_view_item_left'>
+        <image src='/img/btn_quan_1.png'></image>
+      </view>
+      <view class='find_view_item_center'>世同齿科－儿童护牙套餐</view>
+      <view class='find_view_item_right'>
+        <image src='/img/btn_enter.png'></image>
+      </view>
+    </view>
+    <view class='find_view_item' bindtap='go2taocan'>
+      <view class='find_view_item_left'>
+        <image src='/img/btn_quan_2.png'></image>
+      </view>
+      <view class='find_view_item_center'>牙医推荐好用电动牙刷</view>
+      <view class='find_view_item_right'>
+        <image src='/img/btn_enter.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='find_view_box' style='display:{{tab=="3"?"block":"none"}};'>
+    <view class='find_view_item' bindtap='go2cantuan'>
+      <view class='find_view_item_left'>
+        <image src='/img/btn_quan_1.png'></image>
+      </view>
+      <view class='find_view_item_center'>世同齿科－口腔正畸团</view>
+      <view class='find_view_item_right'>
+        <image src='/img/btn_enter.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

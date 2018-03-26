@@ -1,0 +1,86 @@
+<view class='container'>
+  
+  <view class='case_list history'>
+    <view class='split_no_border'></view>
+    <view class='case_body'>
+      <view class='case_item' bindtap='go2caseDetail'>
+        <view class='case_img'>
+          <image src='/img/case_history.png'></image>
+        </view>
+        <view class='case_item_info'>
+          <view class='case_item_info_title'>口腔存在龋齿问题</view>
+          <view>东港区医院主治医师：李晓强</view>
+          <view>2017年8月15日</view>
+        </view>
+        <view class='case_enter'>
+          <image src='/img/btn_enter.png'></image>
+        </view>
+      </view>
+      <view class='case_item' bindtap='go2caseDetail'>
+        <view class='case_img'>
+          <image src='/img/case_history.png'></image>
+        </view>
+        <view class='case_item_info'>
+          <view class='case_item_info_title'>口腔存在龋齿问题</view>
+          <view>东港区医院主治医师：李晓强</view>
+          <view>2017年8月15日</view>
+        </view>
+        <view class='case_enter'>
+          <image src='/img/btn_enter.png'></image>
+        </view>
+      </view>
+      <view class='case_item' bindtap='go2caseDetail'>
+        <view class='case_img'>
+          <image src='/img/case_history.png'></image>
+        </view>
+        <view class='case_item_info'>
+          <view class='case_item_info_title'>口腔存在龋齿问题</view>
+          <view>东港区医院主治医师：李晓强</view>
+          <view>2017年8月15日</view>
+        </view>
+        <view class='case_enter'>
+          <image src='/img/btn_enter.png'></image>
+        </view>
+      </view>
+      <view class='case_item' bindtap='go2caseDetail'>
+        <view class='case_img'>
+          <image src='/img/case_history.png'></image>
+        </view>
+        <view class='case_item_info'>
+          <view class='case_item_info_title'>口腔存在龋齿问题</view>
+          <view>东港区医院主治医师：李晓强</view>
+          <view>2017年8月15日</view>
+        </view>
+        <view class='case_enter'>
+          <image src='/img/btn_enter.png'></image>
+        </view>
+      </view>
+      <view class='case_item' bindtap='go2caseDetail'>
+        <view class='case_img'>
+          <image src='/img/case_history.png'></image>
+        </view>
+        <view class='case_item_info'>
+          <view class='case_item_info_title'>口腔存在龋齿问题</view>
+          <view>东港区医院主治医师：李晓强</view>
+          <view>2017年8月15日</view>
+        </view>
+        <view class='case_enter'>
+          <image src='/img/btn_enter.png'></image>
+        </view>
+      </view>
+      <view class='case_item' bindtap='go2caseDetail'>
+        <view class='case_img'>
+          <image src='/img/case_history.png'></image>
+        </view>
+        <view class='case_item_info'>
+          <view class='case_item_info_title'>口腔存在龋齿问题</view>
+          <view>东港区医院主治医师：李晓强</view>
+          <view>2017年8月15日</view>
+        </view>
+        <view class='case_enter'>
+          <image src='/img/btn_enter.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,51 @@
+<view class="container">
+  <view class='mianfei_top'>
+    <view class='xianshi'>限时</view>
+    <view class='leiji'>累计派发23000张</view>
+    <view class='mianfei_top_body'>
+      <view class='mianfei_top_body_img'>
+        <image src='/img/btn_mianfeixiya.png'></image>
+      </view>
+      <view class='mianfei_top_body_title'>洗牙券免费领</view>
+      <view class='mianfei_top_body_info'>
+        <view class='mianfei_top_body_info_info'>价值¥99.00超声波无痛洁牙</view>
+        <view class='mianfei_top_body_line'></view>
+      </view>
+    </view>
+  </view>
+  <view class='mianfei_guize'>
+    <view class='mianfei_guize_title'>
+      <view class='mianfei_guize_title_info'>
+        <view class='yuanquan1'></view>
+        <view class='yuanquan2'></view>
+        活动规则
+      </view>
+      <view class='mianfei_guize_title_line'></view>
+    </view>
+    <view class='mianfei_guize_info'>1、如何抢券：每周六12：00至周日24：00准时抢券</view>
+    <view class='mianfei_guize_info'>2、如何用券：每周一至周五上午9：00至晚上8：00。</view>
+    <view class='mianfei_guize_info'>3、温馨提示：为了节约时间，洗牙与口腔检查可同时完成。</view>
+  </view>
+  <view class='mianfei_tieshi'>
+    <view class='mianfei_tieshi_title'>
+      <view class='mianfei_tieshi_title_img'>
+        <image src='/img/btn_zan.png'></image>
+      </view>
+      <view class='mianfei_tieshi_title_info'>健康小贴士</view>
+    </view>
+    <view class='mianfei_tieshi_info' style='line-height:60rpx;'>简约牙医建议一年两次口腔检查，配合口腔洁治，防患于未然！
+</view>
+    <view class='mianfei_tieshi_info'>
+      口腔洁治即牙齿洁治术，俗称洗牙
+    </view>
+    <view class='mianfei_tieshi_info'>
+      定期口腔洁治去除牙齿表面菌斑、牙结石、烟斑、茶垢等
+    </view>
+    <view class='mianfei_tieshi_info'>
+      是维持牙周健康、预防龈炎和牙周炎发生或复发的重要措施
+    </view>
+  </view>
+  <view class='mianfei_bottom_btn'>
+    倒计时：80小时42分钟12秒
+  </view>
+</view>
